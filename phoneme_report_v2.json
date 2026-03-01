@@ -1,0 +1,5452 @@
+{
+  "overall_score": 83.3,
+  "phoneme_accuracy": 83.3,
+  "total_expected": 222,
+  "total_actual": 220,
+  "correct": 185,
+  "error_count": 37,
+  "word_results": [
+    {
+      "word": "Please",
+      "expected_phonemes": [
+        "p",
+        "l",
+        "iː",
+        "z"
+      ],
+      "actual_phonemes": [
+        "p",
+        "l",
+        "iː",
+        "z"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "p",
+          "actual": "p",
+          "distance": 0.0,
+          "confidence": 0.977,
+          "gop": -0.02,
+          "score": 99.8,
+          "match": true
+        },
+        {
+          "expected": "l",
+          "actual": "l",
+          "distance": 0.0,
+          "confidence": 0.987,
+          "gop": -0.01,
+          "score": 99.9,
+          "match": true
+        },
+        {
+          "expected": "iː",
+          "actual": "iː",
+          "distance": 0.0,
+          "confidence": 0.932,
+          "gop": -0.07,
+          "score": 99.4,
+          "match": true
+        },
+        {
+          "expected": "z",
+          "actual": "z",
+          "distance": 0.0,
+          "confidence": 0.644,
+          "gop": -0.44,
+          "score": 96.5,
+          "match": true
+        }
+      ],
+      "score": 98.9,
+      "matches": 4,
+      "total": 4,
+      "quality": "good"
+    },
+    {
+      "word": "call",
+      "expected_phonemes": [
+        "k",
+        "ɔ",
+        "l"
+      ],
+      "actual_phonemes": [
+        "k",
+        "ɔ",
+        "l"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "k",
+          "actual": "k",
+          "distance": 0.0,
+          "confidence": 0.963,
+          "gop": -0.03,
+          "score": 99.8,
+          "match": true
+        },
+        {
+          "expected": "ɔ",
+          "actual": "ɔ",
+          "distance": 0.0,
+          "confidence": 0.237,
+          "gop": -1.44,
+          "score": 88.5,
+          "match": true
+        },
+        {
+          "expected": "l",
+          "actual": "l",
+          "distance": 0.0,
+          "confidence": 0.947,
+          "gop": -0.05,
+          "score": 99.6,
+          "match": true
+        }
+      ],
+      "score": 96.0,
+      "matches": 3,
+      "total": 3,
+      "quality": "good"
+    },
+    {
+      "word": "Stella",
+      "expected_phonemes": [
+        "s",
+        "t",
+        "ɛ",
+        "l",
+        "ʌ"
+      ],
+      "actual_phonemes": [
+        "s",
+        "t",
+        "ɛ",
+        "l",
+        "ɐ"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "s",
+          "actual": "s",
+          "distance": 0.0,
+          "confidence": 0.99,
+          "gop": -0.01,
+          "score": 99.9,
+          "match": true
+        },
+        {
+          "expected": "t",
+          "actual": "t",
+          "distance": 0.0,
+          "confidence": 0.996,
+          "gop": -0.0,
+          "score": 100.0,
+          "match": true
+        },
+        {
+          "expected": "ɛ",
+          "actual": "ɛ",
+          "distance": 0.0,
+          "confidence": 0.942,
+          "gop": -0.06,
+          "score": 99.5,
+          "match": true
+        },
+        {
+          "expected": "l",
+          "actual": "l",
+          "distance": 0.0,
+          "confidence": 0.993,
+          "gop": -0.01,
+          "score": 99.9,
+          "match": true
+        },
+        {
+          "expected": "ʌ",
+          "actual": "ɐ",
+          "distance": 0.0,
+          "confidence": 0.504,
+          "gop": -1.21,
+          "score": 90.3,
+          "match": true
+        }
+      ],
+      "score": 97.9,
+      "matches": 5,
+      "total": 5,
+      "quality": "good"
+    },
+    {
+      "word": "Ask",
+      "expected_phonemes": [
+        "æ",
+        "s",
+        "k"
+      ],
+      "actual_phonemes": [
+        "æ",
+        "s",
+        "k"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "æ",
+          "actual": "æ",
+          "distance": 0.0,
+          "confidence": 0.364,
+          "gop": -1.01,
+          "score": 91.9,
+          "match": true
+        },
+        {
+          "expected": "s",
+          "actual": "s",
+          "distance": 0.0,
+          "confidence": 0.987,
+          "gop": -0.01,
+          "score": 99.9,
+          "match": true
+        },
+        {
+          "expected": "k",
+          "actual": "k",
+          "distance": 0.0,
+          "confidence": 0.969,
+          "gop": -0.03,
+          "score": 99.7,
+          "match": true
+        }
+      ],
+      "score": 97.2,
+      "matches": 3,
+      "total": 3,
+      "quality": "good"
+    },
+    {
+      "word": "her",
+      "expected_phonemes": [
+        "h",
+        "ɝ"
+      ],
+      "actual_phonemes": [
+        "h",
+        "ɜː"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "h",
+          "actual": "h",
+          "distance": 0.0,
+          "confidence": 0.56,
+          "gop": -0.58,
+          "score": 95.4,
+          "match": true
+        },
+        {
+          "expected": "ɝ",
+          "actual": "ɜː",
+          "distance": 0.0,
+          "confidence": 0.491,
+          "gop": -1.26,
+          "score": 90.0,
+          "match": true
+        }
+      ],
+      "score": 92.7,
+      "matches": 2,
+      "total": 2,
+      "quality": "good"
+    },
+    {
+      "word": "to",
+      "expected_phonemes": [
+        "t",
+        "uː"
+      ],
+      "actual_phonemes": [
+        "t",
+        "ʊ"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "t",
+          "actual": "t",
+          "distance": 0.0,
+          "confidence": 0.955,
+          "gop": -0.05,
+          "score": 99.6,
+          "match": true
+        },
+        {
+          "expected": "uː",
+          "actual": "ʊ",
+          "distance": 0.5,
+          "confidence": 0.571,
+          "gop": -3.97,
+          "score": 38.2,
+          "match": false
+        }
+      ],
+      "score": 68.9,
+      "matches": 1,
+      "total": 2,
+      "quality": "fair"
+    },
+    {
+      "word": "bring",
+      "expected_phonemes": [
+        "b",
+        "ɹ",
+        "ɪ",
+        "ŋ"
+      ],
+      "actual_phonemes": [
+        "b",
+        "ɹ",
+        "ɪ",
+        "ŋ"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "b",
+          "actual": "b",
+          "distance": 0.0,
+          "confidence": 0.979,
+          "gop": -0.02,
+          "score": 99.8,
+          "match": true
+        },
+        {
+          "expected": "ɹ",
+          "actual": "ɹ",
+          "distance": 0.0,
+          "confidence": 0.764,
+          "gop": -4.03,
+          "score": 67.8,
+          "match": true
+        },
+        {
+          "expected": "ɪ",
+          "actual": "ɪ",
+          "distance": 0.0,
+          "confidence": 0.931,
+          "gop": -5.85,
+          "score": 60.0,
+          "match": true
+        },
+        {
+          "expected": "ŋ",
+          "actual": "ŋ",
+          "distance": 0.0,
+          "confidence": 0.943,
+          "gop": -0.07,
+          "score": 99.5,
+          "match": true
+        }
+      ],
+      "score": 81.8,
+      "matches": 4,
+      "total": 4,
+      "quality": "good"
+    },
+    {
+      "word": "these",
+      "expected_phonemes": [
+        "ð",
+        "iː",
+        "z"
+      ],
+      "actual_phonemes": [
+        "ð",
+        "iː",
+        "z"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "ð",
+          "actual": "ð",
+          "distance": 0.0,
+          "confidence": 0.98,
+          "gop": -0.02,
+          "score": 99.8,
+          "match": true
+        },
+        {
+          "expected": "iː",
+          "actual": "iː",
+          "distance": 0.0,
+          "confidence": 0.905,
+          "gop": -0.1,
+          "score": 99.2,
+          "match": true
+        },
+        {
+          "expected": "z",
+          "actual": "z",
+          "distance": 0.0,
+          "confidence": 0.892,
+          "gop": -0.11,
+          "score": 99.1,
+          "match": true
+        }
+      ],
+      "score": 99.4,
+      "matches": 3,
+      "total": 3,
+      "quality": "good"
+    },
+    {
+      "word": "things",
+      "expected_phonemes": [
+        "θ",
+        "ɪ",
+        "ŋ",
+        "z"
+      ],
+      "actual_phonemes": [
+        "θ",
+        "ɪ",
+        "ŋ",
+        "z"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "θ",
+          "actual": "θ",
+          "distance": 0.0,
+          "confidence": 0.553,
+          "gop": -0.59,
+          "score": 95.3,
+          "match": true
+        },
+        {
+          "expected": "ɪ",
+          "actual": "ɪ",
+          "distance": 0.0,
+          "confidence": 0.934,
+          "gop": -5.07,
+          "score": 60.0,
+          "match": true
+        },
+        {
+          "expected": "ŋ",
+          "actual": "ŋ",
+          "distance": 0.0,
+          "confidence": 0.85,
+          "gop": -0.12,
+          "score": 99.0,
+          "match": true
+        },
+        {
+          "expected": "z",
+          "actual": "z",
+          "distance": 0.0,
+          "confidence": 0.815,
+          "gop": -0.2,
+          "score": 98.4,
+          "match": true
+        }
+      ],
+      "score": 88.2,
+      "matches": 4,
+      "total": 4,
+      "quality": "good"
+    },
+    {
+      "word": "with",
+      "expected_phonemes": [
+        "w",
+        "ɪ",
+        "ð"
+      ],
+      "actual_phonemes": [
+        "v",
+        "ɪ",
+        "ð"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "w",
+          "actual": "v",
+          "distance": 1.0,
+          "confidence": 0.946,
+          "gop": -3.7,
+          "score": 10.4,
+          "match": false
+        },
+        {
+          "expected": "ɪ",
+          "actual": "ɪ",
+          "distance": 0.0,
+          "confidence": 0.963,
+          "gop": -7.01,
+          "score": 60.0,
+          "match": true
+        },
+        {
+          "expected": "ð",
+          "actual": "ð",
+          "distance": 0.0,
+          "confidence": 0.95,
+          "gop": -0.05,
+          "score": 99.6,
+          "match": true
+        }
+      ],
+      "score": 56.7,
+      "matches": 2,
+      "total": 3,
+      "quality": "fair"
+    },
+    {
+      "word": "her",
+      "expected_phonemes": [
+        "h",
+        "ɝ"
+      ],
+      "actual_phonemes": [
+        "h",
+        "ɚ"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "h",
+          "actual": "h",
+          "distance": 0.0,
+          "confidence": 0.569,
+          "gop": -0.56,
+          "score": 95.5,
+          "match": true
+        },
+        {
+          "expected": "ɝ",
+          "actual": "ɚ",
+          "distance": 0.0,
+          "confidence": 0.577,
+          "gop": -0.55,
+          "score": 95.6,
+          "match": true
+        }
+      ],
+      "score": 95.5,
+      "matches": 2,
+      "total": 2,
+      "quality": "good"
+    },
+    {
+      "word": "from",
+      "expected_phonemes": [
+        "f",
+        "ɹ",
+        "ʌ",
+        "m"
+      ],
+      "actual_phonemes": [
+        "f",
+        "ɹ",
+        "ʌ",
+        "m"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "f",
+          "actual": "f",
+          "distance": 0.0,
+          "confidence": 0.973,
+          "gop": -0.03,
+          "score": 99.8,
+          "match": true
+        },
+        {
+          "expected": "ɹ",
+          "actual": "ɹ",
+          "distance": 0.0,
+          "confidence": 0.974,
+          "gop": -5.71,
+          "score": 60.0,
+          "match": true
+        },
+        {
+          "expected": "ʌ",
+          "actual": "ʌ",
+          "distance": 0.0,
+          "confidence": 0.831,
+          "gop": -4.55,
+          "score": 63.6,
+          "match": true
+        },
+        {
+          "expected": "m",
+          "actual": "m",
+          "distance": 0.0,
+          "confidence": 0.992,
+          "gop": -0.21,
+          "score": 98.3,
+          "match": true
+        }
+      ],
+      "score": 80.4,
+      "matches": 4,
+      "total": 4,
+      "quality": "good"
+    },
+    {
+      "word": "the",
+      "expected_phonemes": [
+        "ð",
+        "ʌ"
+      ],
+      "actual_phonemes": [
+        "ð",
+        "ə"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "ð",
+          "actual": "ð",
+          "distance": 0.0,
+          "confidence": 0.987,
+          "gop": -0.01,
+          "score": 99.9,
+          "match": true
+        },
+        {
+          "expected": "ʌ",
+          "actual": "ə",
+          "distance": 0.0,
+          "confidence": 0.952,
+          "gop": -0.05,
+          "score": 99.6,
+          "match": true
+        }
+      ],
+      "score": 99.8,
+      "matches": 2,
+      "total": 2,
+      "quality": "good"
+    },
+    {
+      "word": "store",
+      "expected_phonemes": [
+        "s",
+        "t",
+        "ɔ",
+        "ɹ"
+      ],
+      "actual_phonemes": [
+        "s",
+        "t",
+        "oʊ",
+        "oʊ"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "s",
+          "actual": "s",
+          "distance": 0.0,
+          "confidence": 0.987,
+          "gop": -0.01,
+          "score": 99.9,
+          "match": true
+        },
+        {
+          "expected": "t",
+          "actual": "t",
+          "distance": 0.0,
+          "confidence": 0.994,
+          "gop": -0.01,
+          "score": 99.9,
+          "match": true
+        },
+        {
+          "expected": "ɔ",
+          "actual": "oʊ",
+          "distance": 0.5,
+          "confidence": 0.379,
+          "gop": -5.05,
+          "score": 30.0,
+          "match": false
+        },
+        {
+          "expected": "ɹ",
+          "actual": "oʊ",
+          "distance": 1.0,
+          "confidence": 0.379,
+          "gop": -8.86,
+          "score": 0.0,
+          "match": false
+        }
+      ],
+      "score": 57.5,
+      "matches": 2,
+      "total": 4,
+      "quality": "fair"
+    },
+    {
+      "word": "Six",
+      "expected_phonemes": [
+        "s",
+        "ɪ",
+        "k",
+        "s"
+      ],
+      "actual_phonemes": [
+        "s",
+        "ɪ",
+        "k",
+        "s"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "s",
+          "actual": "s",
+          "distance": 0.0,
+          "confidence": 0.979,
+          "gop": -0.02,
+          "score": 99.8,
+          "match": true
+        },
+        {
+          "expected": "ɪ",
+          "actual": "ɪ",
+          "distance": 0.0,
+          "confidence": 0.961,
+          "gop": -4.8,
+          "score": 61.6,
+          "match": true
+        },
+        {
+          "expected": "k",
+          "actual": "k",
+          "distance": 0.0,
+          "confidence": 0.987,
+          "gop": -0.01,
+          "score": 99.9,
+          "match": true
+        },
+        {
+          "expected": "s",
+          "actual": "s",
+          "distance": 0.0,
+          "confidence": 0.988,
+          "gop": -0.01,
+          "score": 99.9,
+          "match": true
+        }
+      ],
+      "score": 90.3,
+      "matches": 4,
+      "total": 4,
+      "quality": "good"
+    },
+    {
+      "word": "spoons",
+      "expected_phonemes": [
+        "s",
+        "p",
+        "uː",
+        "n",
+        "z"
+      ],
+      "actual_phonemes": [
+        "s",
+        "k",
+        "uː",
+        "n",
+        "s"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "s",
+          "actual": "s",
+          "distance": 0.0,
+          "confidence": 0.988,
+          "gop": -0.01,
+          "score": 99.9,
+          "match": true
+        },
+        {
+          "expected": "p",
+          "actual": "k",
+          "distance": 0.3,
+          "confidence": 0.909,
+          "gop": -5.18,
+          "score": 42.0,
+          "match": false
+        },
+        {
+          "expected": "uː",
+          "actual": "uː",
+          "distance": 0.0,
+          "confidence": 0.886,
+          "gop": -0.12,
+          "score": 99.0,
+          "match": true
+        },
+        {
+          "expected": "n",
+          "actual": "n",
+          "distance": 0.0,
+          "confidence": 0.834,
+          "gop": -0.18,
+          "score": 98.5,
+          "match": true
+        },
+        {
+          "expected": "z",
+          "actual": "s",
+          "distance": 0.4,
+          "confidence": 0.738,
+          "gop": -1.39,
+          "score": 64.9,
+          "match": false
+        }
+      ],
+      "score": 80.9,
+      "matches": 3,
+      "total": 5,
+      "quality": "good"
+    },
+    {
+      "word": "of",
+      "expected_phonemes": [
+        "ʌ",
+        "v"
+      ],
+      "actual_phonemes": [
+        "ʌ",
+        "f"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "ʌ",
+          "actual": "ʌ",
+          "distance": 0.0,
+          "confidence": 0.915,
+          "gop": -4.93,
+          "score": 60.6,
+          "match": true
+        },
+        {
+          "expected": "v",
+          "actual": "f",
+          "distance": 0.4,
+          "confidence": 0.992,
+          "gop": -5.6,
+          "score": 36.0,
+          "match": false
+        }
+      ],
+      "score": 48.3,
+      "matches": 1,
+      "total": 2,
+      "quality": "fair"
+    },
+    {
+      "word": "fresh",
+      "expected_phonemes": [
+        "f",
+        "ɹ",
+        "ɛ",
+        "ʃ"
+      ],
+      "actual_phonemes": [
+        "f",
+        "ɹ",
+        "ɛ",
+        "ʃ"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "f",
+          "actual": "f",
+          "distance": 0.0,
+          "confidence": 0.992,
+          "gop": -0.01,
+          "score": 99.9,
+          "match": true
+        },
+        {
+          "expected": "ɹ",
+          "actual": "ɹ",
+          "distance": 0.0,
+          "confidence": 0.93,
+          "gop": -3.31,
+          "score": 73.5,
+          "match": true
+        },
+        {
+          "expected": "ɛ",
+          "actual": "ɛ",
+          "distance": 0.0,
+          "confidence": 0.909,
+          "gop": -0.1,
+          "score": 99.2,
+          "match": true
+        },
+        {
+          "expected": "ʃ",
+          "actual": "ʃ",
+          "distance": 0.0,
+          "confidence": 0.872,
+          "gop": -0.14,
+          "score": 98.9,
+          "match": true
+        }
+      ],
+      "score": 92.9,
+      "matches": 4,
+      "total": 4,
+      "quality": "good"
+    },
+    {
+      "word": "snow",
+      "expected_phonemes": [
+        "s",
+        "n",
+        "oʊ"
+      ],
+      "actual_phonemes": [
+        "ʃ",
+        "n",
+        "oʊ"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "s",
+          "actual": "ʃ",
+          "distance": 0.3,
+          "confidence": 0.872,
+          "gop": -2.5,
+          "score": 62.0,
+          "match": false
+        },
+        {
+          "expected": "n",
+          "actual": "n",
+          "distance": 0.0,
+          "confidence": 0.9,
+          "gop": -0.11,
+          "score": 99.2,
+          "match": true
+        },
+        {
+          "expected": "oʊ",
+          "actual": "oʊ",
+          "distance": 0.0,
+          "confidence": 0.637,
+          "gop": -5.24,
+          "score": 60.0,
+          "match": true
+        }
+      ],
+      "score": 73.7,
+      "matches": 2,
+      "total": 3,
+      "quality": "good"
+    },
+    {
+      "word": "peas",
+      "expected_phonemes": [
+        "p",
+        "iː",
+        "z"
+      ],
+      "actual_phonemes": [
+        "p",
+        "iː",
+        "z"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "p",
+          "actual": "p",
+          "distance": 0.0,
+          "confidence": 0.94,
+          "gop": -0.06,
+          "score": 99.5,
+          "match": true
+        },
+        {
+          "expected": "iː",
+          "actual": "iː",
+          "distance": 0.0,
+          "confidence": 0.821,
+          "gop": -0.2,
+          "score": 98.4,
+          "match": true
+        },
+        {
+          "expected": "z",
+          "actual": "z",
+          "distance": 0.0,
+          "confidence": 0.961,
+          "gop": -0.04,
+          "score": 99.7,
+          "match": true
+        }
+      ],
+      "score": 99.2,
+      "matches": 3,
+      "total": 3,
+      "quality": "good"
+    },
+    {
+      "word": "five",
+      "expected_phonemes": [
+        "f",
+        "aɪ",
+        "v"
+      ],
+      "actual_phonemes": [
+        "f",
+        "aɪ",
+        "v"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "f",
+          "actual": "f",
+          "distance": 0.0,
+          "confidence": 0.989,
+          "gop": -0.01,
+          "score": 99.9,
+          "match": true
+        },
+        {
+          "expected": "aɪ",
+          "actual": "aɪ",
+          "distance": 0.0,
+          "confidence": 0.961,
+          "gop": -0.04,
+          "score": 99.7,
+          "match": true
+        },
+        {
+          "expected": "v",
+          "actual": "v",
+          "distance": 0.0,
+          "confidence": 0.852,
+          "gop": -0.16,
+          "score": 98.7,
+          "match": true
+        }
+      ],
+      "score": 99.4,
+      "matches": 3,
+      "total": 3,
+      "quality": "good"
+    },
+    {
+      "word": "thick",
+      "expected_phonemes": [
+        "θ",
+        "ɪ",
+        "k"
+      ],
+      "actual_phonemes": [
+        "θ",
+        "ɪ",
+        "k"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "θ",
+          "actual": "θ",
+          "distance": 0.0,
+          "confidence": 0.925,
+          "gop": -0.08,
+          "score": 99.4,
+          "match": true
+        },
+        {
+          "expected": "ɪ",
+          "actual": "ɪ",
+          "distance": 0.0,
+          "confidence": 0.966,
+          "gop": -5.75,
+          "score": 60.0,
+          "match": true
+        },
+        {
+          "expected": "k",
+          "actual": "k",
+          "distance": 0.0,
+          "confidence": 0.974,
+          "gop": -0.03,
+          "score": 99.8,
+          "match": true
+        }
+      ],
+      "score": 86.4,
+      "matches": 3,
+      "total": 3,
+      "quality": "good"
+    },
+    {
+      "word": "slabs",
+      "expected_phonemes": [
+        "s",
+        "l",
+        "æ",
+        "b",
+        "z"
+      ],
+      "actual_phonemes": [
+        "s",
+        "l",
+        "æ",
+        "p",
+        "s"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "s",
+          "actual": "s",
+          "distance": 0.0,
+          "confidence": 0.973,
+          "gop": -0.03,
+          "score": 99.8,
+          "match": true
+        },
+        {
+          "expected": "l",
+          "actual": "l",
+          "distance": 0.0,
+          "confidence": 0.973,
+          "gop": -0.11,
+          "score": 99.1,
+          "match": true
+        },
+        {
+          "expected": "æ",
+          "actual": "æ",
+          "distance": 0.0,
+          "confidence": 0.785,
+          "gop": -0.24,
+          "score": 98.1,
+          "match": true
+        },
+        {
+          "expected": "b",
+          "actual": "p",
+          "distance": 0.4,
+          "confidence": 0.939,
+          "gop": -3.88,
+          "score": 45.0,
+          "match": false
+        },
+        {
+          "expected": "z",
+          "actual": "s",
+          "distance": 0.4,
+          "confidence": 0.911,
+          "gop": -2.49,
+          "score": 56.1,
+          "match": false
+        }
+      ],
+      "score": 79.6,
+      "matches": 3,
+      "total": 5,
+      "quality": "good"
+    },
+    {
+      "word": "of",
+      "expected_phonemes": [
+        "ʌ",
+        "v"
+      ],
+      "actual_phonemes": [
+        "ɔː",
+        "ɔː"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "ʌ",
+          "actual": "ɔː",
+          "distance": 0.3,
+          "confidence": 0.248,
+          "gop": -6.45,
+          "score": 42.0,
+          "match": false
+        },
+        {
+          "expected": "v",
+          "actual": "ɔː",
+          "distance": 1.0,
+          "confidence": 0.248,
+          "gop": -7.11,
+          "score": 0.0,
+          "match": false
+        }
+      ],
+      "score": 21.0,
+      "matches": 0,
+      "total": 2,
+      "quality": "poor"
+    },
+    {
+      "word": "blue",
+      "expected_phonemes": [
+        "b",
+        "l",
+        "uː"
+      ],
+      "actual_phonemes": [
+        "b",
+        "l",
+        "uː"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "b",
+          "actual": "b",
+          "distance": 0.0,
+          "confidence": 0.983,
+          "gop": -0.02,
+          "score": 99.9,
+          "match": true
+        },
+        {
+          "expected": "l",
+          "actual": "l",
+          "distance": 0.0,
+          "confidence": 0.989,
+          "gop": -0.01,
+          "score": 99.9,
+          "match": true
+        },
+        {
+          "expected": "uː",
+          "actual": "uː",
+          "distance": 0.0,
+          "confidence": 0.922,
+          "gop": -0.08,
+          "score": 99.4,
+          "match": true
+        }
+      ],
+      "score": 99.7,
+      "matches": 3,
+      "total": 3,
+      "quality": "good"
+    },
+    {
+      "word": "cheese",
+      "expected_phonemes": [
+        "tʃ",
+        "iː",
+        "z"
+      ],
+      "actual_phonemes": [
+        "tʃ",
+        "iː",
+        "z"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "tʃ",
+          "actual": "tʃ",
+          "distance": 0.0,
+          "confidence": 0.491,
+          "gop": -0.71,
+          "score": 94.3,
+          "match": true
+        },
+        {
+          "expected": "iː",
+          "actual": "iː",
+          "distance": 0.0,
+          "confidence": 0.651,
+          "gop": -0.43,
+          "score": 96.6,
+          "match": true
+        },
+        {
+          "expected": "z",
+          "actual": "z",
+          "distance": 0.0,
+          "confidence": 0.91,
+          "gop": -0.09,
+          "score": 99.2,
+          "match": true
+        }
+      ],
+      "score": 96.7,
+      "matches": 3,
+      "total": 3,
+      "quality": "good"
+    },
+    {
+      "word": "and",
+      "expected_phonemes": [
+        "ʌ",
+        "n",
+        "d"
+      ],
+      "actual_phonemes": [
+        "æ",
+        "n",
+        "n"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "ʌ",
+          "actual": "æ",
+          "distance": 0.3,
+          "confidence": 0.946,
+          "gop": -5.9,
+          "score": 42.0,
+          "match": false
+        },
+        {
+          "expected": "n",
+          "actual": "n",
+          "distance": 0.0,
+          "confidence": 0.984,
+          "gop": -0.08,
+          "score": 99.3,
+          "match": true
+        },
+        {
+          "expected": "d",
+          "actual": "n",
+          "distance": 1.0,
+          "confidence": 0.984,
+          "gop": -4.69,
+          "score": 2.5,
+          "match": false
+        }
+      ],
+      "score": 47.9,
+      "matches": 1,
+      "total": 3,
+      "quality": "fair"
+    },
+    {
+      "word": "maybe",
+      "expected_phonemes": [
+        "m",
+        "eɪ",
+        "b",
+        "iː"
+      ],
+      "actual_phonemes": [
+        "m",
+        "eɪ",
+        "b",
+        "iː"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "m",
+          "actual": "m",
+          "distance": 0.0,
+          "confidence": 0.989,
+          "gop": -0.01,
+          "score": 99.9,
+          "match": true
+        },
+        {
+          "expected": "eɪ",
+          "actual": "eɪ",
+          "distance": 0.0,
+          "confidence": 0.844,
+          "gop": -0.17,
+          "score": 98.6,
+          "match": true
+        },
+        {
+          "expected": "b",
+          "actual": "b",
+          "distance": 0.0,
+          "confidence": 0.934,
+          "gop": -0.07,
+          "score": 99.5,
+          "match": true
+        },
+        {
+          "expected": "iː",
+          "actual": "iː",
+          "distance": 0.0,
+          "confidence": 0.457,
+          "gop": -0.78,
+          "score": 93.7,
+          "match": true
+        }
+      ],
+      "score": 97.9,
+      "matches": 4,
+      "total": 4,
+      "quality": "good"
+    },
+    {
+      "word": "a",
+      "expected_phonemes": [
+        "ʌ"
+      ],
+      "actual_phonemes": [
+        "ɐ"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "ʌ",
+          "actual": "ɐ",
+          "distance": 0.0,
+          "confidence": 0.877,
+          "gop": -2.53,
+          "score": 79.8,
+          "match": true
+        }
+      ],
+      "score": 79.8,
+      "matches": 1,
+      "total": 1,
+      "quality": "good"
+    },
+    {
+      "word": "snack",
+      "expected_phonemes": [
+        "s",
+        "n",
+        "æ",
+        "k"
+      ],
+      "actual_phonemes": [
+        "v",
+        "n",
+        "æ",
+        "k"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "s",
+          "actual": "v",
+          "distance": 0.4,
+          "confidence": 0.983,
+          "gop": -10.24,
+          "score": 36.0,
+          "match": false
+        },
+        {
+          "expected": "n",
+          "actual": "n",
+          "distance": 0.0,
+          "confidence": 0.996,
+          "gop": -0.0,
+          "score": 100.0,
+          "match": true
+        },
+        {
+          "expected": "æ",
+          "actual": "æ",
+          "distance": 0.0,
+          "confidence": 0.914,
+          "gop": -0.09,
+          "score": 99.3,
+          "match": true
+        },
+        {
+          "expected": "k",
+          "actual": "k",
+          "distance": 0.0,
+          "confidence": 0.824,
+          "gop": -0.15,
+          "score": 98.8,
+          "match": true
+        }
+      ],
+      "score": 83.5,
+      "matches": 3,
+      "total": 4,
+      "quality": "good"
+    },
+    {
+      "word": "for",
+      "expected_phonemes": [
+        "f",
+        "ɔ",
+        "ɹ"
+      ],
+      "actual_phonemes": [
+        "f",
+        "ɔːɹ",
+        "ɾ"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "f",
+          "actual": "f",
+          "distance": 0.0,
+          "confidence": 0.986,
+          "gop": -0.01,
+          "score": 99.9,
+          "match": true
+        },
+        {
+          "expected": "ɔ",
+          "actual": "ɔːɹ",
+          "distance": 1.0,
+          "confidence": 0.241,
+          "gop": -3.72,
+          "score": 10.3,
+          "match": false
+        },
+        {
+          "expected": "ɹ",
+          "actual": "ɾ",
+          "distance": 0.0,
+          "confidence": 0.314,
+          "gop": -1.16,
+          "score": 90.7,
+          "match": true
+        }
+      ],
+      "score": 67.0,
+      "matches": 2,
+      "total": 3,
+      "quality": "fair"
+    },
+    {
+      "word": "her",
+      "expected_phonemes": [
+        "h",
+        "ɝ"
+      ],
+      "actual_phonemes": [
+        "h",
+        "ɚ"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "h",
+          "actual": "h",
+          "distance": 0.0,
+          "confidence": 0.911,
+          "gop": -0.4,
+          "score": 96.8,
+          "match": true
+        },
+        {
+          "expected": "ɝ",
+          "actual": "ɚ",
+          "distance": 0.0,
+          "confidence": 0.368,
+          "gop": -1.0,
+          "score": 92.0,
+          "match": true
+        }
+      ],
+      "score": 94.4,
+      "matches": 2,
+      "total": 2,
+      "quality": "good"
+    },
+    {
+      "word": "brother",
+      "expected_phonemes": [
+        "b",
+        "ɹ",
+        "ʌ",
+        "ð",
+        "ɝ"
+      ],
+      "actual_phonemes": [
+        "b",
+        "ɹ",
+        "ʌ",
+        "ð",
+        "ɚ"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "b",
+          "actual": "b",
+          "distance": 0.0,
+          "confidence": 0.979,
+          "gop": -0.02,
+          "score": 99.8,
+          "match": true
+        },
+        {
+          "expected": "ɹ",
+          "actual": "ɹ",
+          "distance": 0.0,
+          "confidence": 0.576,
+          "gop": -4.73,
+          "score": 62.2,
+          "match": true
+        },
+        {
+          "expected": "ʌ",
+          "actual": "ʌ",
+          "distance": 0.0,
+          "confidence": 0.897,
+          "gop": -4.3,
+          "score": 65.6,
+          "match": true
+        },
+        {
+          "expected": "ð",
+          "actual": "ð",
+          "distance": 0.0,
+          "confidence": 0.968,
+          "gop": -0.03,
+          "score": 99.7,
+          "match": true
+        },
+        {
+          "expected": "ɝ",
+          "actual": "ɚ",
+          "distance": 0.0,
+          "confidence": 0.745,
+          "gop": -0.29,
+          "score": 97.6,
+          "match": true
+        }
+      ],
+      "score": 85.0,
+      "matches": 5,
+      "total": 5,
+      "quality": "good"
+    },
+    {
+      "word": "Bob",
+      "expected_phonemes": [
+        "b",
+        "ɑ",
+        "b"
+      ],
+      "actual_phonemes": [
+        "b",
+        "ɔ",
+        "b"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "b",
+          "actual": "b",
+          "distance": 0.0,
+          "confidence": 0.979,
+          "gop": -0.02,
+          "score": 99.8,
+          "match": true
+        },
+        {
+          "expected": "ɑ",
+          "actual": "ɔ",
+          "distance": 0.3,
+          "confidence": 0.365,
+          "gop": -1.62,
+          "score": 69.1,
+          "match": false
+        },
+        {
+          "expected": "b",
+          "actual": "b",
+          "distance": 0.0,
+          "confidence": 0.974,
+          "gop": -0.03,
+          "score": 99.8,
+          "match": true
+        }
+      ],
+      "score": 89.6,
+      "matches": 2,
+      "total": 3,
+      "quality": "good"
+    },
+    {
+      "word": "We",
+      "expected_phonemes": [
+        "w",
+        "iː"
+      ],
+      "actual_phonemes": [
+        "v",
+        "iː"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "w",
+          "actual": "v",
+          "distance": 1.0,
+          "confidence": 0.773,
+          "gop": -1.98,
+          "score": 24.2,
+          "match": false
+        },
+        {
+          "expected": "iː",
+          "actual": "iː",
+          "distance": 0.0,
+          "confidence": 0.834,
+          "gop": -0.18,
+          "score": 98.5,
+          "match": true
+        }
+      ],
+      "score": 61.4,
+      "matches": 1,
+      "total": 2,
+      "quality": "fair"
+    },
+    {
+      "word": "also",
+      "expected_phonemes": [
+        "ɔ",
+        "l",
+        "s",
+        "oʊ"
+      ],
+      "actual_phonemes": [
+        "ɔː",
+        "l",
+        "s",
+        "oʊ"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "ɔ",
+          "actual": "ɔː",
+          "distance": 0.0,
+          "confidence": 0.446,
+          "gop": -3.76,
+          "score": 70.0,
+          "match": true
+        },
+        {
+          "expected": "l",
+          "actual": "l",
+          "distance": 0.0,
+          "confidence": 0.744,
+          "gop": -0.17,
+          "score": 98.6,
+          "match": true
+        },
+        {
+          "expected": "s",
+          "actual": "s",
+          "distance": 0.0,
+          "confidence": 0.538,
+          "gop": -0.33,
+          "score": 97.3,
+          "match": true
+        },
+        {
+          "expected": "oʊ",
+          "actual": "oʊ",
+          "distance": 0.0,
+          "confidence": 0.676,
+          "gop": -5.47,
+          "score": 60.0,
+          "match": true
+        }
+      ],
+      "score": 81.5,
+      "matches": 4,
+      "total": 4,
+      "quality": "good"
+    },
+    {
+      "word": "need",
+      "expected_phonemes": [
+        "n",
+        "iː",
+        "d"
+      ],
+      "actual_phonemes": [
+        "n",
+        "iː",
+        "d"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "n",
+          "actual": "n",
+          "distance": 0.0,
+          "confidence": 0.991,
+          "gop": -0.01,
+          "score": 99.9,
+          "match": true
+        },
+        {
+          "expected": "iː",
+          "actual": "iː",
+          "distance": 0.0,
+          "confidence": 0.958,
+          "gop": -0.04,
+          "score": 99.7,
+          "match": true
+        },
+        {
+          "expected": "d",
+          "actual": "d",
+          "distance": 0.0,
+          "confidence": 0.953,
+          "gop": -0.05,
+          "score": 99.6,
+          "match": true
+        }
+      ],
+      "score": 99.7,
+      "matches": 3,
+      "total": 3,
+      "quality": "good"
+    },
+    {
+      "word": "a",
+      "expected_phonemes": [
+        "ʌ"
+      ],
+      "actual_phonemes": [
+        "ɐ"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "ʌ",
+          "actual": "ɐ",
+          "distance": 0.0,
+          "confidence": 0.884,
+          "gop": -2.81,
+          "score": 77.5,
+          "match": true
+        }
+      ],
+      "score": 77.5,
+      "matches": 1,
+      "total": 1,
+      "quality": "good"
+    },
+    {
+      "word": "small",
+      "expected_phonemes": [
+        "s",
+        "m",
+        "ɔ",
+        "l"
+      ],
+      "actual_phonemes": [
+        "s",
+        "m",
+        "ɔː",
+        "l"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "s",
+          "actual": "s",
+          "distance": 0.0,
+          "confidence": 0.988,
+          "gop": -0.01,
+          "score": 99.9,
+          "match": true
+        },
+        {
+          "expected": "m",
+          "actual": "m",
+          "distance": 0.0,
+          "confidence": 0.962,
+          "gop": -0.02,
+          "score": 99.8,
+          "match": true
+        },
+        {
+          "expected": "ɔ",
+          "actual": "ɔː",
+          "distance": 0.0,
+          "confidence": 0.293,
+          "gop": -2.04,
+          "score": 83.6,
+          "match": true
+        },
+        {
+          "expected": "l",
+          "actual": "l",
+          "distance": 0.0,
+          "confidence": 0.966,
+          "gop": -0.03,
+          "score": 99.7,
+          "match": true
+        }
+      ],
+      "score": 95.7,
+      "matches": 4,
+      "total": 4,
+      "quality": "good"
+    },
+    {
+      "word": "plastic",
+      "expected_phonemes": [
+        "p",
+        "l",
+        "æ",
+        "s",
+        "t",
+        "ɪ",
+        "k"
+      ],
+      "actual_phonemes": [
+        "p",
+        "l",
+        "ɑː",
+        "s",
+        "t",
+        "ɪ",
+        "k"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "p",
+          "actual": "p",
+          "distance": 0.0,
+          "confidence": 0.707,
+          "gop": -0.27,
+          "score": 97.8,
+          "match": true
+        },
+        {
+          "expected": "l",
+          "actual": "l",
+          "distance": 0.0,
+          "confidence": 0.627,
+          "gop": -0.24,
+          "score": 98.1,
+          "match": true
+        },
+        {
+          "expected": "æ",
+          "actual": "ɑː",
+          "distance": 0.3,
+          "confidence": 0.523,
+          "gop": -2.13,
+          "score": 65.0,
+          "match": false
+        },
+        {
+          "expected": "s",
+          "actual": "s",
+          "distance": 0.0,
+          "confidence": 0.988,
+          "gop": -0.01,
+          "score": 99.9,
+          "match": true
+        },
+        {
+          "expected": "t",
+          "actual": "t",
+          "distance": 0.0,
+          "confidence": 0.993,
+          "gop": -0.01,
+          "score": 99.9,
+          "match": true
+        },
+        {
+          "expected": "ɪ",
+          "actual": "ɪ",
+          "distance": 0.0,
+          "confidence": 0.946,
+          "gop": -4.79,
+          "score": 61.7,
+          "match": true
+        },
+        {
+          "expected": "k",
+          "actual": "k",
+          "distance": 0.0,
+          "confidence": 0.812,
+          "gop": -0.12,
+          "score": 99.0,
+          "match": true
+        }
+      ],
+      "score": 88.8,
+      "matches": 6,
+      "total": 7,
+      "quality": "good"
+    },
+    {
+      "word": "snake",
+      "expected_phonemes": [
+        "s",
+        "n",
+        "eɪ",
+        "k"
+      ],
+      "actual_phonemes": [
+        "s",
+        "n",
+        "eɪ",
+        "k"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "s",
+          "actual": "s",
+          "distance": 0.0,
+          "confidence": 0.988,
+          "gop": -0.28,
+          "score": 97.7,
+          "match": true
+        },
+        {
+          "expected": "n",
+          "actual": "n",
+          "distance": 0.0,
+          "confidence": 0.995,
+          "gop": -0.01,
+          "score": 100.0,
+          "match": true
+        },
+        {
+          "expected": "eɪ",
+          "actual": "eɪ",
+          "distance": 0.0,
+          "confidence": 0.906,
+          "gop": -0.1,
+          "score": 99.2,
+          "match": true
+        },
+        {
+          "expected": "k",
+          "actual": "k",
+          "distance": 0.0,
+          "confidence": 0.619,
+          "gop": -0.26,
+          "score": 97.9,
+          "match": true
+        }
+      ],
+      "score": 98.7,
+      "matches": 4,
+      "total": 4,
+      "quality": "good"
+    },
+    {
+      "word": "and",
+      "expected_phonemes": [
+        "ʌ",
+        "n",
+        "d"
+      ],
+      "actual_phonemes": [
+        "æ",
+        "n",
+        "d"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "ʌ",
+          "actual": "æ",
+          "distance": 0.3,
+          "confidence": 0.965,
+          "gop": -7.4,
+          "score": 42.0,
+          "match": false
+        },
+        {
+          "expected": "n",
+          "actual": "n",
+          "distance": 0.0,
+          "confidence": 0.953,
+          "gop": -0.16,
+          "score": 98.7,
+          "match": true
+        },
+        {
+          "expected": "d",
+          "actual": "d",
+          "distance": 0.0,
+          "confidence": 0.985,
+          "gop": -0.02,
+          "score": 99.9,
+          "match": true
+        }
+      ],
+      "score": 80.2,
+      "matches": 2,
+      "total": 3,
+      "quality": "good"
+    },
+    {
+      "word": "a",
+      "expected_phonemes": [
+        "ʌ"
+      ],
+      "actual_phonemes": [
+        "d"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "ʌ",
+          "actual": "d",
+          "distance": 1.0,
+          "confidence": 0.985,
+          "gop": -10.25,
+          "score": 0.0,
+          "match": false
+        }
+      ],
+      "score": 0.0,
+      "matches": 0,
+      "total": 1,
+      "quality": "poor"
+    },
+    {
+      "word": "big",
+      "expected_phonemes": [
+        "b",
+        "ɪ",
+        "ɡ"
+      ],
+      "actual_phonemes": [
+        "b",
+        "ɪ",
+        "k"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "b",
+          "actual": "b",
+          "distance": 0.0,
+          "confidence": 0.95,
+          "gop": -0.05,
+          "score": 99.6,
+          "match": true
+        },
+        {
+          "expected": "ɪ",
+          "actual": "ɪ",
+          "distance": 0.0,
+          "confidence": 0.954,
+          "gop": -5.39,
+          "score": 60.0,
+          "match": true
+        },
+        {
+          "expected": "ɡ",
+          "actual": "k",
+          "distance": 0.4,
+          "confidence": 0.93,
+          "gop": -2.85,
+          "score": 53.2,
+          "match": false
+        }
+      ],
+      "score": 70.9,
+      "matches": 2,
+      "total": 3,
+      "quality": "good"
+    },
+    {
+      "word": "toy",
+      "expected_phonemes": [
+        "t",
+        "ɔɪ"
+      ],
+      "actual_phonemes": [
+        "t",
+        "ɔːɹ"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "t",
+          "actual": "t",
+          "distance": 0.0,
+          "confidence": 0.736,
+          "gop": -0.31,
+          "score": 97.5,
+          "match": true
+        },
+        {
+          "expected": "ɔɪ",
+          "actual": "ɔːɹ",
+          "distance": 1.0,
+          "confidence": 0.119,
+          "gop": -3.11,
+          "score": 15.1,
+          "match": false
+        }
+      ],
+      "score": 56.3,
+      "matches": 1,
+      "total": 2,
+      "quality": "fair"
+    },
+    {
+      "word": "frog",
+      "expected_phonemes": [
+        "f",
+        "ɹ",
+        "ɑ",
+        "ɡ"
+      ],
+      "actual_phonemes": [
+        "f",
+        "ɹ",
+        "ɔ",
+        "k"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "f",
+          "actual": "f",
+          "distance": 0.0,
+          "confidence": 0.994,
+          "gop": -0.01,
+          "score": 100.0,
+          "match": true
+        },
+        {
+          "expected": "ɹ",
+          "actual": "ɹ",
+          "distance": 0.0,
+          "confidence": 0.707,
+          "gop": -4.34,
+          "score": 65.3,
+          "match": true
+        },
+        {
+          "expected": "ɑ",
+          "actual": "ɔ",
+          "distance": 0.3,
+          "confidence": 0.384,
+          "gop": -1.61,
+          "score": 69.1,
+          "match": false
+        },
+        {
+          "expected": "ɡ",
+          "actual": "k",
+          "distance": 0.4,
+          "confidence": 0.965,
+          "gop": -3.55,
+          "score": 47.6,
+          "match": false
+        }
+      ],
+      "score": 70.5,
+      "matches": 2,
+      "total": 4,
+      "quality": "good"
+    },
+    {
+      "word": "for",
+      "expected_phonemes": [
+        "f",
+        "ɔ",
+        "ɹ"
+      ],
+      "actual_phonemes": [
+        "f",
+        "f",
+        "ɔːɹ"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "f",
+          "actual": "f",
+          "distance": 0.0,
+          "confidence": 0.992,
+          "gop": -0.01,
+          "score": 99.9,
+          "match": true
+        },
+        {
+          "expected": "ɔ",
+          "actual": "f",
+          "distance": 1.0,
+          "confidence": 0.992,
+          "gop": -12.7,
+          "score": 0.0,
+          "match": false
+        },
+        {
+          "expected": "ɹ",
+          "actual": "ɔːɹ",
+          "distance": 1.0,
+          "confidence": 0.283,
+          "gop": -7.67,
+          "score": 0.0,
+          "match": false
+        }
+      ],
+      "score": 33.3,
+      "matches": 1,
+      "total": 3,
+      "quality": "poor"
+    },
+    {
+      "word": "the",
+      "expected_phonemes": [
+        "ð",
+        "ʌ"
+      ],
+      "actual_phonemes": [
+        "ð",
+        "ə"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "ð",
+          "actual": "ð",
+          "distance": 0.0,
+          "confidence": 0.975,
+          "gop": -0.03,
+          "score": 99.8,
+          "match": true
+        },
+        {
+          "expected": "ʌ",
+          "actual": "ə",
+          "distance": 0.0,
+          "confidence": 0.9,
+          "gop": -0.1,
+          "score": 99.2,
+          "match": true
+        }
+      ],
+      "score": 99.5,
+      "matches": 2,
+      "total": 2,
+      "quality": "good"
+    },
+    {
+      "word": "kids",
+      "expected_phonemes": [
+        "k",
+        "ɪ",
+        "d",
+        "z"
+      ],
+      "actual_phonemes": [
+        "k",
+        "ɛ",
+        "t",
+        "s"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "k",
+          "actual": "k",
+          "distance": 0.0,
+          "confidence": 0.982,
+          "gop": -0.02,
+          "score": 99.9,
+          "match": true
+        },
+        {
+          "expected": "ɪ",
+          "actual": "ɛ",
+          "distance": 0.3,
+          "confidence": 0.375,
+          "gop": -6.52,
+          "score": 42.0,
+          "match": false
+        },
+        {
+          "expected": "d",
+          "actual": "t",
+          "distance": 0.4,
+          "confidence": 0.803,
+          "gop": -3.27,
+          "score": 49.8,
+          "match": false
+        },
+        {
+          "expected": "z",
+          "actual": "s",
+          "distance": 0.4,
+          "confidence": 0.459,
+          "gop": -1.99,
+          "score": 60.1,
+          "match": false
+        }
+      ],
+      "score": 62.9,
+      "matches": 1,
+      "total": 4,
+      "quality": "fair"
+    },
+    {
+      "word": "She",
+      "expected_phonemes": [
+        "ʃ",
+        "iː"
+      ],
+      "actual_phonemes": [
+        "ʃ",
+        "iː"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "ʃ",
+          "actual": "ʃ",
+          "distance": 0.0,
+          "confidence": 0.885,
+          "gop": -0.12,
+          "score": 99.0,
+          "match": true
+        },
+        {
+          "expected": "iː",
+          "actual": "iː",
+          "distance": 0.0,
+          "confidence": 0.892,
+          "gop": -0.11,
+          "score": 99.1,
+          "match": true
+        }
+      ],
+      "score": 99.0,
+      "matches": 2,
+      "total": 2,
+      "quality": "good"
+    },
+    {
+      "word": "can",
+      "expected_phonemes": [
+        "k",
+        "æ",
+        "n"
+      ],
+      "actual_phonemes": [
+        "k",
+        "æ",
+        "n"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "k",
+          "actual": "k",
+          "distance": 0.0,
+          "confidence": 0.969,
+          "gop": -0.03,
+          "score": 99.7,
+          "match": true
+        },
+        {
+          "expected": "æ",
+          "actual": "æ",
+          "distance": 0.0,
+          "confidence": 0.76,
+          "gop": -0.27,
+          "score": 97.8,
+          "match": true
+        },
+        {
+          "expected": "n",
+          "actual": "n",
+          "distance": 0.0,
+          "confidence": 0.9,
+          "gop": -0.06,
+          "score": 99.5,
+          "match": true
+        }
+      ],
+      "score": 99.0,
+      "matches": 3,
+      "total": 3,
+      "quality": "good"
+    },
+    {
+      "word": "scoop",
+      "expected_phonemes": [
+        "s",
+        "k",
+        "uː",
+        "p"
+      ],
+      "actual_phonemes": [
+        "s",
+        "k",
+        "uː",
+        "p"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "s",
+          "actual": "s",
+          "distance": 0.0,
+          "confidence": 0.976,
+          "gop": -0.1,
+          "score": 99.2,
+          "match": true
+        },
+        {
+          "expected": "k",
+          "actual": "k",
+          "distance": 0.0,
+          "confidence": 0.979,
+          "gop": -0.02,
+          "score": 99.8,
+          "match": true
+        },
+        {
+          "expected": "uː",
+          "actual": "uː",
+          "distance": 0.0,
+          "confidence": 0.891,
+          "gop": -0.12,
+          "score": 99.1,
+          "match": true
+        },
+        {
+          "expected": "p",
+          "actual": "p",
+          "distance": 0.0,
+          "confidence": 0.81,
+          "gop": -0.21,
+          "score": 98.3,
+          "match": true
+        }
+      ],
+      "score": 99.1,
+      "matches": 4,
+      "total": 4,
+      "quality": "good"
+    },
+    {
+      "word": "these",
+      "expected_phonemes": [
+        "ð",
+        "iː",
+        "z"
+      ],
+      "actual_phonemes": [
+        "ð",
+        "iː",
+        "z"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "ð",
+          "actual": "ð",
+          "distance": 0.0,
+          "confidence": 0.868,
+          "gop": -0.14,
+          "score": 98.9,
+          "match": true
+        },
+        {
+          "expected": "iː",
+          "actual": "iː",
+          "distance": 0.0,
+          "confidence": 0.929,
+          "gop": -0.07,
+          "score": 99.4,
+          "match": true
+        },
+        {
+          "expected": "z",
+          "actual": "z",
+          "distance": 0.0,
+          "confidence": 0.906,
+          "gop": -0.1,
+          "score": 99.2,
+          "match": true
+        }
+      ],
+      "score": 99.2,
+      "matches": 3,
+      "total": 3,
+      "quality": "good"
+    },
+    {
+      "word": "things",
+      "expected_phonemes": [
+        "θ",
+        "ɪ",
+        "ŋ",
+        "z"
+      ],
+      "actual_phonemes": [
+        "θ",
+        "ɪ",
+        "ŋ",
+        "z"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "θ",
+          "actual": "θ",
+          "distance": 0.0,
+          "confidence": 0.837,
+          "gop": -0.18,
+          "score": 98.6,
+          "match": true
+        },
+        {
+          "expected": "ɪ",
+          "actual": "ɪ",
+          "distance": 0.0,
+          "confidence": 0.953,
+          "gop": -5.17,
+          "score": 60.0,
+          "match": true
+        },
+        {
+          "expected": "ŋ",
+          "actual": "ŋ",
+          "distance": 0.0,
+          "confidence": 0.962,
+          "gop": -0.08,
+          "score": 99.3,
+          "match": true
+        },
+        {
+          "expected": "z",
+          "actual": "z",
+          "distance": 0.0,
+          "confidence": 0.573,
+          "gop": -0.32,
+          "score": 97.4,
+          "match": true
+        }
+      ],
+      "score": 88.8,
+      "matches": 4,
+      "total": 4,
+      "quality": "good"
+    },
+    {
+      "word": "into",
+      "expected_phonemes": [
+        "ɪ",
+        "n",
+        "t",
+        "uː"
+      ],
+      "actual_phonemes": [
+        "ɪ",
+        "n",
+        "t",
+        "uː"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "ɪ",
+          "actual": "ɪ",
+          "distance": 0.0,
+          "confidence": 0.968,
+          "gop": -5.85,
+          "score": 60.0,
+          "match": true
+        },
+        {
+          "expected": "n",
+          "actual": "n",
+          "distance": 0.0,
+          "confidence": 0.906,
+          "gop": -0.05,
+          "score": 99.6,
+          "match": true
+        },
+        {
+          "expected": "t",
+          "actual": "t",
+          "distance": 0.0,
+          "confidence": 0.964,
+          "gop": -0.04,
+          "score": 99.7,
+          "match": true
+        },
+        {
+          "expected": "uː",
+          "actual": "uː",
+          "distance": 0.0,
+          "confidence": 0.52,
+          "gop": -0.65,
+          "score": 94.8,
+          "match": true
+        }
+      ],
+      "score": 88.5,
+      "matches": 4,
+      "total": 4,
+      "quality": "good"
+    },
+    {
+      "word": "three",
+      "expected_phonemes": [
+        "θ",
+        "ɹ",
+        "iː"
+      ],
+      "actual_phonemes": [
+        "θ",
+        "ɹ",
+        "iː"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "θ",
+          "actual": "θ",
+          "distance": 0.0,
+          "confidence": 0.923,
+          "gop": -0.08,
+          "score": 99.4,
+          "match": true
+        },
+        {
+          "expected": "ɹ",
+          "actual": "ɹ",
+          "distance": 0.0,
+          "confidence": 0.961,
+          "gop": -5.16,
+          "score": 60.0,
+          "match": true
+        },
+        {
+          "expected": "iː",
+          "actual": "iː",
+          "distance": 0.0,
+          "confidence": 0.882,
+          "gop": -0.13,
+          "score": 99.0,
+          "match": true
+        }
+      ],
+      "score": 86.1,
+      "matches": 3,
+      "total": 3,
+      "quality": "good"
+    },
+    {
+      "word": "red",
+      "expected_phonemes": [
+        "ɹ",
+        "ɛ",
+        "d"
+      ],
+      "actual_phonemes": [
+        "ɹ",
+        "ɛ",
+        "d"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "ɹ",
+          "actual": "ɹ",
+          "distance": 0.0,
+          "confidence": 0.928,
+          "gop": -4.68,
+          "score": 62.5,
+          "match": true
+        },
+        {
+          "expected": "ɛ",
+          "actual": "ɛ",
+          "distance": 0.0,
+          "confidence": 0.912,
+          "gop": -0.09,
+          "score": 99.3,
+          "match": true
+        },
+        {
+          "expected": "d",
+          "actual": "d",
+          "distance": 0.0,
+          "confidence": 0.988,
+          "gop": -0.01,
+          "score": 99.9,
+          "match": true
+        }
+      ],
+      "score": 87.2,
+      "matches": 3,
+      "total": 3,
+      "quality": "good"
+    },
+    {
+      "word": "bags",
+      "expected_phonemes": [
+        "b",
+        "æ",
+        "ɡ",
+        "z"
+      ],
+      "actual_phonemes": [
+        "b",
+        "æ",
+        "ɡ",
+        "z"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "b",
+          "actual": "b",
+          "distance": 0.0,
+          "confidence": 0.98,
+          "gop": -0.02,
+          "score": 99.8,
+          "match": true
+        },
+        {
+          "expected": "æ",
+          "actual": "æ",
+          "distance": 0.0,
+          "confidence": 0.821,
+          "gop": -0.2,
+          "score": 98.4,
+          "match": true
+        },
+        {
+          "expected": "ɡ",
+          "actual": "ɡ",
+          "distance": 0.0,
+          "confidence": 0.875,
+          "gop": -0.13,
+          "score": 98.9,
+          "match": true
+        },
+        {
+          "expected": "z",
+          "actual": "z",
+          "distance": 0.0,
+          "confidence": 0.946,
+          "gop": -0.06,
+          "score": 99.6,
+          "match": true
+        }
+      ],
+      "score": 99.2,
+      "matches": 4,
+      "total": 4,
+      "quality": "good"
+    },
+    {
+      "word": "and",
+      "expected_phonemes": [
+        "ʌ",
+        "n",
+        "d"
+      ],
+      "actual_phonemes": [
+        "æ",
+        "n",
+        "d"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "ʌ",
+          "actual": "æ",
+          "distance": 0.3,
+          "confidence": 0.948,
+          "gop": -6.16,
+          "score": 42.0,
+          "match": false
+        },
+        {
+          "expected": "n",
+          "actual": "n",
+          "distance": 0.0,
+          "confidence": 0.962,
+          "gop": -0.04,
+          "score": 99.6,
+          "match": true
+        },
+        {
+          "expected": "d",
+          "actual": "d",
+          "distance": 0.0,
+          "confidence": 0.981,
+          "gop": -0.02,
+          "score": 99.8,
+          "match": true
+        }
+      ],
+      "score": 80.5,
+      "matches": 2,
+      "total": 3,
+      "quality": "good"
+    },
+    {
+      "word": "we",
+      "expected_phonemes": [
+        "w",
+        "iː"
+      ],
+      "actual_phonemes": [
+        "v",
+        "iː"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "w",
+          "actual": "v",
+          "distance": 1.0,
+          "confidence": 0.585,
+          "gop": -1.42,
+          "score": 28.6,
+          "match": false
+        },
+        {
+          "expected": "iː",
+          "actual": "iː",
+          "distance": 0.0,
+          "confidence": 0.74,
+          "gop": -0.3,
+          "score": 97.6,
+          "match": true
+        }
+      ],
+      "score": 63.1,
+      "matches": 1,
+      "total": 2,
+      "quality": "fair"
+    },
+    {
+      "word": "will",
+      "expected_phonemes": [
+        "w",
+        "ɪ",
+        "l"
+      ],
+      "actual_phonemes": [
+        "v",
+        "ɪ",
+        "l"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "w",
+          "actual": "v",
+          "distance": 1.0,
+          "confidence": 0.638,
+          "gop": -1.82,
+          "score": 25.5,
+          "match": false
+        },
+        {
+          "expected": "ɪ",
+          "actual": "ɪ",
+          "distance": 0.0,
+          "confidence": 0.815,
+          "gop": -6.45,
+          "score": 60.0,
+          "match": true
+        },
+        {
+          "expected": "l",
+          "actual": "l",
+          "distance": 0.0,
+          "confidence": 0.61,
+          "gop": -0.39,
+          "score": 96.9,
+          "match": true
+        }
+      ],
+      "score": 60.8,
+      "matches": 2,
+      "total": 3,
+      "quality": "fair"
+    },
+    {
+      "word": "go",
+      "expected_phonemes": [
+        "ɡ",
+        "oʊ"
+      ],
+      "actual_phonemes": [
+        "ɡ",
+        "oʊ"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "ɡ",
+          "actual": "ɡ",
+          "distance": 0.0,
+          "confidence": 0.98,
+          "gop": -0.02,
+          "score": 99.8,
+          "match": true
+        },
+        {
+          "expected": "oʊ",
+          "actual": "oʊ",
+          "distance": 0.0,
+          "confidence": 0.717,
+          "gop": -4.61,
+          "score": 63.2,
+          "match": true
+        }
+      ],
+      "score": 81.5,
+      "matches": 2,
+      "total": 2,
+      "quality": "good"
+    },
+    {
+      "word": "meet",
+      "expected_phonemes": [
+        "m",
+        "iː",
+        "t"
+      ],
+      "actual_phonemes": [
+        "m",
+        "iː",
+        "iː"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "m",
+          "actual": "m",
+          "distance": 0.0,
+          "confidence": 0.994,
+          "gop": -0.01,
+          "score": 100.0,
+          "match": true
+        },
+        {
+          "expected": "iː",
+          "actual": "iː",
+          "distance": 0.0,
+          "confidence": 0.853,
+          "gop": -0.16,
+          "score": 98.7,
+          "match": true
+        },
+        {
+          "expected": "t",
+          "actual": "iː",
+          "distance": 1.0,
+          "confidence": 0.853,
+          "gop": -11.97,
+          "score": 0.0,
+          "match": false
+        }
+      ],
+      "score": 66.2,
+      "matches": 2,
+      "total": 3,
+      "quality": "fair"
+    },
+    {
+      "word": "her",
+      "expected_phonemes": [
+        "h",
+        "ɝ"
+      ],
+      "actual_phonemes": [
+        "ɾ",
+        "ɚ"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "h",
+          "actual": "ɾ",
+          "distance": 1.0,
+          "confidence": 0.694,
+          "gop": -8.05,
+          "score": 0.0,
+          "match": false
+        },
+        {
+          "expected": "ɝ",
+          "actual": "ɚ",
+          "distance": 0.0,
+          "confidence": 0.663,
+          "gop": -0.41,
+          "score": 96.7,
+          "match": true
+        }
+      ],
+      "score": 48.4,
+      "matches": 1,
+      "total": 2,
+      "quality": "fair"
+    },
+    {
+      "word": "Wednesday",
+      "expected_phonemes": [
+        "w",
+        "ɛ",
+        "n",
+        "z",
+        "d",
+        "iː"
+      ],
+      "actual_phonemes": [
+        "v",
+        "ɛ",
+        "n",
+        "z",
+        "d",
+        "eɪ"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "w",
+          "actual": "v",
+          "distance": 1.0,
+          "confidence": 0.989,
+          "gop": -7.94,
+          "score": 0.0,
+          "match": false
+        },
+        {
+          "expected": "ɛ",
+          "actual": "ɛ",
+          "distance": 0.0,
+          "confidence": 0.899,
+          "gop": -0.11,
+          "score": 99.2,
+          "match": true
+        },
+        {
+          "expected": "n",
+          "actual": "n",
+          "distance": 0.0,
+          "confidence": 0.725,
+          "gop": -0.16,
+          "score": 98.7,
+          "match": true
+        },
+        {
+          "expected": "z",
+          "actual": "z",
+          "distance": 0.0,
+          "confidence": 0.636,
+          "gop": -0.45,
+          "score": 96.4,
+          "match": true
+        },
+        {
+          "expected": "d",
+          "actual": "d",
+          "distance": 0.0,
+          "confidence": 0.969,
+          "gop": -0.03,
+          "score": 99.7,
+          "match": true
+        },
+        {
+          "expected": "iː",
+          "actual": "eɪ",
+          "distance": 0.3,
+          "confidence": 0.749,
+          "gop": -5.37,
+          "score": 42.0,
+          "match": false
+        }
+      ],
+      "score": 72.7,
+      "matches": 4,
+      "total": 6,
+      "quality": "good"
+    },
+    {
+      "word": "at",
+      "expected_phonemes": [
+        "æ",
+        "t"
+      ],
+      "actual_phonemes": [
+        "æ",
+        "t"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "æ",
+          "actual": "æ",
+          "distance": 0.0,
+          "confidence": 0.937,
+          "gop": -0.07,
+          "score": 99.5,
+          "match": true
+        },
+        {
+          "expected": "t",
+          "actual": "t",
+          "distance": 0.0,
+          "confidence": 0.668,
+          "gop": -0.4,
+          "score": 96.8,
+          "match": true
+        }
+      ],
+      "score": 98.2,
+      "matches": 2,
+      "total": 2,
+      "quality": "good"
+    },
+    {
+      "word": "the",
+      "expected_phonemes": [
+        "ð",
+        "ʌ"
+      ],
+      "actual_phonemes": [
+        "ð",
+        "ə"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "ð",
+          "actual": "ð",
+          "distance": 0.0,
+          "confidence": 0.857,
+          "gop": -0.15,
+          "score": 98.8,
+          "match": true
+        },
+        {
+          "expected": "ʌ",
+          "actual": "ə",
+          "distance": 0.0,
+          "confidence": 0.877,
+          "gop": -0.13,
+          "score": 99.0,
+          "match": true
+        }
+      ],
+      "score": 98.9,
+      "matches": 2,
+      "total": 2,
+      "quality": "good"
+    },
+    {
+      "word": "train",
+      "expected_phonemes": [
+        "t",
+        "ɹ",
+        "eɪ",
+        "n"
+      ],
+      "actual_phonemes": [
+        "t",
+        "ɹ",
+        "eɪ",
+        "n"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "t",
+          "actual": "t",
+          "distance": 0.0,
+          "confidence": 0.945,
+          "gop": -0.06,
+          "score": 99.5,
+          "match": true
+        },
+        {
+          "expected": "ɹ",
+          "actual": "ɹ",
+          "distance": 0.0,
+          "confidence": 0.933,
+          "gop": -4.7,
+          "score": 62.4,
+          "match": true
+        },
+        {
+          "expected": "eɪ",
+          "actual": "eɪ",
+          "distance": 0.0,
+          "confidence": 0.936,
+          "gop": -0.07,
+          "score": 99.5,
+          "match": true
+        },
+        {
+          "expected": "n",
+          "actual": "n",
+          "distance": 0.0,
+          "confidence": 0.99,
+          "gop": -0.13,
+          "score": 99.0,
+          "match": true
+        }
+      ],
+      "score": 90.1,
+      "matches": 4,
+      "total": 4,
+      "quality": "good"
+    },
+    {
+      "word": "station",
+      "expected_phonemes": [
+        "s",
+        "t",
+        "eɪ",
+        "ʃ",
+        "ʌ",
+        "n"
+      ],
+      "actual_phonemes": [
+        "s",
+        "t",
+        "eɪ",
+        "ʃ",
+        "ə",
+        "n"
+      ],
+      "phoneme_details": [
+        {
+          "expected": "s",
+          "actual": "s",
+          "distance": 0.0,
+          "confidence": 0.969,
+          "gop": -0.03,
+          "score": 99.7,
+          "match": true
+        },
+        {
+          "expected": "t",
+          "actual": "t",
+          "distance": 0.0,
+          "confidence": 0.993,
+          "gop": -0.01,
+          "score": 99.9,
+          "match": true
+        },
+        {
+          "expected": "eɪ",
+          "actual": "eɪ",
+          "distance": 0.0,
+          "confidence": 0.894,
+          "gop": -0.11,
+          "score": 99.1,
+          "match": true
+        },
+        {
+          "expected": "ʃ",
+          "actual": "ʃ",
+          "distance": 0.0,
+          "confidence": 0.941,
+          "gop": -0.06,
+          "score": 99.5,
+          "match": true
+        },
+        {
+          "expected": "ʌ",
+          "actual": "ə",
+          "distance": 0.0,
+          "confidence": 0.984,
+          "gop": -0.02,
+          "score": 99.9,
+          "match": true
+        },
+        {
+          "expected": "n",
+          "actual": "n",
+          "distance": 0.0,
+          "confidence": 0.817,
+          "gop": -0.12,
+          "score": 99.0,
+          "match": true
+        }
+      ],
+      "score": 99.5,
+      "matches": 6,
+      "total": 6,
+      "quality": "good"
+    }
+  ],
+  "phoneme_results": [
+    {
+      "expected": "p",
+      "actual": "p",
+      "distance": 0.0,
+      "confidence": 0.977,
+      "gop": -0.02,
+      "score": 99.8,
+      "match": true
+    },
+    {
+      "expected": "l",
+      "actual": "l",
+      "distance": 0.0,
+      "confidence": 0.987,
+      "gop": -0.01,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "iː",
+      "actual": "iː",
+      "distance": 0.0,
+      "confidence": 0.932,
+      "gop": -0.07,
+      "score": 99.4,
+      "match": true
+    },
+    {
+      "expected": "z",
+      "actual": "z",
+      "distance": 0.0,
+      "confidence": 0.644,
+      "gop": -0.44,
+      "score": 96.5,
+      "match": true
+    },
+    {
+      "expected": "k",
+      "actual": "k",
+      "distance": 0.0,
+      "confidence": 0.963,
+      "gop": -0.03,
+      "score": 99.8,
+      "match": true
+    },
+    {
+      "expected": "ɔ",
+      "actual": "ɔ",
+      "distance": 0.0,
+      "confidence": 0.237,
+      "gop": -1.44,
+      "score": 88.5,
+      "match": true
+    },
+    {
+      "expected": "l",
+      "actual": "l",
+      "distance": 0.0,
+      "confidence": 0.947,
+      "gop": -0.05,
+      "score": 99.6,
+      "match": true
+    },
+    {
+      "expected": "s",
+      "actual": "s",
+      "distance": 0.0,
+      "confidence": 0.99,
+      "gop": -0.01,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "t",
+      "actual": "t",
+      "distance": 0.0,
+      "confidence": 0.996,
+      "gop": -0.0,
+      "score": 100.0,
+      "match": true
+    },
+    {
+      "expected": "ɛ",
+      "actual": "ɛ",
+      "distance": 0.0,
+      "confidence": 0.942,
+      "gop": -0.06,
+      "score": 99.5,
+      "match": true
+    },
+    {
+      "expected": "l",
+      "actual": "l",
+      "distance": 0.0,
+      "confidence": 0.993,
+      "gop": -0.01,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "ʌ",
+      "actual": "ɐ",
+      "distance": 0.0,
+      "confidence": 0.504,
+      "gop": -1.21,
+      "score": 90.3,
+      "match": true
+    },
+    {
+      "expected": "æ",
+      "actual": "æ",
+      "distance": 0.0,
+      "confidence": 0.364,
+      "gop": -1.01,
+      "score": 91.9,
+      "match": true
+    },
+    {
+      "expected": "s",
+      "actual": "s",
+      "distance": 0.0,
+      "confidence": 0.987,
+      "gop": -0.01,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "k",
+      "actual": "k",
+      "distance": 0.0,
+      "confidence": 0.969,
+      "gop": -0.03,
+      "score": 99.7,
+      "match": true
+    },
+    {
+      "expected": "h",
+      "actual": "h",
+      "distance": 0.0,
+      "confidence": 0.56,
+      "gop": -0.58,
+      "score": 95.4,
+      "match": true
+    },
+    {
+      "expected": "ɝ",
+      "actual": "ɜː",
+      "distance": 0.0,
+      "confidence": 0.491,
+      "gop": -1.26,
+      "score": 90.0,
+      "match": true
+    },
+    {
+      "expected": "t",
+      "actual": "t",
+      "distance": 0.0,
+      "confidence": 0.955,
+      "gop": -0.05,
+      "score": 99.6,
+      "match": true
+    },
+    {
+      "expected": "uː",
+      "actual": "ʊ",
+      "distance": 0.5,
+      "confidence": 0.571,
+      "gop": -3.97,
+      "score": 38.2,
+      "match": false
+    },
+    {
+      "expected": "b",
+      "actual": "b",
+      "distance": 0.0,
+      "confidence": 0.979,
+      "gop": -0.02,
+      "score": 99.8,
+      "match": true
+    },
+    {
+      "expected": "ɹ",
+      "actual": "ɹ",
+      "distance": 0.0,
+      "confidence": 0.764,
+      "gop": -4.03,
+      "score": 67.8,
+      "match": true
+    },
+    {
+      "expected": "ɪ",
+      "actual": "ɪ",
+      "distance": 0.0,
+      "confidence": 0.931,
+      "gop": -5.85,
+      "score": 60.0,
+      "match": true
+    },
+    {
+      "expected": "ŋ",
+      "actual": "ŋ",
+      "distance": 0.0,
+      "confidence": 0.943,
+      "gop": -0.07,
+      "score": 99.5,
+      "match": true
+    },
+    {
+      "expected": "ð",
+      "actual": "ð",
+      "distance": 0.0,
+      "confidence": 0.98,
+      "gop": -0.02,
+      "score": 99.8,
+      "match": true
+    },
+    {
+      "expected": "iː",
+      "actual": "iː",
+      "distance": 0.0,
+      "confidence": 0.905,
+      "gop": -0.1,
+      "score": 99.2,
+      "match": true
+    },
+    {
+      "expected": "z",
+      "actual": "z",
+      "distance": 0.0,
+      "confidence": 0.892,
+      "gop": -0.11,
+      "score": 99.1,
+      "match": true
+    },
+    {
+      "expected": "θ",
+      "actual": "θ",
+      "distance": 0.0,
+      "confidence": 0.553,
+      "gop": -0.59,
+      "score": 95.3,
+      "match": true
+    },
+    {
+      "expected": "ɪ",
+      "actual": "ɪ",
+      "distance": 0.0,
+      "confidence": 0.934,
+      "gop": -5.07,
+      "score": 60.0,
+      "match": true
+    },
+    {
+      "expected": "ŋ",
+      "actual": "ŋ",
+      "distance": 0.0,
+      "confidence": 0.85,
+      "gop": -0.12,
+      "score": 99.0,
+      "match": true
+    },
+    {
+      "expected": "z",
+      "actual": "z",
+      "distance": 0.0,
+      "confidence": 0.815,
+      "gop": -0.2,
+      "score": 98.4,
+      "match": true
+    },
+    {
+      "expected": "w",
+      "actual": "v",
+      "distance": 1.0,
+      "confidence": 0.946,
+      "gop": -3.7,
+      "score": 10.4,
+      "match": false
+    },
+    {
+      "expected": "ɪ",
+      "actual": "ɪ",
+      "distance": 0.0,
+      "confidence": 0.963,
+      "gop": -7.01,
+      "score": 60.0,
+      "match": true
+    },
+    {
+      "expected": "ð",
+      "actual": "ð",
+      "distance": 0.0,
+      "confidence": 0.95,
+      "gop": -0.05,
+      "score": 99.6,
+      "match": true
+    },
+    {
+      "expected": "h",
+      "actual": "h",
+      "distance": 0.0,
+      "confidence": 0.569,
+      "gop": -0.56,
+      "score": 95.5,
+      "match": true
+    },
+    {
+      "expected": "ɝ",
+      "actual": "ɚ",
+      "distance": 0.0,
+      "confidence": 0.577,
+      "gop": -0.55,
+      "score": 95.6,
+      "match": true
+    },
+    {
+      "expected": "f",
+      "actual": "f",
+      "distance": 0.0,
+      "confidence": 0.973,
+      "gop": -0.03,
+      "score": 99.8,
+      "match": true
+    },
+    {
+      "expected": "ɹ",
+      "actual": "ɹ",
+      "distance": 0.0,
+      "confidence": 0.974,
+      "gop": -5.71,
+      "score": 60.0,
+      "match": true
+    },
+    {
+      "expected": "ʌ",
+      "actual": "ʌ",
+      "distance": 0.0,
+      "confidence": 0.831,
+      "gop": -4.55,
+      "score": 63.6,
+      "match": true
+    },
+    {
+      "expected": "m",
+      "actual": "m",
+      "distance": 0.0,
+      "confidence": 0.992,
+      "gop": -0.21,
+      "score": 98.3,
+      "match": true
+    },
+    {
+      "expected": "ð",
+      "actual": "ð",
+      "distance": 0.0,
+      "confidence": 0.987,
+      "gop": -0.01,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "ʌ",
+      "actual": "ə",
+      "distance": 0.0,
+      "confidence": 0.952,
+      "gop": -0.05,
+      "score": 99.6,
+      "match": true
+    },
+    {
+      "expected": "s",
+      "actual": "s",
+      "distance": 0.0,
+      "confidence": 0.987,
+      "gop": -0.01,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "t",
+      "actual": "t",
+      "distance": 0.0,
+      "confidence": 0.994,
+      "gop": -0.01,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "ɔ",
+      "actual": "oʊ",
+      "distance": 0.5,
+      "confidence": 0.379,
+      "gop": -5.05,
+      "score": 30.0,
+      "match": false
+    },
+    {
+      "expected": "ɹ",
+      "actual": "oʊ",
+      "distance": 1.0,
+      "confidence": 0.379,
+      "gop": -8.86,
+      "score": 0.0,
+      "match": false
+    },
+    {
+      "expected": "s",
+      "actual": "s",
+      "distance": 0.0,
+      "confidence": 0.979,
+      "gop": -0.02,
+      "score": 99.8,
+      "match": true
+    },
+    {
+      "expected": "ɪ",
+      "actual": "ɪ",
+      "distance": 0.0,
+      "confidence": 0.961,
+      "gop": -4.8,
+      "score": 61.6,
+      "match": true
+    },
+    {
+      "expected": "k",
+      "actual": "k",
+      "distance": 0.0,
+      "confidence": 0.987,
+      "gop": -0.01,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "s",
+      "actual": "s",
+      "distance": 0.0,
+      "confidence": 0.988,
+      "gop": -0.01,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "s",
+      "actual": "s",
+      "distance": 0.0,
+      "confidence": 0.988,
+      "gop": -0.01,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "p",
+      "actual": "k",
+      "distance": 0.3,
+      "confidence": 0.909,
+      "gop": -5.18,
+      "score": 42.0,
+      "match": false
+    },
+    {
+      "expected": "uː",
+      "actual": "uː",
+      "distance": 0.0,
+      "confidence": 0.886,
+      "gop": -0.12,
+      "score": 99.0,
+      "match": true
+    },
+    {
+      "expected": "n",
+      "actual": "n",
+      "distance": 0.0,
+      "confidence": 0.834,
+      "gop": -0.18,
+      "score": 98.5,
+      "match": true
+    },
+    {
+      "expected": "z",
+      "actual": "s",
+      "distance": 0.4,
+      "confidence": 0.738,
+      "gop": -1.39,
+      "score": 64.9,
+      "match": false
+    },
+    {
+      "expected": "ʌ",
+      "actual": "ʌ",
+      "distance": 0.0,
+      "confidence": 0.915,
+      "gop": -4.93,
+      "score": 60.6,
+      "match": true
+    },
+    {
+      "expected": "v",
+      "actual": "f",
+      "distance": 0.4,
+      "confidence": 0.992,
+      "gop": -5.6,
+      "score": 36.0,
+      "match": false
+    },
+    {
+      "expected": "f",
+      "actual": "f",
+      "distance": 0.0,
+      "confidence": 0.992,
+      "gop": -0.01,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "ɹ",
+      "actual": "ɹ",
+      "distance": 0.0,
+      "confidence": 0.93,
+      "gop": -3.31,
+      "score": 73.5,
+      "match": true
+    },
+    {
+      "expected": "ɛ",
+      "actual": "ɛ",
+      "distance": 0.0,
+      "confidence": 0.909,
+      "gop": -0.1,
+      "score": 99.2,
+      "match": true
+    },
+    {
+      "expected": "ʃ",
+      "actual": "ʃ",
+      "distance": 0.0,
+      "confidence": 0.872,
+      "gop": -0.14,
+      "score": 98.9,
+      "match": true
+    },
+    {
+      "expected": "s",
+      "actual": "ʃ",
+      "distance": 0.3,
+      "confidence": 0.872,
+      "gop": -2.5,
+      "score": 62.0,
+      "match": false
+    },
+    {
+      "expected": "n",
+      "actual": "n",
+      "distance": 0.0,
+      "confidence": 0.9,
+      "gop": -0.11,
+      "score": 99.2,
+      "match": true
+    },
+    {
+      "expected": "oʊ",
+      "actual": "oʊ",
+      "distance": 0.0,
+      "confidence": 0.637,
+      "gop": -5.24,
+      "score": 60.0,
+      "match": true
+    },
+    {
+      "expected": "p",
+      "actual": "p",
+      "distance": 0.0,
+      "confidence": 0.94,
+      "gop": -0.06,
+      "score": 99.5,
+      "match": true
+    },
+    {
+      "expected": "iː",
+      "actual": "iː",
+      "distance": 0.0,
+      "confidence": 0.821,
+      "gop": -0.2,
+      "score": 98.4,
+      "match": true
+    },
+    {
+      "expected": "z",
+      "actual": "z",
+      "distance": 0.0,
+      "confidence": 0.961,
+      "gop": -0.04,
+      "score": 99.7,
+      "match": true
+    },
+    {
+      "expected": "f",
+      "actual": "f",
+      "distance": 0.0,
+      "confidence": 0.989,
+      "gop": -0.01,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "aɪ",
+      "actual": "aɪ",
+      "distance": 0.0,
+      "confidence": 0.961,
+      "gop": -0.04,
+      "score": 99.7,
+      "match": true
+    },
+    {
+      "expected": "v",
+      "actual": "v",
+      "distance": 0.0,
+      "confidence": 0.852,
+      "gop": -0.16,
+      "score": 98.7,
+      "match": true
+    },
+    {
+      "expected": "θ",
+      "actual": "θ",
+      "distance": 0.0,
+      "confidence": 0.925,
+      "gop": -0.08,
+      "score": 99.4,
+      "match": true
+    },
+    {
+      "expected": "ɪ",
+      "actual": "ɪ",
+      "distance": 0.0,
+      "confidence": 0.966,
+      "gop": -5.75,
+      "score": 60.0,
+      "match": true
+    },
+    {
+      "expected": "k",
+      "actual": "k",
+      "distance": 0.0,
+      "confidence": 0.974,
+      "gop": -0.03,
+      "score": 99.8,
+      "match": true
+    },
+    {
+      "expected": "s",
+      "actual": "s",
+      "distance": 0.0,
+      "confidence": 0.973,
+      "gop": -0.03,
+      "score": 99.8,
+      "match": true
+    },
+    {
+      "expected": "l",
+      "actual": "l",
+      "distance": 0.0,
+      "confidence": 0.973,
+      "gop": -0.11,
+      "score": 99.1,
+      "match": true
+    },
+    {
+      "expected": "æ",
+      "actual": "æ",
+      "distance": 0.0,
+      "confidence": 0.785,
+      "gop": -0.24,
+      "score": 98.1,
+      "match": true
+    },
+    {
+      "expected": "b",
+      "actual": "p",
+      "distance": 0.4,
+      "confidence": 0.939,
+      "gop": -3.88,
+      "score": 45.0,
+      "match": false
+    },
+    {
+      "expected": "z",
+      "actual": "s",
+      "distance": 0.4,
+      "confidence": 0.911,
+      "gop": -2.49,
+      "score": 56.1,
+      "match": false
+    },
+    {
+      "expected": "ʌ",
+      "actual": "ɔː",
+      "distance": 0.3,
+      "confidence": 0.248,
+      "gop": -6.45,
+      "score": 42.0,
+      "match": false
+    },
+    {
+      "expected": "v",
+      "actual": "ɔː",
+      "distance": 1.0,
+      "confidence": 0.248,
+      "gop": -7.11,
+      "score": 0.0,
+      "match": false
+    },
+    {
+      "expected": "b",
+      "actual": "b",
+      "distance": 0.0,
+      "confidence": 0.983,
+      "gop": -0.02,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "l",
+      "actual": "l",
+      "distance": 0.0,
+      "confidence": 0.989,
+      "gop": -0.01,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "uː",
+      "actual": "uː",
+      "distance": 0.0,
+      "confidence": 0.922,
+      "gop": -0.08,
+      "score": 99.4,
+      "match": true
+    },
+    {
+      "expected": "tʃ",
+      "actual": "tʃ",
+      "distance": 0.0,
+      "confidence": 0.491,
+      "gop": -0.71,
+      "score": 94.3,
+      "match": true
+    },
+    {
+      "expected": "iː",
+      "actual": "iː",
+      "distance": 0.0,
+      "confidence": 0.651,
+      "gop": -0.43,
+      "score": 96.6,
+      "match": true
+    },
+    {
+      "expected": "z",
+      "actual": "z",
+      "distance": 0.0,
+      "confidence": 0.91,
+      "gop": -0.09,
+      "score": 99.2,
+      "match": true
+    },
+    {
+      "expected": "ʌ",
+      "actual": "æ",
+      "distance": 0.3,
+      "confidence": 0.946,
+      "gop": -5.9,
+      "score": 42.0,
+      "match": false
+    },
+    {
+      "expected": "n",
+      "actual": "n",
+      "distance": 0.0,
+      "confidence": 0.984,
+      "gop": -0.08,
+      "score": 99.3,
+      "match": true
+    },
+    {
+      "expected": "d",
+      "actual": "n",
+      "distance": 1.0,
+      "confidence": 0.984,
+      "gop": -4.69,
+      "score": 2.5,
+      "match": false
+    },
+    {
+      "expected": "m",
+      "actual": "m",
+      "distance": 0.0,
+      "confidence": 0.989,
+      "gop": -0.01,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "eɪ",
+      "actual": "eɪ",
+      "distance": 0.0,
+      "confidence": 0.844,
+      "gop": -0.17,
+      "score": 98.6,
+      "match": true
+    },
+    {
+      "expected": "b",
+      "actual": "b",
+      "distance": 0.0,
+      "confidence": 0.934,
+      "gop": -0.07,
+      "score": 99.5,
+      "match": true
+    },
+    {
+      "expected": "iː",
+      "actual": "iː",
+      "distance": 0.0,
+      "confidence": 0.457,
+      "gop": -0.78,
+      "score": 93.7,
+      "match": true
+    },
+    {
+      "expected": "ʌ",
+      "actual": "ɐ",
+      "distance": 0.0,
+      "confidence": 0.877,
+      "gop": -2.53,
+      "score": 79.8,
+      "match": true
+    },
+    {
+      "expected": "s",
+      "actual": "v",
+      "distance": 0.4,
+      "confidence": 0.983,
+      "gop": -10.24,
+      "score": 36.0,
+      "match": false
+    },
+    {
+      "expected": "n",
+      "actual": "n",
+      "distance": 0.0,
+      "confidence": 0.996,
+      "gop": -0.0,
+      "score": 100.0,
+      "match": true
+    },
+    {
+      "expected": "æ",
+      "actual": "æ",
+      "distance": 0.0,
+      "confidence": 0.914,
+      "gop": -0.09,
+      "score": 99.3,
+      "match": true
+    },
+    {
+      "expected": "k",
+      "actual": "k",
+      "distance": 0.0,
+      "confidence": 0.824,
+      "gop": -0.15,
+      "score": 98.8,
+      "match": true
+    },
+    {
+      "expected": "f",
+      "actual": "f",
+      "distance": 0.0,
+      "confidence": 0.986,
+      "gop": -0.01,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "ɔ",
+      "actual": "ɔːɹ",
+      "distance": 1.0,
+      "confidence": 0.241,
+      "gop": -3.72,
+      "score": 10.3,
+      "match": false
+    },
+    {
+      "expected": "ɹ",
+      "actual": "ɾ",
+      "distance": 0.0,
+      "confidence": 0.314,
+      "gop": -1.16,
+      "score": 90.7,
+      "match": true
+    },
+    {
+      "expected": "h",
+      "actual": "h",
+      "distance": 0.0,
+      "confidence": 0.911,
+      "gop": -0.4,
+      "score": 96.8,
+      "match": true
+    },
+    {
+      "expected": "ɝ",
+      "actual": "ɚ",
+      "distance": 0.0,
+      "confidence": 0.368,
+      "gop": -1.0,
+      "score": 92.0,
+      "match": true
+    },
+    {
+      "expected": "b",
+      "actual": "b",
+      "distance": 0.0,
+      "confidence": 0.979,
+      "gop": -0.02,
+      "score": 99.8,
+      "match": true
+    },
+    {
+      "expected": "ɹ",
+      "actual": "ɹ",
+      "distance": 0.0,
+      "confidence": 0.576,
+      "gop": -4.73,
+      "score": 62.2,
+      "match": true
+    },
+    {
+      "expected": "ʌ",
+      "actual": "ʌ",
+      "distance": 0.0,
+      "confidence": 0.897,
+      "gop": -4.3,
+      "score": 65.6,
+      "match": true
+    },
+    {
+      "expected": "ð",
+      "actual": "ð",
+      "distance": 0.0,
+      "confidence": 0.968,
+      "gop": -0.03,
+      "score": 99.7,
+      "match": true
+    },
+    {
+      "expected": "ɝ",
+      "actual": "ɚ",
+      "distance": 0.0,
+      "confidence": 0.745,
+      "gop": -0.29,
+      "score": 97.6,
+      "match": true
+    },
+    {
+      "expected": "b",
+      "actual": "b",
+      "distance": 0.0,
+      "confidence": 0.979,
+      "gop": -0.02,
+      "score": 99.8,
+      "match": true
+    },
+    {
+      "expected": "ɑ",
+      "actual": "ɔ",
+      "distance": 0.3,
+      "confidence": 0.365,
+      "gop": -1.62,
+      "score": 69.1,
+      "match": false
+    },
+    {
+      "expected": "b",
+      "actual": "b",
+      "distance": 0.0,
+      "confidence": 0.974,
+      "gop": -0.03,
+      "score": 99.8,
+      "match": true
+    },
+    {
+      "expected": "w",
+      "actual": "v",
+      "distance": 1.0,
+      "confidence": 0.773,
+      "gop": -1.98,
+      "score": 24.2,
+      "match": false
+    },
+    {
+      "expected": "iː",
+      "actual": "iː",
+      "distance": 0.0,
+      "confidence": 0.834,
+      "gop": -0.18,
+      "score": 98.5,
+      "match": true
+    },
+    {
+      "expected": "ɔ",
+      "actual": "ɔː",
+      "distance": 0.0,
+      "confidence": 0.446,
+      "gop": -3.76,
+      "score": 70.0,
+      "match": true
+    },
+    {
+      "expected": "l",
+      "actual": "l",
+      "distance": 0.0,
+      "confidence": 0.744,
+      "gop": -0.17,
+      "score": 98.6,
+      "match": true
+    },
+    {
+      "expected": "s",
+      "actual": "s",
+      "distance": 0.0,
+      "confidence": 0.538,
+      "gop": -0.33,
+      "score": 97.3,
+      "match": true
+    },
+    {
+      "expected": "oʊ",
+      "actual": "oʊ",
+      "distance": 0.0,
+      "confidence": 0.676,
+      "gop": -5.47,
+      "score": 60.0,
+      "match": true
+    },
+    {
+      "expected": "n",
+      "actual": "n",
+      "distance": 0.0,
+      "confidence": 0.991,
+      "gop": -0.01,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "iː",
+      "actual": "iː",
+      "distance": 0.0,
+      "confidence": 0.958,
+      "gop": -0.04,
+      "score": 99.7,
+      "match": true
+    },
+    {
+      "expected": "d",
+      "actual": "d",
+      "distance": 0.0,
+      "confidence": 0.953,
+      "gop": -0.05,
+      "score": 99.6,
+      "match": true
+    },
+    {
+      "expected": "ʌ",
+      "actual": "ɐ",
+      "distance": 0.0,
+      "confidence": 0.884,
+      "gop": -2.81,
+      "score": 77.5,
+      "match": true
+    },
+    {
+      "expected": "s",
+      "actual": "s",
+      "distance": 0.0,
+      "confidence": 0.988,
+      "gop": -0.01,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "m",
+      "actual": "m",
+      "distance": 0.0,
+      "confidence": 0.962,
+      "gop": -0.02,
+      "score": 99.8,
+      "match": true
+    },
+    {
+      "expected": "ɔ",
+      "actual": "ɔː",
+      "distance": 0.0,
+      "confidence": 0.293,
+      "gop": -2.04,
+      "score": 83.6,
+      "match": true
+    },
+    {
+      "expected": "l",
+      "actual": "l",
+      "distance": 0.0,
+      "confidence": 0.966,
+      "gop": -0.03,
+      "score": 99.7,
+      "match": true
+    },
+    {
+      "expected": "p",
+      "actual": "p",
+      "distance": 0.0,
+      "confidence": 0.707,
+      "gop": -0.27,
+      "score": 97.8,
+      "match": true
+    },
+    {
+      "expected": "l",
+      "actual": "l",
+      "distance": 0.0,
+      "confidence": 0.627,
+      "gop": -0.24,
+      "score": 98.1,
+      "match": true
+    },
+    {
+      "expected": "æ",
+      "actual": "ɑː",
+      "distance": 0.3,
+      "confidence": 0.523,
+      "gop": -2.13,
+      "score": 65.0,
+      "match": false
+    },
+    {
+      "expected": "s",
+      "actual": "s",
+      "distance": 0.0,
+      "confidence": 0.988,
+      "gop": -0.01,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "t",
+      "actual": "t",
+      "distance": 0.0,
+      "confidence": 0.993,
+      "gop": -0.01,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "ɪ",
+      "actual": "ɪ",
+      "distance": 0.0,
+      "confidence": 0.946,
+      "gop": -4.79,
+      "score": 61.7,
+      "match": true
+    },
+    {
+      "expected": "k",
+      "actual": "k",
+      "distance": 0.0,
+      "confidence": 0.812,
+      "gop": -0.12,
+      "score": 99.0,
+      "match": true
+    },
+    {
+      "expected": "s",
+      "actual": "s",
+      "distance": 0.0,
+      "confidence": 0.988,
+      "gop": -0.28,
+      "score": 97.7,
+      "match": true
+    },
+    {
+      "expected": "n",
+      "actual": "n",
+      "distance": 0.0,
+      "confidence": 0.995,
+      "gop": -0.01,
+      "score": 100.0,
+      "match": true
+    },
+    {
+      "expected": "eɪ",
+      "actual": "eɪ",
+      "distance": 0.0,
+      "confidence": 0.906,
+      "gop": -0.1,
+      "score": 99.2,
+      "match": true
+    },
+    {
+      "expected": "k",
+      "actual": "k",
+      "distance": 0.0,
+      "confidence": 0.619,
+      "gop": -0.26,
+      "score": 97.9,
+      "match": true
+    },
+    {
+      "expected": "ʌ",
+      "actual": "æ",
+      "distance": 0.3,
+      "confidence": 0.965,
+      "gop": -7.4,
+      "score": 42.0,
+      "match": false
+    },
+    {
+      "expected": "n",
+      "actual": "n",
+      "distance": 0.0,
+      "confidence": 0.953,
+      "gop": -0.16,
+      "score": 98.7,
+      "match": true
+    },
+    {
+      "expected": "d",
+      "actual": "d",
+      "distance": 0.0,
+      "confidence": 0.985,
+      "gop": -0.02,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "ʌ",
+      "actual": "d",
+      "distance": 1.0,
+      "confidence": 0.985,
+      "gop": -10.25,
+      "score": 0.0,
+      "match": false
+    },
+    {
+      "expected": "b",
+      "actual": "b",
+      "distance": 0.0,
+      "confidence": 0.95,
+      "gop": -0.05,
+      "score": 99.6,
+      "match": true
+    },
+    {
+      "expected": "ɪ",
+      "actual": "ɪ",
+      "distance": 0.0,
+      "confidence": 0.954,
+      "gop": -5.39,
+      "score": 60.0,
+      "match": true
+    },
+    {
+      "expected": "ɡ",
+      "actual": "k",
+      "distance": 0.4,
+      "confidence": 0.93,
+      "gop": -2.85,
+      "score": 53.2,
+      "match": false
+    },
+    {
+      "expected": "t",
+      "actual": "t",
+      "distance": 0.0,
+      "confidence": 0.736,
+      "gop": -0.31,
+      "score": 97.5,
+      "match": true
+    },
+    {
+      "expected": "ɔɪ",
+      "actual": "ɔːɹ",
+      "distance": 1.0,
+      "confidence": 0.119,
+      "gop": -3.11,
+      "score": 15.1,
+      "match": false
+    },
+    {
+      "expected": "f",
+      "actual": "f",
+      "distance": 0.0,
+      "confidence": 0.994,
+      "gop": -0.01,
+      "score": 100.0,
+      "match": true
+    },
+    {
+      "expected": "ɹ",
+      "actual": "ɹ",
+      "distance": 0.0,
+      "confidence": 0.707,
+      "gop": -4.34,
+      "score": 65.3,
+      "match": true
+    },
+    {
+      "expected": "ɑ",
+      "actual": "ɔ",
+      "distance": 0.3,
+      "confidence": 0.384,
+      "gop": -1.61,
+      "score": 69.1,
+      "match": false
+    },
+    {
+      "expected": "ɡ",
+      "actual": "k",
+      "distance": 0.4,
+      "confidence": 0.965,
+      "gop": -3.55,
+      "score": 47.6,
+      "match": false
+    },
+    {
+      "expected": "f",
+      "actual": "f",
+      "distance": 0.0,
+      "confidence": 0.992,
+      "gop": -0.01,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "ɔ",
+      "actual": "f",
+      "distance": 1.0,
+      "confidence": 0.992,
+      "gop": -12.7,
+      "score": 0.0,
+      "match": false
+    },
+    {
+      "expected": "ɹ",
+      "actual": "ɔːɹ",
+      "distance": 1.0,
+      "confidence": 0.283,
+      "gop": -7.67,
+      "score": 0.0,
+      "match": false
+    },
+    {
+      "expected": "ð",
+      "actual": "ð",
+      "distance": 0.0,
+      "confidence": 0.975,
+      "gop": -0.03,
+      "score": 99.8,
+      "match": true
+    },
+    {
+      "expected": "ʌ",
+      "actual": "ə",
+      "distance": 0.0,
+      "confidence": 0.9,
+      "gop": -0.1,
+      "score": 99.2,
+      "match": true
+    },
+    {
+      "expected": "k",
+      "actual": "k",
+      "distance": 0.0,
+      "confidence": 0.982,
+      "gop": -0.02,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "ɪ",
+      "actual": "ɛ",
+      "distance": 0.3,
+      "confidence": 0.375,
+      "gop": -6.52,
+      "score": 42.0,
+      "match": false
+    },
+    {
+      "expected": "d",
+      "actual": "t",
+      "distance": 0.4,
+      "confidence": 0.803,
+      "gop": -3.27,
+      "score": 49.8,
+      "match": false
+    },
+    {
+      "expected": "z",
+      "actual": "s",
+      "distance": 0.4,
+      "confidence": 0.459,
+      "gop": -1.99,
+      "score": 60.1,
+      "match": false
+    },
+    {
+      "expected": "ʃ",
+      "actual": "ʃ",
+      "distance": 0.0,
+      "confidence": 0.885,
+      "gop": -0.12,
+      "score": 99.0,
+      "match": true
+    },
+    {
+      "expected": "iː",
+      "actual": "iː",
+      "distance": 0.0,
+      "confidence": 0.892,
+      "gop": -0.11,
+      "score": 99.1,
+      "match": true
+    },
+    {
+      "expected": "k",
+      "actual": "k",
+      "distance": 0.0,
+      "confidence": 0.969,
+      "gop": -0.03,
+      "score": 99.7,
+      "match": true
+    },
+    {
+      "expected": "æ",
+      "actual": "æ",
+      "distance": 0.0,
+      "confidence": 0.76,
+      "gop": -0.27,
+      "score": 97.8,
+      "match": true
+    },
+    {
+      "expected": "n",
+      "actual": "n",
+      "distance": 0.0,
+      "confidence": 0.9,
+      "gop": -0.06,
+      "score": 99.5,
+      "match": true
+    },
+    {
+      "expected": "s",
+      "actual": "s",
+      "distance": 0.0,
+      "confidence": 0.976,
+      "gop": -0.1,
+      "score": 99.2,
+      "match": true
+    },
+    {
+      "expected": "k",
+      "actual": "k",
+      "distance": 0.0,
+      "confidence": 0.979,
+      "gop": -0.02,
+      "score": 99.8,
+      "match": true
+    },
+    {
+      "expected": "uː",
+      "actual": "uː",
+      "distance": 0.0,
+      "confidence": 0.891,
+      "gop": -0.12,
+      "score": 99.1,
+      "match": true
+    },
+    {
+      "expected": "p",
+      "actual": "p",
+      "distance": 0.0,
+      "confidence": 0.81,
+      "gop": -0.21,
+      "score": 98.3,
+      "match": true
+    },
+    {
+      "expected": "ð",
+      "actual": "ð",
+      "distance": 0.0,
+      "confidence": 0.868,
+      "gop": -0.14,
+      "score": 98.9,
+      "match": true
+    },
+    {
+      "expected": "iː",
+      "actual": "iː",
+      "distance": 0.0,
+      "confidence": 0.929,
+      "gop": -0.07,
+      "score": 99.4,
+      "match": true
+    },
+    {
+      "expected": "z",
+      "actual": "z",
+      "distance": 0.0,
+      "confidence": 0.906,
+      "gop": -0.1,
+      "score": 99.2,
+      "match": true
+    },
+    {
+      "expected": "θ",
+      "actual": "θ",
+      "distance": 0.0,
+      "confidence": 0.837,
+      "gop": -0.18,
+      "score": 98.6,
+      "match": true
+    },
+    {
+      "expected": "ɪ",
+      "actual": "ɪ",
+      "distance": 0.0,
+      "confidence": 0.953,
+      "gop": -5.17,
+      "score": 60.0,
+      "match": true
+    },
+    {
+      "expected": "ŋ",
+      "actual": "ŋ",
+      "distance": 0.0,
+      "confidence": 0.962,
+      "gop": -0.08,
+      "score": 99.3,
+      "match": true
+    },
+    {
+      "expected": "z",
+      "actual": "z",
+      "distance": 0.0,
+      "confidence": 0.573,
+      "gop": -0.32,
+      "score": 97.4,
+      "match": true
+    },
+    {
+      "expected": "ɪ",
+      "actual": "ɪ",
+      "distance": 0.0,
+      "confidence": 0.968,
+      "gop": -5.85,
+      "score": 60.0,
+      "match": true
+    },
+    {
+      "expected": "n",
+      "actual": "n",
+      "distance": 0.0,
+      "confidence": 0.906,
+      "gop": -0.05,
+      "score": 99.6,
+      "match": true
+    },
+    {
+      "expected": "t",
+      "actual": "t",
+      "distance": 0.0,
+      "confidence": 0.964,
+      "gop": -0.04,
+      "score": 99.7,
+      "match": true
+    },
+    {
+      "expected": "uː",
+      "actual": "uː",
+      "distance": 0.0,
+      "confidence": 0.52,
+      "gop": -0.65,
+      "score": 94.8,
+      "match": true
+    },
+    {
+      "expected": "θ",
+      "actual": "θ",
+      "distance": 0.0,
+      "confidence": 0.923,
+      "gop": -0.08,
+      "score": 99.4,
+      "match": true
+    },
+    {
+      "expected": "ɹ",
+      "actual": "ɹ",
+      "distance": 0.0,
+      "confidence": 0.961,
+      "gop": -5.16,
+      "score": 60.0,
+      "match": true
+    },
+    {
+      "expected": "iː",
+      "actual": "iː",
+      "distance": 0.0,
+      "confidence": 0.882,
+      "gop": -0.13,
+      "score": 99.0,
+      "match": true
+    },
+    {
+      "expected": "ɹ",
+      "actual": "ɹ",
+      "distance": 0.0,
+      "confidence": 0.928,
+      "gop": -4.68,
+      "score": 62.5,
+      "match": true
+    },
+    {
+      "expected": "ɛ",
+      "actual": "ɛ",
+      "distance": 0.0,
+      "confidence": 0.912,
+      "gop": -0.09,
+      "score": 99.3,
+      "match": true
+    },
+    {
+      "expected": "d",
+      "actual": "d",
+      "distance": 0.0,
+      "confidence": 0.988,
+      "gop": -0.01,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "b",
+      "actual": "b",
+      "distance": 0.0,
+      "confidence": 0.98,
+      "gop": -0.02,
+      "score": 99.8,
+      "match": true
+    },
+    {
+      "expected": "æ",
+      "actual": "æ",
+      "distance": 0.0,
+      "confidence": 0.821,
+      "gop": -0.2,
+      "score": 98.4,
+      "match": true
+    },
+    {
+      "expected": "ɡ",
+      "actual": "ɡ",
+      "distance": 0.0,
+      "confidence": 0.875,
+      "gop": -0.13,
+      "score": 98.9,
+      "match": true
+    },
+    {
+      "expected": "z",
+      "actual": "z",
+      "distance": 0.0,
+      "confidence": 0.946,
+      "gop": -0.06,
+      "score": 99.6,
+      "match": true
+    },
+    {
+      "expected": "ʌ",
+      "actual": "æ",
+      "distance": 0.3,
+      "confidence": 0.948,
+      "gop": -6.16,
+      "score": 42.0,
+      "match": false
+    },
+    {
+      "expected": "n",
+      "actual": "n",
+      "distance": 0.0,
+      "confidence": 0.962,
+      "gop": -0.04,
+      "score": 99.6,
+      "match": true
+    },
+    {
+      "expected": "d",
+      "actual": "d",
+      "distance": 0.0,
+      "confidence": 0.981,
+      "gop": -0.02,
+      "score": 99.8,
+      "match": true
+    },
+    {
+      "expected": "w",
+      "actual": "v",
+      "distance": 1.0,
+      "confidence": 0.585,
+      "gop": -1.42,
+      "score": 28.6,
+      "match": false
+    },
+    {
+      "expected": "iː",
+      "actual": "iː",
+      "distance": 0.0,
+      "confidence": 0.74,
+      "gop": -0.3,
+      "score": 97.6,
+      "match": true
+    },
+    {
+      "expected": "w",
+      "actual": "v",
+      "distance": 1.0,
+      "confidence": 0.638,
+      "gop": -1.82,
+      "score": 25.5,
+      "match": false
+    },
+    {
+      "expected": "ɪ",
+      "actual": "ɪ",
+      "distance": 0.0,
+      "confidence": 0.815,
+      "gop": -6.45,
+      "score": 60.0,
+      "match": true
+    },
+    {
+      "expected": "l",
+      "actual": "l",
+      "distance": 0.0,
+      "confidence": 0.61,
+      "gop": -0.39,
+      "score": 96.9,
+      "match": true
+    },
+    {
+      "expected": "ɡ",
+      "actual": "ɡ",
+      "distance": 0.0,
+      "confidence": 0.98,
+      "gop": -0.02,
+      "score": 99.8,
+      "match": true
+    },
+    {
+      "expected": "oʊ",
+      "actual": "oʊ",
+      "distance": 0.0,
+      "confidence": 0.717,
+      "gop": -4.61,
+      "score": 63.2,
+      "match": true
+    },
+    {
+      "expected": "m",
+      "actual": "m",
+      "distance": 0.0,
+      "confidence": 0.994,
+      "gop": -0.01,
+      "score": 100.0,
+      "match": true
+    },
+    {
+      "expected": "iː",
+      "actual": "iː",
+      "distance": 0.0,
+      "confidence": 0.853,
+      "gop": -0.16,
+      "score": 98.7,
+      "match": true
+    },
+    {
+      "expected": "t",
+      "actual": "iː",
+      "distance": 1.0,
+      "confidence": 0.853,
+      "gop": -11.97,
+      "score": 0.0,
+      "match": false
+    },
+    {
+      "expected": "h",
+      "actual": "ɾ",
+      "distance": 1.0,
+      "confidence": 0.694,
+      "gop": -8.05,
+      "score": 0.0,
+      "match": false
+    },
+    {
+      "expected": "ɝ",
+      "actual": "ɚ",
+      "distance": 0.0,
+      "confidence": 0.663,
+      "gop": -0.41,
+      "score": 96.7,
+      "match": true
+    },
+    {
+      "expected": "w",
+      "actual": "v",
+      "distance": 1.0,
+      "confidence": 0.989,
+      "gop": -7.94,
+      "score": 0.0,
+      "match": false
+    },
+    {
+      "expected": "ɛ",
+      "actual": "ɛ",
+      "distance": 0.0,
+      "confidence": 0.899,
+      "gop": -0.11,
+      "score": 99.2,
+      "match": true
+    },
+    {
+      "expected": "n",
+      "actual": "n",
+      "distance": 0.0,
+      "confidence": 0.725,
+      "gop": -0.16,
+      "score": 98.7,
+      "match": true
+    },
+    {
+      "expected": "z",
+      "actual": "z",
+      "distance": 0.0,
+      "confidence": 0.636,
+      "gop": -0.45,
+      "score": 96.4,
+      "match": true
+    },
+    {
+      "expected": "d",
+      "actual": "d",
+      "distance": 0.0,
+      "confidence": 0.969,
+      "gop": -0.03,
+      "score": 99.7,
+      "match": true
+    },
+    {
+      "expected": "iː",
+      "actual": "eɪ",
+      "distance": 0.3,
+      "confidence": 0.749,
+      "gop": -5.37,
+      "score": 42.0,
+      "match": false
+    },
+    {
+      "expected": "æ",
+      "actual": "æ",
+      "distance": 0.0,
+      "confidence": 0.937,
+      "gop": -0.07,
+      "score": 99.5,
+      "match": true
+    },
+    {
+      "expected": "t",
+      "actual": "t",
+      "distance": 0.0,
+      "confidence": 0.668,
+      "gop": -0.4,
+      "score": 96.8,
+      "match": true
+    },
+    {
+      "expected": "ð",
+      "actual": "ð",
+      "distance": 0.0,
+      "confidence": 0.857,
+      "gop": -0.15,
+      "score": 98.8,
+      "match": true
+    },
+    {
+      "expected": "ʌ",
+      "actual": "ə",
+      "distance": 0.0,
+      "confidence": 0.877,
+      "gop": -0.13,
+      "score": 99.0,
+      "match": true
+    },
+    {
+      "expected": "t",
+      "actual": "t",
+      "distance": 0.0,
+      "confidence": 0.945,
+      "gop": -0.06,
+      "score": 99.5,
+      "match": true
+    },
+    {
+      "expected": "ɹ",
+      "actual": "ɹ",
+      "distance": 0.0,
+      "confidence": 0.933,
+      "gop": -4.7,
+      "score": 62.4,
+      "match": true
+    },
+    {
+      "expected": "eɪ",
+      "actual": "eɪ",
+      "distance": 0.0,
+      "confidence": 0.936,
+      "gop": -0.07,
+      "score": 99.5,
+      "match": true
+    },
+    {
+      "expected": "n",
+      "actual": "n",
+      "distance": 0.0,
+      "confidence": 0.99,
+      "gop": -0.13,
+      "score": 99.0,
+      "match": true
+    },
+    {
+      "expected": "s",
+      "actual": "s",
+      "distance": 0.0,
+      "confidence": 0.969,
+      "gop": -0.03,
+      "score": 99.7,
+      "match": true
+    },
+    {
+      "expected": "t",
+      "actual": "t",
+      "distance": 0.0,
+      "confidence": 0.993,
+      "gop": -0.01,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "eɪ",
+      "actual": "eɪ",
+      "distance": 0.0,
+      "confidence": 0.894,
+      "gop": -0.11,
+      "score": 99.1,
+      "match": true
+    },
+    {
+      "expected": "ʃ",
+      "actual": "ʃ",
+      "distance": 0.0,
+      "confidence": 0.941,
+      "gop": -0.06,
+      "score": 99.5,
+      "match": true
+    },
+    {
+      "expected": "ʌ",
+      "actual": "ə",
+      "distance": 0.0,
+      "confidence": 0.984,
+      "gop": -0.02,
+      "score": 99.9,
+      "match": true
+    },
+    {
+      "expected": "n",
+      "actual": "n",
+      "distance": 0.0,
+      "confidence": 0.817,
+      "gop": -0.12,
+      "score": 99.0,
+      "match": true
+    }
+  ],
+  "error_patterns": [
+    {
+      "pattern": "w → v",
+      "count": 5,
+      "readable": "w → v"
+    },
+    {
+      "pattern": "z → s",
+      "count": 3,
+      "readable": "z → s"
+    },
+    {
+      "pattern": "ʌ → æ",
+      "count": 3,
+      "readable": "uh → a"
+    },
+    {
+      "pattern": "ɑ → ɔ",
+      "count": 2,
+      "readable": "ah → aw"
+    },
+    {
+      "pattern": "ɡ → k",
+      "count": 2,
+      "readable": "g → k"
+    },
+    {
+      "pattern": "uː → ʊ",
+      "count": 1,
+      "readable": "oo-long → oo"
+    },
+    {
+      "pattern": "ɔ → oʊ",
+      "count": 1,
+      "readable": "aw → oh"
+    },
+    {
+      "pattern": "ɹ → oʊ",
+      "count": 1,
+      "readable": "r → oh"
+    },
+    {
+      "pattern": "p → k",
+      "count": 1,
+      "readable": "p → k"
+    },
+    {
+      "pattern": "v → f",
+      "count": 1,
+      "readable": "v → f"
+    },
+    {
+      "pattern": "s → ʃ",
+      "count": 1,
+      "readable": "s → sh"
+    },
+    {
+      "pattern": "b → p",
+      "count": 1,
+      "readable": "b → p"
+    },
+    {
+      "pattern": "ʌ → ɔː",
+      "count": 1,
+      "readable": "uh → ɔː"
+    },
+    {
+      "pattern": "v → ɔː",
+      "count": 1,
+      "readable": "v → ɔː"
+    },
+    {
+      "pattern": "d → n",
+      "count": 1,
+      "readable": "d → n"
+    },
+    {
+      "pattern": "s → v",
+      "count": 1,
+      "readable": "s → v"
+    },
+    {
+      "pattern": "ɔ → ɔːɹ",
+      "count": 1,
+      "readable": "aw → ɔːɹ"
+    },
+    {
+      "pattern": "æ → ɑː",
+      "count": 1,
+      "readable": "a → ɑː"
+    },
+    {
+      "pattern": "ʌ → d",
+      "count": 1,
+      "readable": "uh → d"
+    },
+    {
+      "pattern": "ɔɪ → ɔːɹ",
+      "count": 1,
+      "readable": "oy → ɔːɹ"
+    }
+  ],
+  "reference_text": "Please call Stella. Ask her to bring these things with her from the store. Six spoons of fresh snow peas, five thick slabs of blue cheese and maybe a snack for her brother Bob. We also need a small plastic snake and a big toy frog for the kids. She can scoop these things into three red bags and we will go meet her Wednesday at the train station."
+}

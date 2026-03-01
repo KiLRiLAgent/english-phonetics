@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture Transcription Viewer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0f0f1a; color: #e0e0e0; padding: 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { color: #4ecca3; margin-bottom: 20px; }
+        
+        .status {
+            background: #1a1a2e; padding: 20px; border-radius: 12px;
+            margin-bottom: 25px; border-left: 4px solid #4ecca3;
+        }
+        .status h2 { color: #4ecca3; font-size: 18px; margin-bottom: 10px; }
+        .status p { color: #888; margin: 5px 0; }
+        
+        .progress {
+            width: 100%; height: 8px; background: #222;
+            border-radius: 4px; overflow: hidden; margin: 15px 0;
+        }
+        .progress-bar {
+            height: 100%; background: linear-gradient(90deg, #4ecca3, #5dade2);
+            transition: width 0.3s;
+        }
+        
+        .transcript {
+            background: #1a1a2e; padding: 25px; border-radius: 12px;
+            margin-bottom: 25px; line-height: 1.8; white-space: pre-wrap;
+        }
+        
+        .segment {
+            padding: 15px; margin: 10px 0; background: #0f0f1a;
+            border-radius: 8px; border-left: 3px solid #4ecca3;
+        }
+        .segment .time {
+            color: #888; font-size: 12px; margin-bottom: 5px;
+        }
+        .segment .text {
+            color: #e0e0e0; line-height: 1.6;
+        }
+        
+        .error {
+            background: #2a1a1a; padding: 12px; border-radius: 6px;
+            margin: 8px 0; border-left: 3px solid #e94560;
+        }
+        .error .type { color: #e94560; font-weight: bold; font-size: 12px; }
+        .error .message { color: #ccc; margin-top: 5px; }
+        .error .suggestion { color: #4ecca3; margin-top: 5px; }
+        
+        button {
+            background: #4ecca3; color: #0f0f1a; border: none;
+            padding: 12px 24px; border-radius: 8px; cursor: pointer;
+            font-weight: bold; margin: 5px;
+        }
+        button:hover { background: #5dade2; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📝 Lecture Transcription Viewer</h1>
+        
+        <div class="status">
+            <h2>Status</h2>
+            <p id="statusText">Checking transcription progress...</p>
+            <div class="progress">
+                <div class="progress-bar" id="progressBar" style="width: 0%"></div>
+            </div>
+            <p id="timeInfo" style="color: #ccc; font-size: 14px;"></p>
+        </div>
+        
+        <div>
+            <button onclick="refresh()">🔄 Refresh</button>
+            <button onclick="downloadTranscript()">💾 Download Transcript</button>
+            <button onclick="analyzeGrammar()">🔍 Analyze Grammar</button>
+        </div>
+        
+        <div id="content"></div>
+    </div>
+    
+    <script>
+        let latestFile = null;
+        
+        async function refresh() {
+            try {
+                // Check log file
+                const logResp = await fetch('/transcribe.log');
+                const logText = await logResp.text();
+                
+                document.getElementById('statusText').textContent = 
+                    logText.includes('✅') ? 'Transcription complete!' : 'Transcribing...';
+                
+                // Check for transcript files
+                const filesResp = await fetch('/api/transcriptions');
+                const files = await filesResp.json();
+                
+                if (files.length > 0) {
+                    latestFile = files[0];
+                    displayTranscript(latestFile);
+                }
+            } catch (err) {
+                console.error('Error refreshing:', err);
+            }
+        }
+        
+        async function displayTranscript(filename) {
+            const resp = await fetch(`/api/transcript/${filename}`);
+            const data = await resp.json();
+            
+            const content = document.getElementById('content');
+            
+            // Display segments
+            let html = '<h2 style="color: #4ecca3; margin: 25px 0 15px;">Transcript Segments</h2>';
+            
+            if (data.segments) {
+                data.segments.forEach(seg => {
+                    const startTime = formatTime(seg.start);
+                    const endTime = formatTime(seg.end);
+                    
+                    html += `
+                        <div class="segment">
+                            <div class="time">${startTime} → ${endTime}</div>
+                            <div class="text">${seg.text}</div>
+                        </div>
+                    `;
+                });
+            } else {
+                html += `<div class="transcript">${data.text}</div>`;
+            }
+            
+            content.innerHTML = html;
+            
+            // Update time info
+            if (data.duration) {
+                document.getElementById('timeInfo').textContent = 
+                    `Duration: ${formatTime(data.duration)} | Segments: ${data.segments?.length || 0}`;
+            }
+        }
+        
+        function formatTime(seconds) {
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${mins}:${secs.toString().padStart(2, '0')}`;
+        }
+        
+        async function downloadTranscript() {
+            if (!latestFile) {
+                alert('No transcript available yet');
+                return;
+            }
+            
+            const resp = await fetch(`/api/transcript/${latestFile}`);
+            const data = await resp.json();
+            
+            const blob = new Blob([data.text], { type: 'text/plain' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'lecture_transcript.txt';
+            a.click();
+        }
+        
+        async function analyzeGrammar() {
+            alert('Grammar analysis will be implemented using OpenAI API');
+        }
+        
+        // Auto-refresh every 10 seconds
+        setInterval(refresh, 10000);
+        refresh();
+    </script>
+</body>
+</html>

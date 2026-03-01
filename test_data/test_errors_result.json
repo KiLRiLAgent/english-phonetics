@@ -1,0 +1,236 @@
+{
+  "transcript": "I goes to the store yesterday. She don't like apples. \nWe has a meeting tomorrow. He have a nice car. \nI goes shopping every week.",
+  "full_transcript": "I goes to the store yesterday. She don't like apples. \nWe has a meeting tomorrow. He have a nice car. \nI goes shopping every week.",
+  "reference": null,
+  "speakers": {
+    "total": 1,
+    "segments": [],
+    "target_speaker": null
+  },
+  "grammar": {
+    "score": 60,
+    "total_errors": 4,
+    "errors": [
+      {
+        "timestamp": 0.0,
+        "message": "The pronoun \u2018I\u2019 must be used with a non-third-person form of a verb.",
+        "offset": 2,
+        "length": 4,
+        "replacements": [
+          "go"
+        ],
+        "category": "GRAMMAR",
+        "rule": "NON3PRS_VERB",
+        "severity": "error",
+        "context": "I goes to the store yesterday. She don't like ...",
+        "incorrect_text": "goes",
+        "cambridge": {
+          "title": "Subject-Verb Agreement: I/You/We/They + base form",
+          "explanation": "Use the base form of the verb (without -s) with I, you, we, and they.",
+          "examples": [
+            "\u2705 I go to school",
+            "\u2705 They go to school",
+            "\u274c I goes to school"
+          ],
+          "unit": "Unit 5-6 (Present Simple)",
+          "book": "English Grammar in Use (Intermediate)",
+          "level": "Elementary"
+        }
+      },
+      {
+        "timestamp": 2.5,
+        "message": "The pronoun \u2018She\u2019 is usually used with a third-person or a past tense verb.",
+        "offset": 35,
+        "length": 2,
+        "replacements": [
+          "does",
+          "did"
+        ],
+        "category": "GRAMMAR",
+        "rule": "HE_VERB_AGR",
+        "severity": "error",
+        "context": "I goes to the store yesterday. She don't like apples.  We has a meeting tomor...",
+        "incorrect_text": "do",
+        "cambridge": {
+          "title": "Subject-Verb Agreement: He/She/It + verb-s",
+          "explanation": "Add -s/-es to verbs in Present Simple with he, she, it.",
+          "examples": [
+            "\u2705 He goes to school",
+            "\u2705 She likes apples",
+            "\u274c He go to school",
+            "\u274c She don't like apples \u2192 She doesn't like apples"
+          ],
+          "unit": "Unit 5-6 (Present Simple)",
+          "book": "English Grammar in Use (Intermediate)",
+          "level": "Elementary"
+        }
+      },
+      {
+        "timestamp": 4.5,
+        "message": "The pronoun \u2018We\u2019 must be used with a non-third-person form of a verb.",
+        "offset": 58,
+        "length": 3,
+        "replacements": [
+          "have"
+        ],
+        "category": "GRAMMAR",
+        "rule": "NON3PRS_VERB",
+        "severity": "error",
+        "context": "...e yesterday. She don't like apples.  We has a meeting tomorrow. He have a nice car....",
+        "incorrect_text": "has",
+        "cambridge": {
+          "title": "Subject-Verb Agreement: I/You/We/They + base form",
+          "explanation": "Use the base form of the verb (without -s) with I, you, we, and they.",
+          "examples": [
+            "\u2705 I go to school",
+            "\u2705 They go to school",
+            "\u274c I goes to school"
+          ],
+          "unit": "Unit 5-6 (Present Simple)",
+          "book": "English Grammar in Use (Intermediate)",
+          "level": "Elementary"
+        }
+      },
+      {
+        "timestamp": 7.0,
+        "message": "The pronoun \u2018He\u2019 is usually used with a third-person or a past tense verb.",
+        "offset": 85,
+        "length": 4,
+        "replacements": [
+          "has",
+          "had"
+        ],
+        "category": "GRAMMAR",
+        "rule": "HE_VERB_AGR",
+        "severity": "error",
+        "context": "... apples.  We has a meeting tomorrow. He have a nice car.  I goes shopping every week...",
+        "incorrect_text": "have",
+        "cambridge": {
+          "title": "Subject-Verb Agreement: He/She/It + verb-s",
+          "explanation": "Add -s/-es to verbs in Present Simple with he, she, it.",
+          "examples": [
+            "\u2705 He goes to school",
+            "\u2705 She likes apples",
+            "\u274c He go to school",
+            "\u274c She don't like apples \u2192 She doesn't like apples"
+          ],
+          "unit": "Unit 5-6 (Present Simple)",
+          "book": "English Grammar in Use (Intermediate)",
+          "level": "Elementary"
+        }
+      }
+    ],
+    "categories": {
+      "GRAMMAR": 4
+    }
+  },
+  "fluency": {
+    "wpm": 120,
+    "duration": 10.0,
+    "word_count": 25,
+    "avg_pause": 0.3,
+    "pause_count": 5,
+    "pauses": [
+      0.2,
+      0.3,
+      0.4,
+      0.2,
+      0.3
+    ]
+  },
+  "pronunciation": {
+    "wer": 0,
+    "word_accuracy": 100,
+    "mispronounced_words": [],
+    "note": "No reference text provided"
+  },
+  "overall_score": 84,
+  "summary": {
+    "duration": 10.0,
+    "speaking_time": 10.0,
+    "speaking_percentage": 100
+  },
+  "top_errors": [
+    {
+      "timestamp": 0.0,
+      "message": "The pronoun \u2018I\u2019 must be used with a non-third-person form of a verb.",
+      "offset": 2,
+      "length": 4,
+      "replacements": [
+        "go"
+      ],
+      "category": "GRAMMAR",
+      "rule": "NON3PRS_VERB",
+      "severity": "error",
+      "context": "I goes to the store yesterday. She don't like ...",
+      "incorrect_text": "goes",
+      "cambridge": {
+        "title": "Subject-Verb Agreement: I/You/We/They + base form",
+        "explanation": "Use the base form of the verb (without -s) with I, you, we, and they.",
+        "examples": [
+          "\u2705 I go to school",
+          "\u2705 They go to school",
+          "\u274c I goes to school"
+        ],
+        "unit": "Unit 5-6 (Present Simple)",
+        "book": "English Grammar in Use (Intermediate)",
+        "level": "Elementary"
+      },
+      "occurrences": 2,
+      "all_examples": [
+        {
+          "timestamp": 0.0,
+          "incorrect_text": "goes",
+          "context": "I goes to the store yesterday. She don't like ..."
+        },
+        {
+          "timestamp": 4.5,
+          "incorrect_text": "has",
+          "context": "...e yesterday. She don't like apples.  We has a meeting tomorrow. He have a nice car...."
+        }
+      ]
+    },
+    {
+      "timestamp": 2.5,
+      "message": "The pronoun \u2018She\u2019 is usually used with a third-person or a past tense verb.",
+      "offset": 35,
+      "length": 2,
+      "replacements": [
+        "does",
+        "did"
+      ],
+      "category": "GRAMMAR",
+      "rule": "HE_VERB_AGR",
+      "severity": "error",
+      "context": "I goes to the store yesterday. She don't like apples.  We has a meeting tomor...",
+      "incorrect_text": "do",
+      "cambridge": {
+        "title": "Subject-Verb Agreement: He/She/It + verb-s",
+        "explanation": "Add -s/-es to verbs in Present Simple with he, she, it.",
+        "examples": [
+          "\u2705 He goes to school",
+          "\u2705 She likes apples",
+          "\u274c He go to school",
+          "\u274c She don't like apples \u2192 She doesn't like apples"
+        ],
+        "unit": "Unit 5-6 (Present Simple)",
+        "book": "English Grammar in Use (Intermediate)",
+        "level": "Elementary"
+      },
+      "occurrences": 2,
+      "all_examples": [
+        {
+          "timestamp": 2.5,
+          "incorrect_text": "do",
+          "context": "I goes to the store yesterday. She don't like apples.  We has a meeting tomor..."
+        },
+        {
+          "timestamp": 7.0,
+          "incorrect_text": "have",
+          "context": "... apples.  We has a meeting tomorrow. He have a nice car.  I goes shopping every week..."
+        }
+      ]
+    }
+  ],
+  "analyzed_at": "2026-02-19T15:17:57.996914"
+}

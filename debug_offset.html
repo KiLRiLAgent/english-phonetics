@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Debug Audio Offset</title>
+    <style>
+        body {
+            font-family: monospace;
+            padding: 20px;
+            background: #1a1a2e;
+            color: #fff;
+        }
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            margin-left: 280px;
+        }
+        
+        /* Navigation Menu */
+        .nav-menu {
+            position: fixed; top: 20px; left: 20px;
+            background: rgba(26, 26, 46, 0.95); padding: 20px; border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3); backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1); z-index: 1000; min-width: 200px;
+        }
+        .nav-menu h3 {
+            margin: 0 0 15px 0; font-size: 1.1em; color: #64ffda;
+            border-bottom: 2px solid rgba(100, 255, 218, 0.3); padding-bottom: 10px;
+        }
+        .nav-menu a {
+            display: block; color: #e0e0e0; text-decoration: none;
+            padding: 10px 15px; margin: 5px 0; border-radius: 8px;
+            transition: all 0.3s; font-size: 0.95em;
+        }
+        .nav-menu a:hover {
+            background: rgba(102, 126, 234, 0.3); color: #fff; transform: translateX(5px);
+        }
+        .nav-menu a.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white; font-weight: bold;
+        }
+        .nav-menu a::before { content: "→ "; opacity: 0; transition: opacity 0.3s; }
+        .nav-menu a:hover::before { opacity: 1; }
+        h1 { color: #64ffda; }
+        audio {
+            width: 100%;
+            margin: 20px 0;
+        }
+        .test-section {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 14px;
+        }
+        .btn:hover {
+            background: #764ba2;
+        }
+        .info {
+            background: rgba(100, 255, 218, 0.1);
+            border-left: 4px solid #64ffda;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .current-word {
+            font-size: 24px;
+            color: #64ffda;
+            margin: 15px 0;
+            padding: 15px;
+            background: rgba(100, 255, 218, 0.1);
+            border-radius: 10px;
+        }
+        .words-around {
+            background: rgba(255,255,255,0.05);
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        .word-item {
+            padding: 5px;
+            margin: 2px 0;
+        }
+        .word-item.highlight {
+            background: rgba(102, 126, 234, 0.3);
+            border-left: 3px solid #667eea;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-menu">
+        <h3>📚 Navigation</h3>
+        <a href="/transcript">📝 Transcript (Words)</a>
+        <a href="/transcript-sentences">📄 Transcript (Sentences)</a>
+        <a href="/grammar">🔍 Grammar Analysis</a>
+        <a href="/test-sync">🎯 Sync Test</a>
+        <a href="/debug-offset" class="active">🔧 Debug Offset</a>
+    </nav>
+
+    <div class="content">
+    <h1>🔍 Audio Offset Debug Tool</h1>
+    <p>This tool helps identify timestamp offset issues</p>
+    
+    <audio id="audio" controls preload="auto">
+        <source src="/audio/lecture_audio.mp3" type="audio/mpeg">
+    </audio>
+    
+    <div class="current-word" id="currentWord">
+        Current time: 0:00 | No word playing
+    </div>
+    
+    <div class="test-section">
+        <h3>🎯 Quick Tests</h3>
+        <p>Click these buttons to jump to specific timestamps</p>
+        <button class="btn" onclick="jumpTo(0)">Start (0:00)</button>
+        <button class="btn" onclick="jumpTo(8.16)">First Word "So" (0:08)</button>
+        <button class="btn" onclick="jumpTo(10.0)">10 seconds</button>
+        <button class="btn" onclick="jumpTo(20.0)">20 seconds</button>
+        <button class="btn" onclick="jumpTo(30.0)">30 seconds</button>
+    </div>
+    
+    <div class="test-section">
+        <h3>📝 Words Around Current Time</h3>
+        <div class="words-around" id="wordsAround">
+            Loading...
+        </div>
+    </div>
+    
+    <div class="info">
+        <strong>How to test:</strong><br>
+        1. Click "First Word 'So' (0:08)" - you should hear "So yeah hello"<br>
+        2. If you hear something else, note what you actually hear<br>
+        3. Check the "Words Around Current Time" list - is the highlighted word correct?<br>
+        4. If timestamps are off, we'll see the offset here
+    </div>
+    
+    <script>
+        const audio = document.getElementById('audio');
+        let allWords = [];
+        
+        // Load words
+        fetch('/api/transcript-words')
+            .then(r => r.json())
+            .then(words => {
+                allWords = words;
+                console.log('Loaded', words.length, 'words');
+                console.log('First word:', words[0]);
+                updateWordsDisplay();
+            });
+        
+        function formatTime(seconds) {
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            const ms = Math.floor((seconds % 1) * 10);
+            return `${mins}:${secs.toString().padStart(2, '0')}.${ms}`;
+        }
+        
+        function jumpTo(time) {
+            console.log('Jumping to', time, 'seconds');
+            audio.currentTime = time;
+            audio.play().catch(e => console.error(e));
+        }
+        
+        function updateWordsDisplay() {
+            const currentTime = audio.currentTime;
+            
+            // Find current word
+            let currentWord = null;
+            let currentIndex = -1;
+            
+            for (let i = 0; i < allWords.length; i++) {
+                const w = allWords[i];
+                if (currentTime >= w.start && currentTime <= w.end) {
+                    currentWord = w;
+                    currentIndex = i;
+                    break;
+                }
+            }
+            
+            // Update current word display
+            const currentWordEl = document.getElementById('currentWord');
+            if (currentWord) {
+                currentWordEl.innerHTML = `
+                    Current time: <strong>${formatTime(currentTime)}</strong><br>
+                    Playing word [${currentIndex}]: "<strong>${currentWord.word}</strong>"<br>
+                    Word timestamp: ${formatTime(currentWord.start)} - ${formatTime(currentWord.end)}
+                `;
+            } else {
+                currentWordEl.innerHTML = `
+                    Current time: <strong>${formatTime(currentTime)}</strong><br>
+                    No word at this timestamp (between words or before/after speech)
+                `;
+            }
+            
+            // Show words around current time (±5 seconds)
+            const wordsAroundEl = document.getElementById('wordsAround');
+            const timeWindow = 5; // seconds
+            const wordsInRange = allWords.filter(w => 
+                Math.abs(w.start - currentTime) < timeWindow
+            );
+            
+            wordsAroundEl.innerHTML = wordsInRange.map((w, i) => {
+                const isCurrent = currentWord && w.start === currentWord.start;
+                const className = isCurrent ? 'word-item highlight' : 'word-item';
+                return `<div class="${className}">[${allWords.indexOf(w)}] ${formatTime(w.start)}: "${w.word}"</div>`;
+            }).join('');
+        }
+        
+        // Update every 100ms
+        audio.addEventListener('timeupdate', updateWordsDisplay);
+        audio.addEventListener('seeked', updateWordsDisplay);
+        
+        // Initial update
+        setTimeout(updateWordsDisplay, 500);
+    </script>
+    </div>
+</body>
+</html>

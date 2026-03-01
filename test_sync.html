@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Audio Sync Test</title>
+    <style>
+        body {
+            font-family: monospace;
+            padding: 20px;
+            background: #1a1a2e;
+            color: #fff;
+        }
+        .content {
+            margin-left: 260px;
+        }
+        
+        /* Navigation Menu */
+        .nav-menu {
+            position: fixed; top: 20px; left: 20px;
+            background: rgba(26, 26, 46, 0.95); padding: 20px; border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3); backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1); z-index: 1000; min-width: 200px;
+        }
+        .nav-menu h3 {
+            margin: 0 0 15px 0; font-size: 1.1em; color: #64ffda;
+            border-bottom: 2px solid rgba(100, 255, 218, 0.3); padding-bottom: 10px;
+        }
+        .nav-menu a {
+            display: block; color: #e0e0e0; text-decoration: none;
+            padding: 10px 15px; margin: 5px 0; border-radius: 8px;
+            transition: all 0.3s; font-size: 0.95em;
+        }
+        .nav-menu a:hover {
+            background: rgba(102, 126, 234, 0.3); color: #fff; transform: translateX(5px);
+        }
+        .nav-menu a.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white; font-weight: bold;
+        }
+        .nav-menu a::before { content: "→ "; opacity: 0; transition: opacity 0.3s; }
+        .nav-menu a:hover::before { opacity: 1; }
+        audio {
+            width: 100%;
+            margin: 20px 0;
+        }
+        .word-test {
+            margin: 10px 0;
+            padding: 15px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+        }
+        .btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .btn:hover {
+            background: #764ba2;
+        }
+        .time {
+            color: #64ffda;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-menu">
+        <h3>📚 Navigation</h3>
+        <a href="/transcript">📝 Transcript (Words)</a>
+        <a href="/transcript-sentences">📄 Transcript (Sentences)</a>
+        <a href="/grammar">🔍 Grammar Analysis</a>
+        <a href="/test-sync" class="active">🎯 Sync Test</a>
+        <a href="/debug-offset">🔧 Debug Offset</a>
+    </nav>
+
+    <div class="content">
+        <h1>🎯 Audio Synchronization Test</h1>
+        <p>Click "Play" button to test if timestamp matches actual audio</p>
+        
+        <audio id="audio" controls preload="auto">
+            <source src="/audio/lecture_audio.mp3" type="audio/mpeg">
+        </audio>
+        
+        <div id="tests"></div>
+    </div>
+    
+    <script>
+        const audio = document.getElementById('audio');
+        const tests = document.getElementById('tests');
+        
+        // Test words from 3:35-3:50 range (NEW ACCURATE TIMESTAMPS)
+        const testWords = [
+            { time: 215.98, text: "why", index: 430 },
+            { time: 216.24, text: "people", index: 431 },
+            { time: 216.48, text: "buy?", index: 432 },
+            { time: 224.60, text: "We", index: 454 },
+            { time: 224.74, text: "can", index: 455 },
+            { time: 224.98, text: "increase", index: 456 },
+            { time: 225.44, text: "conversions", index: 457 },
+            { time: 217.32, text: "people", index: 434 },
+        ];
+        
+        function formatTime(seconds) {
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            const ms = Math.floor((seconds % 1) * 10);
+            return `${mins}:${secs.toString().padStart(2, '0')}.${ms}`;
+        }
+        
+        function playAt(time, wordText) {
+            console.log(`Playing at ${time}s: "${wordText}"`);
+            audio.currentTime = time;
+            audio.play().catch(e => console.error('Play failed:', e));
+        }
+        
+        // Create test buttons
+        testWords.forEach(word => {
+            const div = document.createElement('div');
+            div.className = 'word-test';
+            div.innerHTML = `
+                <button class="btn" onclick="playAt(${word.time}, '${word.text}')">▶ Play</button>
+                <span class="time">${formatTime(word.time)}</span> 
+                (${word.time.toFixed(2)}s) 
+                — Word [${word.index}]: "<strong>${word.text}</strong>"
+                <br><small>Should hear: "${word.text}" when playing at this time</small>
+            `;
+            tests.appendChild(div);
+        });
+        
+        // Monitor actual playback
+        audio.addEventListener('timeupdate', () => {
+            const current = audio.currentTime;
+            // Show which word should be playing now
+            testWords.forEach(w => {
+                if (Math.abs(current - w.time) < 0.5) {
+                    console.log(`Now at ${current.toFixed(2)}s - should hear: "${w.text}"`);
+                }
+            });
+        });
+    </script>
+    </div>
+</body>
+</html>

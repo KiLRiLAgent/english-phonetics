@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammar Analysis - Lecture Transcript</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #0f0f1a; color: #e0e0e0; padding: 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; margin-left: 280px; }
+        
+        /* Navigation Menu */
+        .nav-menu {
+            position: fixed; top: 20px; left: 20px;
+            background: rgba(26, 26, 46, 0.95); padding: 20px; border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3); backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1); z-index: 1000; min-width: 200px;
+        }
+        .nav-menu h3 {
+            margin: 0 0 15px 0; font-size: 1.1em; color: #4ecca3;
+            border-bottom: 2px solid rgba(78, 204, 163, 0.3); padding-bottom: 10px;
+        }
+        .nav-menu a {
+            display: block; color: #e0e0e0; text-decoration: none;
+            padding: 10px 15px; margin: 5px 0; border-radius: 8px;
+            transition: all 0.3s; font-size: 0.95em;
+        }
+        .nav-menu a:hover {
+            background: rgba(78, 204, 163, 0.3); color: #fff; transform: translateX(5px);
+        }
+        .nav-menu a.active {
+            background: linear-gradient(135deg, #4ecca3 0%, #5dade2 100%);
+            color: #0f0f1a; font-weight: bold;
+        }
+        .nav-menu a::before { content: "→ "; opacity: 0; transition: opacity 0.3s; }
+        .nav-menu a:hover::before { opacity: 1; }
+        h1 { color: #4ecca3; margin-bottom: 20px; }
+        
+        .audio-player {
+            background: #1a1a2e; padding: 20px; border-radius: 12px;
+            margin-bottom: 30px; position: sticky; top: 20px; z-index: 100;
+        }
+        .audio-player audio { width: 100%; }
+        .current-time { color: #4ecca3; margin-top: 10px; font-size: 14px; }
+        
+        .summary {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px; margin-bottom: 30px;
+        }
+        .stat-card {
+            background: #1a1a2e; padding: 20px; border-radius: 12px;
+            border-left: 4px solid #4ecca3; text-align: center;
+        }
+        .stat-card.grammar { border-left-color: #e94560; }
+        .stat-card.clarity { border-left-color: #5dade2; }
+        .stat-card.word-choice { border-left-color: #a78bfa; }
+        
+        .stat-card .number {
+            font-size: 36px; font-weight: bold; color: #4ecca3;
+        }
+        .stat-card.grammar .number { color: #e94560; }
+        .stat-card.clarity .number { color: #5dade2; }
+        .stat-card.word-choice .number { color: #a78bfa; }
+        
+        .stat-card .label { color: #888; font-size: 13px; margin-top: 8px; }
+        
+        .error-card {
+            background: #1a1a2e; padding: 20px; margin-bottom: 15px;
+            border-radius: 12px; border-left: 4px solid #4ecca3;
+            cursor: pointer; transition: all 0.2s;
+        }
+        .error-card:hover { background: #222238; transform: translateX(5px); }
+        .error-card.grammar { border-left-color: #e94560; }
+        .error-card.clarity { border-left-color: #5dade2; }
+        .error-card.word-choice { border-left-color: #a78bfa; }
+        
+        .error-header {
+            display: flex; justify-content: space-between; align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .error-type {
+            display: inline-block; padding: 4px 12px; border-radius: 20px;
+            font-size: 11px; font-weight: bold;
+            text-transform: uppercase;
+        }
+        .error-type.grammar { background: #e94560; color: #fff; }
+        .error-type.clarity { background: #5dade2; color: #0f0f1a; }
+        .error-type.word-choice { background: #a78bfa; color: #fff; }
+
+        .speaker-tag {
+            display: inline-block; padding: 3px 10px; border-radius: 20px;
+            font-size: 11px; font-weight: bold; margin-left: 8px;
+            border: 1px solid;
+        }
+        .speaker-tag.spk-0 { color: #64ffda; border-color: rgba(100,255,218,0.4); background: rgba(100,255,218,0.1); }
+        .speaker-tag.spk-1 { color: #ffd764; border-color: rgba(255,215,100,0.4); background: rgba(255,215,100,0.1); }
+        .speaker-tag.spk-2 { color: #ff64b4; border-color: rgba(255,100,180,0.4); background: rgba(255,100,180,0.1); }
+        .speaker-tag.spk-3 { color: #64b4ff; border-color: rgba(100,180,255,0.4); background: rgba(100,180,255,0.1); }
+
+        .speaker-filter { margin-bottom: 15px; display: none; }
+        .speaker-filter button {
+            background: rgba(255,255,255,0.1); color: #e0e0e0; border: 2px solid transparent;
+            padding: 6px 14px; border-radius: 6px; cursor: pointer; font-weight: bold;
+            font-size: 12px; margin-right: 8px; transition: all 0.2s;
+        }
+        .speaker-filter button:hover { background: rgba(255,255,255,0.2); }
+        .speaker-filter button.active { border-color: currentColor; background: rgba(255,255,255,0.15); }
+        .speaker-filter button.spk-all { color: #fff; }
+        .speaker-filter button.spk-0 { color: #64ffda; }
+        .speaker-filter button.spk-1 { color: #ffd764; }
+        .speaker-filter button.spk-2 { color: #ff64b4; }
+        .speaker-filter button.spk-3 { color: #64b4ff; }
+        
+        .play-button, .rule-button {
+            background: #4ecca3; color: #0f0f1a; border: none;
+            padding: 8px 16px; border-radius: 6px; cursor: pointer;
+            font-weight: bold; font-size: 12px; margin-left: 5px;
+        }
+        .play-button:hover, .rule-button:hover { background: #5dade2; }
+        .play-button:disabled, .rule-button:disabled { background: #666; cursor: not-allowed; }
+        
+        .timestamp {
+            color: #888; font-size: 12px; margin-left: 10px;
+        }
+        
+        .original-text {
+            background: #0f0f1a; padding: 12px; border-radius: 8px;
+            font-family: 'Courier New', monospace; color: #e94560;
+            margin: 10px 0; border-left: 3px solid #e94560;
+        }
+        .issue { color: #888; margin: 8px 0; }
+        .suggestion {
+            background: #0f0f1a; padding: 12px; border-radius: 8px;
+            color: #4ecca3; margin: 10px 0; border-left: 3px solid #4ecca3;
+        }
+        
+        /* Modal/Popup */
+        .modal-overlay {
+            display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.85); z-index: 1000;
+            justify-content: center; align-items: center;
+        }
+        .modal-overlay.active { display: flex; }
+        
+        .modal-content {
+            background: #1a1a2e; border-radius: 16px; padding: 30px;
+            max-width: 700px; width: 90%; max-height: 80vh; overflow-y: auto;
+            border: 2px solid #4ecca3;
+        }
+        .modal-close {
+            float: right; background: #e94560; color: #fff; border: none;
+            width: 32px; height: 32px; border-radius: 50%; cursor: pointer;
+            font-size: 20px; line-height: 1;
+        }
+        .modal-title {
+            color: #4ecca3; font-size: 24px; margin-bottom: 15px;
+            clear: both;
+        }
+        .rule-section {
+            margin: 20px 0;
+        }
+        .rule-section h3 {
+            color: #5dade2; font-size: 16px; margin-bottom: 8px;
+        }
+        .rule-section p, .rule-section li {
+            color: #ccc; line-height: 1.6; margin: 5px 0;
+        }
+        .rule-section ul {
+            margin-left: 20px;
+        }
+        .example {
+            background: #0f0f1a; padding: 10px; border-radius: 6px;
+            margin: 5px 0; font-family: 'Courier New', monospace;
+        }
+        .example.correct { border-left: 3px solid #4ecca3; color: #4ecca3; }
+        .example.incorrect { border-left: 3px solid #e94560; color: #e94560; }
+
+        .rule-source {
+            margin-top: 25px; padding: 15px; border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.1);
+            font-size: 14px; color: #aaa;
+        }
+        .rule-source.gpt {
+            background: rgba(167, 139, 250, 0.1);
+            border-color: rgba(167, 139, 250, 0.3);
+        }
+        .rule-source.textbook {
+            background: rgba(78, 204, 163, 0.1);
+            border-color: rgba(78, 204, 163, 0.3);
+        }
+        .rule-source strong { color: #e0e0e0; }
+        .rule-source .source-icon { font-size: 18px; margin-right: 6px; }
+        .rule-source .source-note { color: #888; font-size: 12px; margin-top: 5px; }
+        
+        button {
+            background: #4ecca3; color: #0f0f1a; border: none;
+            padding: 12px 24px; border-radius: 8px; cursor: pointer;
+            font-weight: bold; margin: 5px;
+        }
+        button:hover { background: #5dade2; }
+        
+        .filter-buttons { margin-bottom: 20px; }
+        .filter-buttons button { margin-right: 10px; }
+        .filter-buttons button.active { background: #5dade2; }
+    </style>
+</head>
+<body>
+    <nav class="nav-menu">
+        <h3>📚 Navigation</h3>
+        <a href="/transcript">📝 Transcript (Words)</a>
+        <a href="/transcript-sentences">📄 Transcript (Sentences)</a>
+        <a href="/grammar" class="active">🔍 Grammar Analysis</a>
+        <a href="/test-sync">🎯 Sync Test</a>
+        <a href="/debug-offset">🔧 Debug Offset</a>
+    </nav>
+
+    <div class="container">
+        <h1>📝 Grammar Analysis - Lecture Transcript</h1>
+        
+        <div class="audio-player">
+            <audio id="audioPlayer" controls preload="auto">
+                Your browser does not support audio.
+            </audio>
+            <div class="current-time" id="currentTime">Loading audio...</div>
+            <div id="loadingIndicator" style="color: #f0c040; font-size: 12px; margin-top: 5px;">
+                <span id="loadingText">⏳ Loading audio file...</span>
+                <span id="loadingProgress"></span>
+            </div>
+        </div>
+        
+        <div class="summary" id="summary"></div>
+        
+        <div class="filter-buttons">
+            <button class="active" onclick="filterErrors('all')">All Errors</button>
+            <button onclick="filterErrors('grammar')">Grammar</button>
+            <button onclick="filterErrors('clarity')">Clarity</button>
+            <button onclick="filterErrors('word-choice')">Word Choice</button>
+        </div>
+
+        <div class="speaker-filter" id="speakerFilter"></div>
+        
+        <div id="errors"></div>
+    </div>
+    
+    <!-- Grammar Rule Modal -->
+    <div class="modal-overlay" id="ruleModal" onclick="if(event.target===this)closeRuleModal()">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeRuleModal()">×</button>
+            <div id="ruleContent"></div>
+        </div>
+    </div>
+    
+    <script>
+        let allErrors = [];
+        let currentFilter = 'all';
+        let speakerFilter = 'all';
+        let grammarRules = {};
+        let diarizationData = null;
+        const audioPlayer = document.getElementById('audioPlayer');
+        
+        function formatTime(seconds) {
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${mins}:${secs.toString().padStart(2, '0')}`;
+        }
+        
+        function playAtTime(startTime) {
+            // Start 2 seconds before for context
+            const playTime = Math.max(0, startTime - 2);
+            
+            // Check if audio is ready
+            if (audioPlayer.readyState < 2) {
+                // Not enough data loaded
+                document.getElementById('currentTime').textContent = 
+                    'Waiting for audio to load...';
+                
+                // Wait for audio to be ready
+                audioPlayer.addEventListener('canplay', function playWhenReady() {
+                    audioPlayer.removeEventListener('canplay', playWhenReady);
+                    playAtTime(startTime);
+                }, { once: true });
+                
+                return;
+            }
+            
+            // Force pause first
+            audioPlayer.pause();
+            
+            // Set time
+            audioPlayer.currentTime = playTime;
+            
+            // Wait for seek to complete
+            audioPlayer.addEventListener('seeked', function onSeeked() {
+                audioPlayer.removeEventListener('seeked', onSeeked);
+                
+                // Now play
+                audioPlayer.play().then(() => {
+                    document.getElementById('currentTime').textContent = 
+                        `Playing from ${formatTime(playTime)} (error at ${formatTime(startTime)})`;
+                }).catch(err => {
+                    console.error('Play failed:', err);
+                    document.getElementById('currentTime').textContent = 
+                        'Play failed - click again';
+                });
+            }, { once: true });
+        }
+        
+        function showRule(ruleName) {
+            const rule = grammarRules[ruleName];
+            if (!rule) {
+                document.getElementById('ruleContent').innerHTML = 
+                    `<h2 class="modal-title">${ruleName}</h2><p>No detailed rule information available.</p>`;
+                document.getElementById('ruleModal').classList.add('active');
+                return;
+            }
+            
+            let html = `<h2 class="modal-title">${rule.title}</h2>`;
+            
+            if (rule.description) {
+                html += `<div class="rule-section"><p>${rule.description}</p></div>`;
+            }
+            
+            if (rule.structure) {
+                html += `<div class="rule-section"><h3>Structure</h3><p>${rule.structure}</p></div>`;
+            }
+            
+            if (rule.rules) {
+                html += `<div class="rule-section"><h3>Rules</h3><ul>`;
+                rule.rules.forEach(r => html += `<li>${r}</li>`);
+                html += `</ul></div>`;
+            }
+            
+            if (rule.common_prepositions) {
+                html += `<div class="rule-section"><h3>Common Prepositions</h3><ul>`;
+                rule.common_prepositions.forEach(p => html += `<li>${p}</li>`);
+                html += `</ul></div>`;
+            }
+            
+            if (rule.how_to_fix) {
+                html += `<div class="rule-section"><h3>How to Fix</h3><ul>`;
+                rule.how_to_fix.forEach(f => html += `<li>${f}</li>`);
+                html += `</ul></div>`;
+            }
+            
+            if (rule.tips) {
+                html += `<div class="rule-section"><h3>Tips</h3><ul>`;
+                rule.tips.forEach(t => html += `<li>${t}</li>`);
+                html += `</ul></div>`;
+            }
+            
+            if (rule.examples) {
+                html += `<div class="rule-section"><h3>Examples</h3>`;
+                rule.examples.forEach(ex => {
+                    if (ex.startsWith('❌')) {
+                        html += `<div class="example incorrect">${ex.substring(2)}</div>`;
+                    } else if (ex.startsWith('✅')) {
+                        html += `<div class="example correct">${ex.substring(2)}</div>`;
+                    } else {
+                        html += `<div class="example">${ex}</div>`;
+                    }
+                });
+                html += `</div>`;
+            }
+            
+            if (rule.common_mistakes) {
+                html += `<div class="rule-section"><h3>Common Mistakes</h3>`;
+                rule.common_mistakes.forEach(m => {
+                    html += `<div class="example incorrect">${m}</div>`;
+                });
+                html += `</div>`;
+            }
+            
+            if (rule.common_issues) {
+                html += `<div class="rule-section"><h3>Common Issues</h3><ul>`;
+                rule.common_issues.forEach(i => html += `<li>${i}</li>`);
+                html += `</ul></div>`;
+            }
+
+            if (rule.source) {
+                if (rule.source.type === 'textbook') {
+                    html += `<div class="rule-source textbook">`;
+                    html += `<span class="source-icon">📖</span> `;
+                    html += `<strong>${rule.source.book}</strong>`;
+                    if (rule.source.unit) html += `, ${rule.source.unit}`;
+                    if (rule.source.page) html += `, p. ${rule.source.page}`;
+                    if (rule.source.topic) html += ` — ${rule.source.topic}`;
+                    html += `</div>`;
+                } else if (rule.source.type === 'gpt') {
+                    html += `<div class="rule-source gpt">`;
+                    html += `<span class="source-icon">🤖</span> `;
+                    html += `<strong>Generated by AI</strong> — verify with a textbook for authoritative reference`;
+                    if (rule.source.note) {
+                        html += `<div class="source-note">${rule.source.note}</div>`;
+                    }
+                    html += `</div>`;
+                }
+            }
+
+            document.getElementById('ruleContent').innerHTML = html;
+            document.getElementById('ruleModal').classList.add('active');
+        }
+        
+        function closeRuleModal() {
+            document.getElementById('ruleModal').classList.remove('active');
+        }
+        
+        async function loadGrammarRules() {
+            try {
+                const response = await fetch('/api/grammar-rules');
+                grammarRules = await response.json();
+            } catch (err) {
+                console.error('Failed to load grammar rules:', err);
+            }
+        }
+
+        async function loadDiarization() {
+            try {
+                const response = await fetch('/api/diarization');
+                if (response.ok) {
+                    diarizationData = await response.json();
+                    setupSpeakerFilter();
+                }
+            } catch (err) {
+                console.warn('No diarization data');
+            }
+        }
+
+        function getSpeakerForTimestamp(startTime) {
+            if (!diarizationData || !diarizationData.speaker_segments) return null;
+            for (const seg of diarizationData.speaker_segments) {
+                if (startTime >= seg.start && startTime <= seg.end) return seg.speaker;
+            }
+            return null;
+        }
+
+        function setupSpeakerFilter() {
+            if (!diarizationData || diarizationData.speakers_count < 2) return;
+            const container = document.getElementById('speakerFilter');
+            let html = `<button class="spk-all active" onclick="filterSpeaker('all', this)">All Speakers</button>`;
+            (diarizationData.speaker_stats || []).forEach(s => {
+                html += `<button class="spk-${s.id}" onclick="filterSpeaker(${s.id}, this)">${s.label}</button>`;
+            });
+            container.innerHTML = html;
+            container.style.display = 'block';
+        }
+
+        function filterSpeaker(speaker, btn) {
+            speakerFilter = speaker;
+            document.querySelectorAll('#speakerFilter button').forEach(b => b.classList.remove('active'));
+            if (btn) btn.classList.add('active');
+            displayErrors();
+        }
+        
+        async function loadAnalysis() {
+            try {
+                const response = await fetch('/api/grammar-full-linked');
+                const data = await response.json();
+                
+                allErrors = data.errors || [];
+                
+                // Display summary
+                const summary = data.summary || {};
+                document.getElementById('summary').innerHTML = `
+                    <div class="stat-card">
+                        <div class="number">${summary.total_errors || 0}</div>
+                        <div class="label">Total Errors</div>
+                    </div>
+                    <div class="stat-card grammar">
+                        <div class="number">${summary.grammar || 0}</div>
+                        <div class="label">Grammar</div>
+                    </div>
+                    <div class="stat-card clarity">
+                        <div class="number">${summary.clarity || 0}</div>
+                        <div class="label">Clarity</div>
+                    </div>
+                    <div class="stat-card word-choice">
+                        <div class="number">${summary.word_choice || 0}</div>
+                        <div class="label">Word Choice</div>
+                    </div>
+                `;
+                
+                displayErrors();
+            } catch (err) {
+                console.error('Failed to load analysis:', err);
+                document.getElementById('errors').innerHTML = 
+                    '<p style="color: #e94560;">Analysis in progress... Refresh in a moment.</p>';
+            }
+        }
+        
+        function filterErrors(type) {
+            currentFilter = type;
+            
+            // Update button states
+            document.querySelectorAll('.filter-buttons button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            displayErrors();
+        }
+        
+        function displayErrors() {
+            let filtered = currentFilter === 'all'
+                ? allErrors
+                : allErrors.filter(e => e.type === currentFilter);
+
+            // Assign speaker to each error based on timestamp
+            if (diarizationData) {
+                filtered.forEach(err => {
+                    if (err._speaker === undefined) {
+                        err._speaker = getSpeakerForTimestamp(err.timestamp?.start || 0);
+                    }
+                });
+            }
+
+            // Filter by speaker
+            if (speakerFilter !== 'all') {
+                filtered = filtered.filter(e => e._speaker === speakerFilter);
+            }
+
+            // Sort by timestamp (chronological order)
+            filtered = filtered.sort((a, b) => {
+                const timeA = a.timestamp?.start || 0;
+                const timeB = b.timestamp?.start || 0;
+                return timeA - timeB;
+            });
+
+            const errorsDiv = document.getElementById('errors');
+
+            if (filtered.length === 0) {
+                errorsDiv.innerHTML = '<p style="color: #888;">No errors found</p>';
+                return;
+            }
+
+            errorsDiv.innerHTML = filtered.map((err, idx) => {
+                const hasTimestamp = err.timestamp && err.timestamp.start !== undefined;
+                const timestampText = hasTimestamp
+                    ? `<span class="timestamp">⏱ ${formatTime(err.timestamp.start)}</span>`
+                    : '<span class="timestamp">⏱ No timestamp</span>';
+
+                const playButton = hasTimestamp
+                    ? `<button class="play-button" onclick="event.stopPropagation(); playAtTime(${err.timestamp.start})">▶ Play</button>`
+                    : '<button class="play-button" disabled>▶ No Audio</button>';
+
+                const ruleButton = err.rule
+                    ? `<button class="rule-button" onclick="event.stopPropagation(); showRule('${err.rule}')">📖 Rule</button>`
+                    : '';
+
+                const speakerTag = (err._speaker !== null && err._speaker !== undefined)
+                    ? `<span class="speaker-tag spk-${err._speaker}">Speaker ${err._speaker + 1}</span>`
+                    : '';
+
+                return `
+                    <div class="error-card ${err.type}">
+                        <div class="error-header">
+                            <div>
+                                <span class="error-type ${err.type}">${err.type}</span>
+                                ${speakerTag}
+                                ${timestampText}
+                            </div>
+                            <div>
+                                ${playButton}
+                                ${ruleButton}
+                            </div>
+                        </div>
+                        <div class="original-text">${err.text}</div>
+                        <div class="issue">❌ ${err.issue}</div>
+                        <div class="suggestion">✅ ${err.suggestion}</div>
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        // Update current time display
+        audioPlayer.addEventListener('timeupdate', () => {
+            document.getElementById('currentTime').textContent = 
+                `${formatTime(audioPlayer.currentTime)} / ${formatTime(audioPlayer.duration || 0)}`;
+        });
+        
+        // Audio loading events
+        audioPlayer.addEventListener('loadstart', () => {
+            document.getElementById('loadingText').textContent = '⏳ Loading audio...';
+        });
+        
+        audioPlayer.addEventListener('progress', () => {
+            if (audioPlayer.buffered.length > 0) {
+                const buffered = audioPlayer.buffered.end(0);
+                const duration = audioPlayer.duration;
+                if (duration > 0) {
+                    const percent = (buffered / duration * 100).toFixed(0);
+                    document.getElementById('loadingProgress').textContent = ` ${percent}%`;
+                }
+            }
+        });
+        
+        audioPlayer.addEventListener('canplay', () => {
+            document.getElementById('loadingText').textContent = '✅ Audio ready';
+            document.getElementById('currentTime').textContent = 'Ready to play';
+        });
+        
+        audioPlayer.addEventListener('canplaythrough', () => {
+            document.getElementById('loadingIndicator').style.display = 'none';
+            document.getElementById('currentTime').textContent = 'Fully loaded - ready to play';
+        });
+        
+        audioPlayer.addEventListener('error', (e) => {
+            document.getElementById('loadingText').textContent = '❌ Audio load failed';
+            console.error('Audio error:', e);
+        });
+        
+        // Load audio file dynamically
+        async function loadAudio() {
+            try {
+                const response = await fetch('/api/audio-file');
+                const data = await response.json();
+                if (data.filename) {
+                    audioPlayer.src = '/audio/' + encodeURIComponent(data.filename);
+                    audioPlayer.load();
+                }
+            } catch (err) {
+                console.error('Failed to load audio file:', err);
+                document.getElementById('loadingText').textContent = '❌ Audio not found';
+            }
+        }
+
+        loadAudio();
+        loadGrammarRules();
+        loadDiarization();
+        loadAnalysis();
+        
+        // Auto-refresh every 10 seconds while analysis is in progress
+        let refreshInterval = setInterval(() => {
+            if (allErrors.length === 0) {
+                loadAnalysis();
+            } else {
+                clearInterval(refreshInterval);
+            }
+        }, 10000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+{
+  "audio_file": "test_data/russian1.mp3",
+  "analyzed_at": "2026-02-14T14:17:01.755414",
+  "transcript": "Please call Stella. Ask her to bring these things with her from the store. Six spoons of fresh snow peas, five thick slips of blue cheese and maybe a snack for her brother Bob. We also need a small plastic snake and big toy frog for the kids. She can scoop these things into three red bags and we will go meet her Wednesday at the train station.",
+  "overall_score": 95.3,
+  "pronunciation": {
+    "score": 95.5,
+    "total_words": 68,
+    "problem_words": 3,
+    "details": [
+      {
+        "word": "slips",
+        "confidence": 0.67,
+        "start": 10.58,
+        "end": 11.04,
+        "quality": "fair"
+      },
+      {
+        "word": "and",
+        "confidence": 0.508,
+        "start": 12.36,
+        "end": 12.76,
+        "quality": "fair"
+      },
+      {
+        "word": "and",
+        "confidence": 0.495,
+        "start": 26.88,
+        "end": 27.46,
+        "quality": "poor"
+      }
+    ]
+  },
+  "grammar": {
+    "score": 95,
+    "total_errors": 1,
+    "errors": [
+      {
+        "message": "Use a comma before ‘and’ if it connects two independent clauses (unless they are closely connected and short).",
+        "context": "...n scoop these things into three red bags and we will go meet her Wednesday at the tr...",
+        "offset": 289,
+        "length": 4,
+        "rule_id": "COMMA_COMPOUND_SENTENCE",
+        "category": "PUNCTUATION",
+        "replacements": [
+          ", and"
+        ],
+        "severity": "medium"
+      }
+    ]
+  }
+}

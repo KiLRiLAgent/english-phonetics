@@ -1,0 +1,358 @@
+[
+  {
+    "speaker": "0003",
+    "text": "MARK IS GOING TO SEE ELEPHANT",
+    "expert_score": 9,
+    "expert_normalized": 90,
+    "our_score": 93.9,
+    "our_pronunciation": 89.9,
+    "diff": 3.9000000000000057,
+    "word_scores": [
+      {
+        "word": "MARK",
+        "accuracy": 10,
+        "phones": [
+          "M",
+          "AA0",
+          "R",
+          "K"
+        ],
+        "phones_accuracy": [
+          2.0,
+          2.0,
+          1.8,
+          2.0
+        ]
+      },
+      {
+        "word": "IS",
+        "accuracy": 10,
+        "phones": [
+          "IH0",
+          "Z"
+        ],
+        "phones_accuracy": [
+          2.0,
+          1.8
+        ]
+      },
+      {
+        "word": "GOING",
+        "accuracy": 10,
+        "phones": [
+          "G",
+          "OW0",
+          "IH0",
+          "NG"
+        ],
+        "phones_accuracy": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ]
+      },
+      {
+        "word": "TO",
+        "accuracy": 10,
+        "phones": [
+          "T",
+          "UW0"
+        ],
+        "phones_accuracy": [
+          2.0,
+          2.0
+        ]
+      },
+      {
+        "word": "SEE",
+        "accuracy": 10,
+        "phones": [
+          "S",
+          "IY0"
+        ],
+        "phones_accuracy": [
+          2.0,
+          2.0
+        ]
+      },
+      {
+        "word": "ELEPHANT",
+        "accuracy": 10,
+        "phones": [
+          "EH1",
+          "L",
+          "IH0",
+          "F",
+          "AH0",
+          "N",
+          "T"
+        ],
+        "phones_accuracy": [
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ]
+      }
+    ],
+    "our_transcript": "Mark is going to see elephant."
+  },
+  {
+    "speaker": "0003",
+    "text": "KATE LOVES CHINA",
+    "expert_score": 7,
+    "expert_normalized": 70,
+    "our_score": 93.5,
+    "our_pronunciation": 89.1,
+    "diff": 23.5,
+    "word_scores": [
+      {
+        "word": "KATE",
+        "accuracy": 8,
+        "phones": [
+          "K",
+          "EH0",
+          "T"
+        ],
+        "phones_accuracy": [
+          2.0,
+          1.4,
+          1.8
+        ]
+      },
+      {
+        "word": "LOVES",
+        "accuracy": 8,
+        "phones": [
+          "L",
+          "AH0",
+          "V",
+          "Z"
+        ],
+        "phones_accuracy": [
+          2.0,
+          2.0,
+          2.0,
+          1.4
+        ]
+      },
+      {
+        "word": "CHINA",
+        "accuracy": 10,
+        "phones": [
+          "CH",
+          "AY1",
+          "N",
+          "AH0"
+        ],
+        "phones_accuracy": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ]
+      }
+    ],
+    "our_transcript": "Kate loves China."
+  },
+  {
+    "speaker": "0003",
+    "text": "TWO SIX FOUR EIGHT",
+    "expert_score": 9,
+    "expert_normalized": 90,
+    "our_score": 89.9,
+    "our_pronunciation": 83.1,
+    "diff": 0.09999999999999432,
+    "word_scores": [
+      {
+        "word": "TWO",
+        "accuracy": 10,
+        "phones": [
+          "T",
+          "UW0"
+        ],
+        "phones_accuracy": [
+          2.0,
+          2.0
+        ]
+      },
+      {
+        "word": "SIX",
+        "accuracy": 10,
+        "phones": [
+          "S",
+          "IH0",
+          "K",
+          "S"
+        ],
+        "phones_accuracy": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ]
+      },
+      {
+        "word": "FOUR",
+        "accuracy": 10,
+        "phones": [
+          "F",
+          "AO0",
+          "R"
+        ],
+        "phones_accuracy": [
+          2.0,
+          2.0,
+          1.8
+        ]
+      },
+      {
+        "word": "EIGHT",
+        "accuracy": 10,
+        "phones": [
+          "EY0",
+          "T"
+        ],
+        "phones_accuracy": [
+          2.0,
+          2.0
+        ]
+      }
+    ],
+    "our_transcript": "2-6-4-8"
+  },
+  {
+    "speaker": "0003",
+    "text": "TWO EIGHT NINE ONE",
+    "expert_score": 9,
+    "expert_normalized": 90,
+    "our_score": 86.8,
+    "our_pronunciation": 78.0,
+    "diff": 3.200000000000003,
+    "word_scores": [
+      {
+        "word": "TWO",
+        "accuracy": 10,
+        "phones": [
+          "T",
+          "UW0"
+        ],
+        "phones_accuracy": [
+          2.0,
+          2.0
+        ]
+      },
+      {
+        "word": "EIGHT",
+        "accuracy": 10,
+        "phones": [
+          "EY0",
+          "T"
+        ],
+        "phones_accuracy": [
+          2.0,
+          2.0
+        ]
+      },
+      {
+        "word": "NINE",
+        "accuracy": 10,
+        "phones": [
+          "N",
+          "AY0",
+          "N"
+        ],
+        "phones_accuracy": [
+          2.0,
+          2.0,
+          2.0
+        ]
+      },
+      {
+        "word": "ONE",
+        "accuracy": 10,
+        "phones": [
+          "W",
+          "AH0",
+          "N"
+        ],
+        "phones_accuracy": [
+          2.0,
+          2.0,
+          2.0
+        ]
+      }
+    ],
+    "our_transcript": "2891"
+  },
+  {
+    "speaker": "0003",
+    "text": "TWO FIVE NINE NINE",
+    "expert_score": 8,
+    "expert_normalized": 80,
+    "our_score": 83.8,
+    "our_pronunciation": 73.0,
+    "diff": 3.799999999999997,
+    "word_scores": [
+      {
+        "word": "TWO",
+        "accuracy": 10,
+        "phones": [
+          "T",
+          "UW0"
+        ],
+        "phones_accuracy": [
+          2.0,
+          2.0
+        ]
+      },
+      {
+        "word": "FIVE",
+        "accuracy": 8,
+        "phones": [
+          "F",
+          "AY0",
+          "V"
+        ],
+        "phones_accuracy": [
+          2.0,
+          2.0,
+          1.4
+        ]
+      },
+      {
+        "word": "NINE",
+        "accuracy": 10,
+        "phones": [
+          "N",
+          "AY0",
+          "N"
+        ],
+        "phones_accuracy": [
+          2.0,
+          2.0,
+          2.0
+        ]
+      },
+      {
+        "word": "NINE",
+        "accuracy": 10,
+        "phones": [
+          "N",
+          "AY0",
+          "N"
+        ],
+        "phones_accuracy": [
+          2.0,
+          2.0,
+          2.0
+        ]
+      }
+    ],
+    "our_transcript": "2599"
+  }
+]

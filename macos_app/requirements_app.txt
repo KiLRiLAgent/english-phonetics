@@ -1,0 +1,10 @@
+# macOS App dependencies
+rumps>=0.4.0  # Menu bar app framework
+pyobjc>=10.0  # macOS system integration
+pyaudio>=0.2.13  # Audio recording
+py2app>=0.28.6  # Package as .app
+
+# Core analyzer (already in main requirements.txt)
+# whisper
+# language-tool-python
+# numpy

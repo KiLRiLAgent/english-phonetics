@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture Transcript - Interactive</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #e0e0e0;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .audio-player {
+            position: sticky;
+            top: 20px;
+            background: rgba(30, 30, 50, 0.95);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            z-index: 100;
+        }
+
+        audio {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .time-display {
+            text-align: center;
+            font-size: 1.2em;
+            color: #64ffda;
+            font-weight: bold;
+        }
+
+        .transcript {
+            background: rgba(255,255,255,0.03);
+            padding: 30px;
+            border-radius: 15px;
+            font-size: 1.1em;
+            line-height: 2;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .word {
+            cursor: pointer;
+            padding: 2px 0;
+            transition: all 0.2s;
+            position: relative;
+            display: inline;
+        }
+
+        .word:hover {
+            background: rgba(100, 255, 218, 0.2);
+            color: #64ffda;
+            border-radius: 3px;
+            padding: 2px 4px;
+        }
+
+        .word.playing {
+            background: rgba(102, 126, 234, 0.4);
+            color: #fff;
+            font-weight: bold;
+            border-radius: 3px;
+            padding: 2px 4px;
+        }
+
+        .word.error {
+            color: #ff6b6b;
+            border-bottom: 2px solid rgba(255, 107, 107, 0.5);
+        }
+
+        .word.error:hover {
+            background: rgba(255, 107, 107, 0.2);
+            color: #ff6b6b;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.9em;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255,255,255,0.1);
+            color: #e0e0e0;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .stats {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .stat-box {
+            background: rgba(255,255,255,0.05);
+            padding: 15px 25px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .stat-label {
+            font-size: 0.85em;
+            color: #888;
+            margin-bottom: 5px;
+        }
+
+        .stat-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #64ffda;
+        }
+
+        .info {
+            background: rgba(100, 255, 218, 0.1);
+            border: 1px solid rgba(100, 255, 218, 0.3);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            color: #64ffda;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 1.2em;
+            color: #888;
+        }
+
+        .timestamp {
+            color: #888;
+            font-size: 0.8em;
+            margin-left: 5px;
+        }
+
+        /* Speaker colors */
+        .word.speaker-0 { color: #64ffda; }
+        .word.speaker-1 { color: #ffd764; }
+        .word.speaker-2 { color: #ff64b4; }
+        .word.speaker-3 { color: #64b4ff; }
+        .word.speaker-4 { color: #b464ff; }
+        .word.speaker-dimmed { opacity: 0.15; }
+
+        .speaker-filter-buttons { display: flex; gap: 8px; flex-wrap: wrap; }
+        .speaker-filter-buttons button {
+            padding: 6px 14px; border: 2px solid transparent; border-radius: 6px;
+            font-weight: bold; font-size: 0.85em; cursor: pointer;
+            background: rgba(255,255,255,0.1); color: #e0e0e0;
+            transition: all 0.2s;
+        }
+        .speaker-filter-buttons button:hover { background: rgba(255,255,255,0.2); }
+        .speaker-filter-buttons button.active { background: rgba(255,255,255,0.2); border-color: currentColor; }
+        .speaker-filter-buttons button.spk-all { color: #fff; }
+        .speaker-filter-buttons button.spk-0 { color: #64ffda; }
+        .speaker-filter-buttons button.spk-1 { color: #ffd764; }
+        .speaker-filter-buttons button.spk-2 { color: #ff64b4; }
+        .speaker-filter-buttons button.spk-3 { color: #64b4ff; }
+        .speaker-filter-buttons button.spk-4 { color: #b464ff; }
+
+        /* Navigation Menu */
+        .nav-menu {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: rgba(30, 30, 50, 0.95);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            z-index: 1000;
+            min-width: 200px;
+        }
+
+        .nav-menu h3 {
+            margin: 0 0 15px 0;
+            font-size: 1.1em;
+            color: #64ffda;
+            border-bottom: 2px solid rgba(100, 255, 218, 0.3);
+            padding-bottom: 10px;
+        }
+
+        .nav-menu a {
+            display: block;
+            color: #e0e0e0;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 5px 0;
+            border-radius: 8px;
+            transition: all 0.3s;
+            font-size: 0.95em;
+        }
+
+        .nav-menu a:hover {
+            background: rgba(102, 126, 234, 0.3);
+            color: #fff;
+            transform: translateX(5px);
+        }
+
+        .nav-menu a.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav-menu a::before {
+            content: "→ ";
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .nav-menu a:hover::before {
+            opacity: 1;
+        }
+
+        .container {
+            margin-left: 260px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-menu">
+        <h3>📚 Navigation</h3>
+        <a href="/transcript" class="active">📝 Transcript (Words)</a>
+        <a href="/transcript-sentences">📄 Transcript (Sentences)</a>
+        <a href="/grammar">🔍 Grammar Analysis</a>
+        <a href="/test-sync">🎯 Sync Test</a>
+        <a href="/debug-offset">🔧 Debug Offset</a>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>📝 Interactive Lecture Transcript</h1>
+            <p>Click any word to jump to that moment in the audio</p>
+        </header>
+
+        <div class="audio-player">
+            <audio id="audio" controls preload="auto">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="time-display" id="timeDisplay">0:00 / 0:00</div>
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-primary" onclick="toggleErrorHighlight()">
+                <span id="errorToggleText">Show Errors</span>
+            </button>
+            <button class="btn btn-secondary" onclick="toggleTimestamps()">
+                <span id="timestampToggleText">Show Timestamps</span>
+            </button>
+            <button class="btn btn-secondary" onclick="scrollToCurrentWord()">
+                Jump to Current Word
+            </button>
+        </div>
+
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-label">Total Words</div>
+                <div class="stat-value" id="totalWords">-</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Duration</div>
+                <div class="stat-value" id="duration">-</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Words with Errors</div>
+                <div class="stat-value" id="errorWords">-</div>
+            </div>
+            <div class="stat-box" id="speakersStatBox" style="display:none;">
+                <div class="stat-label">Speakers</div>
+                <div class="stat-value" id="speakersCount">-</div>
+            </div>
+        </div>
+
+        <div id="speakerFilters" style="display:none; margin-bottom: 15px;">
+            <div class="speaker-filter-buttons" id="speakerFilterButtons"></div>
+        </div>
+
+        <div class="info">
+            💡 <strong>Tip:</strong> Hover over any word to see its timestamp. Click to jump to that moment. Red words indicate potential errors.
+        </div>
+
+        <div class="transcript" id="transcript">
+            <div class="loading">Loading transcript...</div>
+        </div>
+    </div>
+
+    <script>
+        const audio = document.getElementById('audio');
+        const transcript = document.getElementById('transcript');
+        const timeDisplay = document.getElementById('timeDisplay');
+        
+        let wordsData = [];
+        let errorsData = [];
+        let diarizationData = null;
+        let showErrors = false;
+        let showTimestamps = false;
+        let currentWordIndex = -1;
+        let activeSpeakerFilter = 'all';
+        const SPEAKER_COLORS = ['#64ffda', '#ffd764', '#ff64b4', '#64b4ff', '#b464ff'];
+
+        // Format time as MM:SS
+        function formatTime(seconds) {
+            const mins = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${mins}:${secs.toString().padStart(2, '0')}`;
+        }
+
+        // Update time display
+        audio.addEventListener('timeupdate', () => {
+            const current = formatTime(audio.currentTime);
+            const total = formatTime(audio.duration || 0);
+            timeDisplay.textContent = `${current} / ${total}`;
+
+            // Highlight current word
+            updateCurrentWord();
+        });
+
+        audio.addEventListener('loadedmetadata', () => {
+            document.getElementById('duration').textContent = formatTime(audio.duration);
+        });
+
+        // Update currently playing word
+        function updateCurrentWord() {
+            const currentTime = audio.currentTime;
+            
+            // Find the word being spoken
+            let newIndex = -1;
+            for (let i = 0; i < wordsData.length; i++) {
+                const word = wordsData[i];
+                if (currentTime >= word.start && currentTime <= word.end) {
+                    newIndex = i;
+                    break;
+                }
+            }
+
+            if (newIndex !== currentWordIndex) {
+                // Remove old highlight
+                if (currentWordIndex >= 0) {
+                    const oldEl = document.querySelector(`[data-index="${currentWordIndex}"]`);
+                    if (oldEl) oldEl.classList.remove('playing');
+                }
+
+                // Add new highlight
+                currentWordIndex = newIndex;
+                if (currentWordIndex >= 0) {
+                    const newEl = document.querySelector(`[data-index="${currentWordIndex}"]`);
+                    if (newEl) newEl.classList.add('playing');
+                }
+            }
+        }
+
+        // Play from specific time
+        function playAtTime(time, wordIndex) {
+            audio.currentTime = Math.max(0, time - 0.5); // Start 0.5s before for context
+            
+            // Immediately update highlight to the clicked word
+            if (wordIndex !== undefined) {
+                // Remove old highlight
+                if (currentWordIndex >= 0) {
+                    const oldEl = document.querySelector(`[data-index="${currentWordIndex}"]`);
+                    if (oldEl) oldEl.classList.remove('playing');
+                }
+                
+                // Set new index and highlight
+                currentWordIndex = wordIndex;
+                const newEl = document.querySelector(`[data-index="${wordIndex}"]`);
+                if (newEl) newEl.classList.add('playing');
+            }
+            
+            if (audio.readyState >= 2) {
+                audio.play().catch(e => console.warn('Play failed:', e));
+            } else {
+                audio.addEventListener('canplay', () => {
+                    audio.play().catch(e => console.warn('Play failed:', e));
+                }, { once: true });
+            }
+        }
+        
+        // Force update on seeked event
+        audio.addEventListener('seeked', () => {
+            updateCurrentWord();
+        });
+
+        // Load transcript data
+        async function loadTranscript() {
+            try {
+                // Discover and set audio source
+                const audioResponse = await fetch('/api/audio-file');
+                if (audioResponse.ok) {
+                    const audioInfo = await audioResponse.json();
+                    audio.src = `/audio/${audioInfo.filename}`;
+                }
+
+                // Load words
+                const wordsResponse = await fetch('/api/transcript-words');
+                wordsData = await wordsResponse.json();
+
+                // Load errors
+                try {
+                    const errorsResponse = await fetch('/api/grammar-linked');
+                    const errorsResult = await errorsResponse.json();
+                    errorsData = errorsResult.errors || [];
+                } catch (e) {
+                    console.warn('No errors data available');
+                    errorsData = [];
+                }
+
+                // Load diarization data
+                try {
+                    const diarResponse = await fetch('/api/diarization');
+                    if (diarResponse.ok) {
+                        diarizationData = await diarResponse.json();
+                        setupSpeakerUI();
+                    }
+                } catch (e) {
+                    console.warn('No diarization data available');
+                }
+
+                renderTranscript();
+                updateStats();
+            } catch (error) {
+                transcript.innerHTML = `<div class="loading" style="color: #ff6b6b;">Error loading transcript: ${error.message}</div>`;
+            }
+        }
+
+        // Render transcript
+        function renderTranscript() {
+            const errorWords = new Set();
+            
+            // Map errors to word indices
+            errorsData.forEach(error => {
+                if (error.word_index !== undefined) {
+                    errorWords.add(error.word_index);
+                }
+            });
+
+            let html = '';
+            wordsData.forEach((word, index) => {
+                const isError = errorWords.has(index);
+                const errorClass = (showErrors && isError) ? 'error' : '';
+                const speaker = word.speaker !== undefined ? word.speaker : null;
+                const speakerClass = speaker !== null ? `speaker-${speaker}` : '';
+                const dimmed = (activeSpeakerFilter !== 'all' && speaker !== null && speaker !== activeSpeakerFilter) ? 'speaker-dimmed' : '';
+                const timestamp = showTimestamps ? `<span class="timestamp">[${formatTime(word.start)}]</span>` : '';
+
+                html += `<span class="word ${errorClass} ${speakerClass} ${dimmed}"
+                             data-index="${index}"
+                             data-start="${word.start}"
+                             data-end="${word.end}"
+                             data-speaker="${speaker !== null ? speaker : ''}"
+                             title="${speaker !== null ? 'Speaker ' + (speaker + 1) + ' | ' : ''}Click to play from ${formatTime(word.start)}"
+                             onclick="playAtTime(${word.start}, ${index})">${word.word}</span>${timestamp} `;
+            });
+
+            transcript.innerHTML = html;
+        }
+
+        // Update statistics
+        function updateStats() {
+            document.getElementById('totalWords').textContent = wordsData.length;
+            
+            const errorWords = new Set();
+            errorsData.forEach(error => {
+                if (error.word_index !== undefined) {
+                    errorWords.add(error.word_index);
+                }
+            });
+            document.getElementById('errorWords').textContent = errorWords.size;
+        }
+
+        // Toggle error highlighting
+        function toggleErrorHighlight() {
+            showErrors = !showErrors;
+            document.getElementById('errorToggleText').textContent = showErrors ? 'Hide Errors' : 'Show Errors';
+            renderTranscript();
+        }
+
+        // Toggle timestamps
+        function toggleTimestamps() {
+            showTimestamps = !showTimestamps;
+            document.getElementById('timestampToggleText').textContent = showTimestamps ? 'Hide Timestamps' : 'Show Timestamps';
+            renderTranscript();
+        }
+
+        // Scroll to current word
+        function scrollToCurrentWord() {
+            if (currentWordIndex >= 0) {
+                const el = document.querySelector(`[data-index="${currentWordIndex}"]`);
+                if (el) {
+                    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }
+        }
+
+        function setupSpeakerUI() {
+            if (!diarizationData || diarizationData.speakers_count < 2) return;
+
+            // Show stats
+            document.getElementById('speakersStatBox').style.display = '';
+            document.getElementById('speakersCount').textContent = diarizationData.speakers_count;
+
+            // Build filter buttons
+            const container = document.getElementById('speakerFilterButtons');
+            let html = `<button class="spk-all active" onclick="filterBySpeaker('all', this)">All</button>`;
+            (diarizationData.speaker_stats || []).forEach(s => {
+                const mins = Math.floor(s.total_time / 60);
+                const secs = Math.floor(s.total_time % 60);
+                html += `<button class="spk-${s.id}" onclick="filterBySpeaker(${s.id}, this)">${s.label} (${mins}m${secs}s)</button>`;
+            });
+            container.innerHTML = html;
+            document.getElementById('speakerFilters').style.display = '';
+        }
+
+        function filterBySpeaker(speaker, btn) {
+            activeSpeakerFilter = speaker;
+            document.querySelectorAll('#speakerFilterButtons button').forEach(b => b.classList.remove('active'));
+            if (btn) btn.classList.add('active');
+            renderTranscript();
+        }
+
+        // Load on page load
+        loadTranscript();
+    </script>
+</body>
+</html>

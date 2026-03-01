@@ -1,0 +1,912 @@
+{
+  "audio": "test_data/russian_accent/russian42.mp3",
+  "reference": "Please call Stella. Ask her to bring these things with her from the store. Six spoons of fresh snow peas, five thick slabs of blue cheese, and maybe a snack for her brother Bob. We also need a small plastic snake and a big toy frog for the kids. She can scoop these things into three red bags, and we will go meet her Wednesday at the train station.",
+  "transcript": "Please call Stella. Ask her to bring these things with her from the store. Six spoons of fresh snow peas, five thick slabs of blue cheese, and maybe a snack for her brother Bob. They also need a small plastic snake and a big toy frog for the kids. She can scoop these things into three red bags, and we will go meet her Wednesday at the train station.",
+  "overall_score": 96.1,
+  "words_total": 69,
+  "words_green": 63,
+  "words_yellow": 4,
+  "words_red": 2,
+  "aligned_words": [
+    {
+      "ref_word": "please",
+      "hyp_word": "Please",
+      "status": "correct",
+      "confidence": 0.746,
+      "start": 0.0,
+      "end": 0.66
+    },
+    {
+      "ref_word": "call",
+      "hyp_word": "call",
+      "status": "correct",
+      "confidence": 0.893,
+      "start": 0.66,
+      "end": 1.02
+    },
+    {
+      "ref_word": "stella",
+      "hyp_word": "Stella.",
+      "status": "correct",
+      "confidence": 0.962,
+      "start": 1.02,
+      "end": 1.42
+    },
+    {
+      "ref_word": "ask",
+      "hyp_word": "Ask",
+      "status": "correct",
+      "confidence": 0.957,
+      "start": 1.76,
+      "end": 1.94
+    },
+    {
+      "ref_word": "her",
+      "hyp_word": "her",
+      "status": "correct",
+      "confidence": 0.998,
+      "start": 1.94,
+      "end": 2.1
+    },
+    {
+      "ref_word": "to",
+      "hyp_word": "to",
+      "status": "correct",
+      "confidence": 0.998,
+      "start": 2.1,
+      "end": 2.2
+    },
+    {
+      "ref_word": "bring",
+      "hyp_word": "bring",
+      "status": "correct",
+      "confidence": 0.996,
+      "start": 2.2,
+      "end": 2.36
+    },
+    {
+      "ref_word": "these",
+      "hyp_word": "these",
+      "status": "correct",
+      "confidence": 0.975,
+      "start": 2.36,
+      "end": 2.8
+    },
+    {
+      "ref_word": "things",
+      "hyp_word": "things",
+      "status": "correct",
+      "confidence": 0.981,
+      "start": 2.8,
+      "end": 3.22
+    },
+    {
+      "ref_word": "with",
+      "hyp_word": "with",
+      "status": "correct",
+      "confidence": 0.983,
+      "start": 3.22,
+      "end": 3.66
+    },
+    {
+      "ref_word": "her",
+      "hyp_word": "her",
+      "status": "correct",
+      "confidence": 0.996,
+      "start": 3.66,
+      "end": 3.96
+    },
+    {
+      "ref_word": "from",
+      "hyp_word": "from",
+      "status": "correct",
+      "confidence": 0.961,
+      "start": 3.96,
+      "end": 4.22
+    },
+    {
+      "ref_word": "the",
+      "hyp_word": "the",
+      "status": "correct",
+      "confidence": 0.994,
+      "start": 4.22,
+      "end": 4.42
+    },
+    {
+      "ref_word": "store",
+      "hyp_word": "store.",
+      "status": "correct",
+      "confidence": 0.992,
+      "start": 4.42,
+      "end": 4.7
+    },
+    {
+      "ref_word": "six",
+      "hyp_word": "Six",
+      "status": "correct",
+      "confidence": 0.714,
+      "start": 4.96,
+      "end": 5.14
+    },
+    {
+      "ref_word": "spoons",
+      "hyp_word": "spoons",
+      "status": "correct",
+      "confidence": 0.565,
+      "start": 5.14,
+      "end": 5.42
+    },
+    {
+      "ref_word": "of",
+      "hyp_word": "of",
+      "status": "correct",
+      "confidence": 0.992,
+      "start": 5.42,
+      "end": 5.76
+    },
+    {
+      "ref_word": "fresh",
+      "hyp_word": "fresh",
+      "status": "correct",
+      "confidence": 0.981,
+      "start": 5.76,
+      "end": 6.0
+    },
+    {
+      "ref_word": "snow",
+      "hyp_word": "snow",
+      "status": "correct",
+      "confidence": 0.777,
+      "start": 6.0,
+      "end": 6.32
+    },
+    {
+      "ref_word": "peas",
+      "hyp_word": "peas,",
+      "status": "correct",
+      "confidence": 0.952,
+      "start": 6.32,
+      "end": 6.6
+    },
+    {
+      "ref_word": "five",
+      "hyp_word": "five",
+      "status": "correct",
+      "confidence": 0.911,
+      "start": 6.84,
+      "end": 7.1
+    },
+    {
+      "ref_word": "thick",
+      "hyp_word": "thick",
+      "status": "correct",
+      "confidence": 0.973,
+      "start": 7.1,
+      "end": 7.34
+    },
+    {
+      "ref_word": "slabs",
+      "hyp_word": "slabs",
+      "status": "correct",
+      "confidence": 0.98,
+      "start": 7.34,
+      "end": 7.68
+    },
+    {
+      "ref_word": "of",
+      "hyp_word": "of",
+      "status": "correct",
+      "confidence": 0.998,
+      "start": 7.68,
+      "end": 7.92
+    },
+    {
+      "ref_word": "blue",
+      "hyp_word": "blue",
+      "status": "correct",
+      "confidence": 0.946,
+      "start": 7.92,
+      "end": 8.1
+    },
+    {
+      "ref_word": "cheese",
+      "hyp_word": "cheese,",
+      "status": "correct",
+      "confidence": 0.992,
+      "start": 8.1,
+      "end": 8.42
+    },
+    {
+      "ref_word": "and",
+      "hyp_word": "and",
+      "status": "correct",
+      "confidence": 0.982,
+      "start": 8.6,
+      "end": 8.68
+    },
+    {
+      "ref_word": "maybe",
+      "hyp_word": "maybe",
+      "status": "correct",
+      "confidence": 0.991,
+      "start": 8.68,
+      "end": 8.88
+    },
+    {
+      "ref_word": "a",
+      "hyp_word": "a",
+      "status": "correct",
+      "confidence": 0.997,
+      "start": 8.88,
+      "end": 9.08
+    },
+    {
+      "ref_word": "snack",
+      "hyp_word": "snack",
+      "status": "correct",
+      "confidence": 0.994,
+      "start": 9.08,
+      "end": 9.34
+    },
+    {
+      "ref_word": "for",
+      "hyp_word": "for",
+      "status": "correct",
+      "confidence": 0.992,
+      "start": 9.34,
+      "end": 9.62
+    },
+    {
+      "ref_word": "her",
+      "hyp_word": "her",
+      "status": "correct",
+      "confidence": 0.998,
+      "start": 9.62,
+      "end": 9.76
+    },
+    {
+      "ref_word": "brother",
+      "hyp_word": "brother",
+      "status": "correct",
+      "confidence": 0.965,
+      "start": 9.76,
+      "end": 9.98
+    },
+    {
+      "ref_word": "bob",
+      "hyp_word": "Bob.",
+      "status": "correct",
+      "confidence": 0.774,
+      "start": 9.98,
+      "end": 10.26
+    },
+    {
+      "ref_word": "we",
+      "hyp_word": "They",
+      "status": "substitution",
+      "confidence": 0.518,
+      "start": 10.82,
+      "end": 10.98
+    },
+    {
+      "ref_word": "also",
+      "hyp_word": "also",
+      "status": "correct",
+      "confidence": 0.989,
+      "start": 10.98,
+      "end": 11.18
+    },
+    {
+      "ref_word": "need",
+      "hyp_word": "need",
+      "status": "correct",
+      "confidence": 0.994,
+      "start": 11.18,
+      "end": 11.4
+    },
+    {
+      "ref_word": "a",
+      "hyp_word": "a",
+      "status": "correct",
+      "confidence": 0.999,
+      "start": 11.4,
+      "end": 11.54
+    },
+    {
+      "ref_word": "small",
+      "hyp_word": "small",
+      "status": "correct",
+      "confidence": 0.998,
+      "start": 11.54,
+      "end": 11.74
+    },
+    {
+      "ref_word": "plastic",
+      "hyp_word": "plastic",
+      "status": "correct",
+      "confidence": 0.955,
+      "start": 11.74,
+      "end": 12.14
+    },
+    {
+      "ref_word": "snake",
+      "hyp_word": "snake",
+      "status": "correct",
+      "confidence": 0.955,
+      "start": 12.14,
+      "end": 12.48
+    },
+    {
+      "ref_word": "and",
+      "hyp_word": "and",
+      "status": "correct",
+      "confidence": 0.862,
+      "start": 12.48,
+      "end": 12.72
+    },
+    {
+      "ref_word": "a",
+      "hyp_word": "a",
+      "status": "correct",
+      "confidence": 0.993,
+      "start": 12.72,
+      "end": 12.84
+    },
+    {
+      "ref_word": "big",
+      "hyp_word": "big",
+      "status": "correct",
+      "confidence": 0.997,
+      "start": 12.84,
+      "end": 12.94
+    },
+    {
+      "ref_word": "toy",
+      "hyp_word": "toy",
+      "status": "correct",
+      "confidence": 0.986,
+      "start": 12.94,
+      "end": 13.2
+    },
+    {
+      "ref_word": "frog",
+      "hyp_word": "frog",
+      "status": "correct",
+      "confidence": 0.964,
+      "start": 13.2,
+      "end": 13.5
+    },
+    {
+      "ref_word": "for",
+      "hyp_word": "for",
+      "status": "correct",
+      "confidence": 0.997,
+      "start": 13.5,
+      "end": 13.72
+    },
+    {
+      "ref_word": "the",
+      "hyp_word": "the",
+      "status": "correct",
+      "confidence": 0.994,
+      "start": 13.72,
+      "end": 13.84
+    },
+    {
+      "ref_word": "kids",
+      "hyp_word": "kids.",
+      "status": "correct",
+      "confidence": 0.999,
+      "start": 13.84,
+      "end": 14.1
+    },
+    {
+      "ref_word": "she",
+      "hyp_word": "She",
+      "status": "correct",
+      "confidence": 0.99,
+      "start": 14.62,
+      "end": 14.84
+    },
+    {
+      "ref_word": "can",
+      "hyp_word": "can",
+      "status": "correct",
+      "confidence": 0.993,
+      "start": 14.84,
+      "end": 14.98
+    },
+    {
+      "ref_word": "scoop",
+      "hyp_word": "scoop",
+      "status": "correct",
+      "confidence": 0.989,
+      "start": 14.98,
+      "end": 15.22
+    },
+    {
+      "ref_word": "these",
+      "hyp_word": "these",
+      "status": "correct",
+      "confidence": 0.994,
+      "start": 15.22,
+      "end": 15.5
+    },
+    {
+      "ref_word": "things",
+      "hyp_word": "things",
+      "status": "correct",
+      "confidence": 0.998,
+      "start": 15.5,
+      "end": 15.74
+    },
+    {
+      "ref_word": "into",
+      "hyp_word": "into",
+      "status": "correct",
+      "confidence": 0.991,
+      "start": 15.74,
+      "end": 16.04
+    },
+    {
+      "ref_word": "three",
+      "hyp_word": "three",
+      "status": "correct",
+      "confidence": 0.963,
+      "start": 16.04,
+      "end": 16.3
+    },
+    {
+      "ref_word": "red",
+      "hyp_word": "red",
+      "status": "correct",
+      "confidence": 0.993,
+      "start": 16.3,
+      "end": 16.5
+    },
+    {
+      "ref_word": "bags",
+      "hyp_word": "bags,",
+      "status": "correct",
+      "confidence": 0.969,
+      "start": 16.5,
+      "end": 16.82
+    },
+    {
+      "ref_word": "and",
+      "hyp_word": "and",
+      "status": "correct",
+      "confidence": 0.994,
+      "start": 17.18,
+      "end": 17.24
+    },
+    {
+      "ref_word": "we",
+      "hyp_word": "we",
+      "status": "correct",
+      "confidence": 0.985,
+      "start": 17.24,
+      "end": 17.44
+    },
+    {
+      "ref_word": "will",
+      "hyp_word": "will",
+      "status": "correct",
+      "confidence": 0.931,
+      "start": 17.44,
+      "end": 17.58
+    },
+    {
+      "ref_word": "go",
+      "hyp_word": "go",
+      "status": "correct",
+      "confidence": 0.951,
+      "start": 17.58,
+      "end": 17.76
+    },
+    {
+      "ref_word": "meet",
+      "hyp_word": "meet",
+      "status": "correct",
+      "confidence": 0.994,
+      "start": 17.76,
+      "end": 17.96
+    },
+    {
+      "ref_word": "her",
+      "hyp_word": "her",
+      "status": "correct",
+      "confidence": 0.998,
+      "start": 17.96,
+      "end": 18.18
+    },
+    {
+      "ref_word": "wednesday",
+      "hyp_word": "Wednesday",
+      "status": "correct",
+      "confidence": 0.877,
+      "start": 18.18,
+      "end": 18.56
+    },
+    {
+      "ref_word": "at",
+      "hyp_word": "at",
+      "status": "correct",
+      "confidence": 0.991,
+      "start": 18.56,
+      "end": 18.74
+    },
+    {
+      "ref_word": "the",
+      "hyp_word": "the",
+      "status": "correct",
+      "confidence": 0.982,
+      "start": 18.74,
+      "end": 18.82
+    },
+    {
+      "ref_word": "train",
+      "hyp_word": "train",
+      "status": "correct",
+      "confidence": 0.97,
+      "start": 18.82,
+      "end": 19.0
+    },
+    {
+      "ref_word": "station",
+      "hyp_word": "station.",
+      "status": "correct",
+      "confidence": 0.998,
+      "start": 19.0,
+      "end": 19.46
+    }
+  ],
+  "scored_words": [
+    {
+      "score": 70,
+      "color": "yellow",
+      "level": "acceptable"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 70,
+      "color": "yellow",
+      "level": "acceptable"
+    },
+    {
+      "score": 40,
+      "color": "red",
+      "level": "unclear"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 70,
+      "color": "yellow",
+      "level": "acceptable"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 70,
+      "color": "yellow",
+      "level": "acceptable"
+    },
+    {
+      "score": 10,
+      "color": "red",
+      "level": "wrong_word"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    }
+  ],
+  "analyzed_at": "2026-02-14T15:58:53.838793"
+}

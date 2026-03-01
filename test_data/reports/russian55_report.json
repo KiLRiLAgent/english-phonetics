@@ -1,0 +1,938 @@
+{
+  "audio": "test_data/russian_accent/russian55.mp3",
+  "reference": "Please call Stella. Ask her to bring these things with her from the store. Six spoons of fresh snow peas, five thick slabs of blue cheese, and maybe a snack for her brother Bob. We also need a small plastic snake and a big toy frog for the kids. She can scoop these things into three red bags, and we will go meet her Wednesday at the train station.",
+  "transcript": "Please, Carl Stella, ask her to bring the sink with her from the store. Six spoons of fresh, show pears, five with slabs of blue, cheese, and maybe a snack for her brother Bob. We also hid a small plastic snack and big to you frok for the kids. She can scoop the sink into three red banks and we will go meet her when today and the train station.",
+  "overall_score": 65.4,
+  "words_total": 71,
+  "words_green": 34,
+  "words_yellow": 11,
+  "words_red": 26,
+  "aligned_words": [
+    {
+      "ref_word": "please",
+      "hyp_word": "Please,",
+      "status": "correct",
+      "confidence": 0.644,
+      "start": 0.0,
+      "end": 0.98
+    },
+    {
+      "ref_word": "call",
+      "hyp_word": "Carl",
+      "status": "substitution",
+      "confidence": 0.071,
+      "start": 1.26,
+      "end": 1.52
+    },
+    {
+      "ref_word": "stella",
+      "hyp_word": "Stella,",
+      "status": "correct",
+      "confidence": 0.461,
+      "start": 1.52,
+      "end": 1.94
+    },
+    {
+      "ref_word": "ask",
+      "hyp_word": "ask",
+      "status": "correct",
+      "confidence": 0.943,
+      "start": 2.36,
+      "end": 2.68
+    },
+    {
+      "ref_word": "her",
+      "hyp_word": "her",
+      "status": "correct",
+      "confidence": 0.624,
+      "start": 2.68,
+      "end": 3.3
+    },
+    {
+      "ref_word": "to",
+      "hyp_word": "to",
+      "status": "correct",
+      "confidence": 0.989,
+      "start": 3.3,
+      "end": 3.7
+    },
+    {
+      "ref_word": "bring",
+      "hyp_word": "bring",
+      "status": "correct",
+      "confidence": 0.915,
+      "start": 3.7,
+      "end": 4.18
+    },
+    {
+      "ref_word": "these",
+      "hyp_word": "the",
+      "status": "substitution",
+      "confidence": 0.791,
+      "start": 4.18,
+      "end": 5.1
+    },
+    {
+      "ref_word": "things",
+      "hyp_word": "sink",
+      "status": "substitution",
+      "confidence": 0.187,
+      "start": 5.1,
+      "end": 7.08
+    },
+    {
+      "ref_word": "with",
+      "hyp_word": "with",
+      "status": "correct",
+      "confidence": 0.514,
+      "start": 7.08,
+      "end": 8.18
+    },
+    {
+      "ref_word": "her",
+      "hyp_word": "her",
+      "status": "correct",
+      "confidence": 0.761,
+      "start": 8.18,
+      "end": 8.7
+    },
+    {
+      "ref_word": "from",
+      "hyp_word": "from",
+      "status": "correct",
+      "confidence": 0.971,
+      "start": 8.7,
+      "end": 9.3
+    },
+    {
+      "ref_word": "the",
+      "hyp_word": "the",
+      "status": "correct",
+      "confidence": 0.977,
+      "start": 9.3,
+      "end": 9.84
+    },
+    {
+      "ref_word": "store",
+      "hyp_word": "store.",
+      "status": "correct",
+      "confidence": 0.706,
+      "start": 9.84,
+      "end": 10.42
+    },
+    {
+      "ref_word": "six",
+      "hyp_word": "Six",
+      "status": "correct",
+      "confidence": 0.786,
+      "start": 11.18,
+      "end": 11.72
+    },
+    {
+      "ref_word": "spoons",
+      "hyp_word": "spoons",
+      "status": "correct",
+      "confidence": 0.92,
+      "start": 11.72,
+      "end": 12.24
+    },
+    {
+      "ref_word": "of",
+      "hyp_word": "of",
+      "status": "correct",
+      "confidence": 0.993,
+      "start": 12.24,
+      "end": 12.88
+    },
+    {
+      "ref_word": "fresh",
+      "hyp_word": "fresh,",
+      "status": "correct",
+      "confidence": 0.855,
+      "start": 12.88,
+      "end": 13.38
+    },
+    {
+      "ref_word": "snow",
+      "hyp_word": "show",
+      "status": "substitution",
+      "confidence": 0.218,
+      "start": 13.44,
+      "end": 13.88
+    },
+    {
+      "ref_word": "peas",
+      "hyp_word": "pears,",
+      "status": "substitution",
+      "confidence": 0.415,
+      "start": 13.88,
+      "end": 16.14
+    },
+    {
+      "ref_word": "five",
+      "hyp_word": "five",
+      "status": "correct",
+      "confidence": 0.92,
+      "start": 16.64,
+      "end": 16.98
+    },
+    {
+      "ref_word": "thick",
+      "hyp_word": "with",
+      "status": "substitution",
+      "confidence": 0.706,
+      "start": 16.98,
+      "end": 17.9
+    },
+    {
+      "ref_word": "slabs",
+      "hyp_word": "slabs",
+      "status": "correct",
+      "confidence": 0.905,
+      "start": 17.9,
+      "end": 18.68
+    },
+    {
+      "ref_word": "of",
+      "hyp_word": "of",
+      "status": "correct",
+      "confidence": 0.961,
+      "start": 18.68,
+      "end": 19.5
+    },
+    {
+      "ref_word": "blue",
+      "hyp_word": "blue,",
+      "status": "correct",
+      "confidence": 0.979,
+      "start": 19.5,
+      "end": 20.02
+    },
+    {
+      "ref_word": "cheese",
+      "hyp_word": "cheese,",
+      "status": "correct",
+      "confidence": 0.276,
+      "start": 20.9,
+      "end": 21.72
+    },
+    {
+      "ref_word": "and",
+      "hyp_word": "and",
+      "status": "correct",
+      "confidence": 0.954,
+      "start": 23.06,
+      "end": 23.06
+    },
+    {
+      "ref_word": "maybe",
+      "hyp_word": "maybe",
+      "status": "correct",
+      "confidence": 0.981,
+      "start": 23.06,
+      "end": 24.0
+    },
+    {
+      "ref_word": "a",
+      "hyp_word": "a",
+      "status": "correct",
+      "confidence": 0.908,
+      "start": 24.0,
+      "end": 24.34
+    },
+    {
+      "ref_word": "snack",
+      "hyp_word": "snack",
+      "status": "correct",
+      "confidence": 0.812,
+      "start": 24.34,
+      "end": 27.08
+    },
+    {
+      "ref_word": "for",
+      "hyp_word": "for",
+      "status": "correct",
+      "confidence": 0.983,
+      "start": 27.08,
+      "end": 27.68
+    },
+    {
+      "ref_word": "her",
+      "hyp_word": "her",
+      "status": "correct",
+      "confidence": 0.888,
+      "start": 27.68,
+      "end": 28.48
+    },
+    {
+      "ref_word": "brother",
+      "hyp_word": "brother",
+      "status": "correct",
+      "confidence": 0.968,
+      "start": 28.48,
+      "end": 29.14
+    },
+    {
+      "ref_word": "bob",
+      "hyp_word": "Bob.",
+      "status": "correct",
+      "confidence": 0.488,
+      "start": 29.14,
+      "end": 29.5
+    },
+    {
+      "ref_word": "we",
+      "hyp_word": "We",
+      "status": "correct",
+      "confidence": 0.685,
+      "start": 29.5,
+      "end": 30.58
+    },
+    {
+      "ref_word": "also",
+      "hyp_word": "also",
+      "status": "correct",
+      "confidence": 0.99,
+      "start": 30.58,
+      "end": 31.14
+    },
+    {
+      "ref_word": "need",
+      "hyp_word": "hid",
+      "status": "substitution",
+      "confidence": 0.556,
+      "start": 31.14,
+      "end": 31.52
+    },
+    {
+      "ref_word": "a",
+      "hyp_word": "a",
+      "status": "correct",
+      "confidence": 0.984,
+      "start": 31.52,
+      "end": 32.18
+    },
+    {
+      "ref_word": "small",
+      "hyp_word": "small",
+      "status": "correct",
+      "confidence": 0.996,
+      "start": 32.18,
+      "end": 32.74
+    },
+    {
+      "ref_word": "plastic",
+      "hyp_word": "plastic",
+      "status": "correct",
+      "confidence": 0.984,
+      "start": 32.74,
+      "end": 33.56
+    },
+    {
+      "ref_word": "snake",
+      "hyp_word": "snack",
+      "status": "substitution",
+      "confidence": 0.719,
+      "start": 33.56,
+      "end": 34.38
+    },
+    {
+      "ref_word": "and",
+      "hyp_word": "and",
+      "status": "correct",
+      "confidence": 0.785,
+      "start": 34.38,
+      "end": 35.4
+    },
+    {
+      "ref_word": "a",
+      "hyp_word": null,
+      "status": "deletion",
+      "confidence": 0,
+      "start": 34.38,
+      "end": 35.4
+    },
+    {
+      "ref_word": "big",
+      "hyp_word": "big",
+      "status": "correct",
+      "confidence": 0.537,
+      "start": 35.4,
+      "end": 35.76
+    },
+    {
+      "ref_word": "toy",
+      "hyp_word": "to",
+      "status": "substitution",
+      "confidence": 0.43,
+      "start": 35.76,
+      "end": 36.06
+    },
+    {
+      "ref_word": null,
+      "hyp_word": "you",
+      "status": "insertion",
+      "confidence": 0.861,
+      "start": 36.06,
+      "end": 36.32
+    },
+    {
+      "ref_word": "frog",
+      "hyp_word": "frok",
+      "status": "substitution",
+      "confidence": 0.283,
+      "start": 36.32,
+      "end": 37.06
+    },
+    {
+      "ref_word": "for",
+      "hyp_word": "for",
+      "status": "correct",
+      "confidence": 0.939,
+      "start": 37.06,
+      "end": 37.86
+    },
+    {
+      "ref_word": "the",
+      "hyp_word": "the",
+      "status": "correct",
+      "confidence": 0.972,
+      "start": 37.86,
+      "end": 38.62
+    },
+    {
+      "ref_word": "kids",
+      "hyp_word": "kids.",
+      "status": "correct",
+      "confidence": 0.99,
+      "start": 38.62,
+      "end": 39.08
+    },
+    {
+      "ref_word": "she",
+      "hyp_word": "She",
+      "status": "correct",
+      "confidence": 0.97,
+      "start": 39.74,
+      "end": 39.84
+    },
+    {
+      "ref_word": "can",
+      "hyp_word": "can",
+      "status": "correct",
+      "confidence": 0.994,
+      "start": 39.84,
+      "end": 40.14
+    },
+    {
+      "ref_word": "scoop",
+      "hyp_word": "scoop",
+      "status": "correct",
+      "confidence": 0.948,
+      "start": 40.14,
+      "end": 41.86
+    },
+    {
+      "ref_word": "these",
+      "hyp_word": "the",
+      "status": "substitution",
+      "confidence": 0.944,
+      "start": 41.86,
+      "end": 42.78
+    },
+    {
+      "ref_word": "things",
+      "hyp_word": "sink",
+      "status": "substitution",
+      "confidence": 0.002,
+      "start": 42.78,
+      "end": 44.52
+    },
+    {
+      "ref_word": "into",
+      "hyp_word": "into",
+      "status": "correct",
+      "confidence": 0.431,
+      "start": 44.52,
+      "end": 45.16
+    },
+    {
+      "ref_word": "three",
+      "hyp_word": "three",
+      "status": "correct",
+      "confidence": 0.187,
+      "start": 45.16,
+      "end": 45.76
+    },
+    {
+      "ref_word": "red",
+      "hyp_word": "red",
+      "status": "correct",
+      "confidence": 0.468,
+      "start": 45.76,
+      "end": 46.96
+    },
+    {
+      "ref_word": "bags",
+      "hyp_word": "banks",
+      "status": "substitution",
+      "confidence": 0.117,
+      "start": 46.96,
+      "end": 47.7
+    },
+    {
+      "ref_word": "and",
+      "hyp_word": "and",
+      "status": "correct",
+      "confidence": 0.691,
+      "start": 47.7,
+      "end": 48.84
+    },
+    {
+      "ref_word": "we",
+      "hyp_word": "we",
+      "status": "correct",
+      "confidence": 0.976,
+      "start": 48.84,
+      "end": 49.8
+    },
+    {
+      "ref_word": "will",
+      "hyp_word": "will",
+      "status": "correct",
+      "confidence": 0.969,
+      "start": 49.8,
+      "end": 50.36
+    },
+    {
+      "ref_word": "go",
+      "hyp_word": "go",
+      "status": "correct",
+      "confidence": 0.955,
+      "start": 50.36,
+      "end": 51.18
+    },
+    {
+      "ref_word": "meet",
+      "hyp_word": "meet",
+      "status": "correct",
+      "confidence": 0.808,
+      "start": 51.18,
+      "end": 51.92
+    },
+    {
+      "ref_word": "her",
+      "hyp_word": "her",
+      "status": "correct",
+      "confidence": 0.958,
+      "start": 51.92,
+      "end": 52.92
+    },
+    {
+      "ref_word": null,
+      "hyp_word": "when",
+      "status": "insertion",
+      "confidence": 0.434,
+      "start": 52.92,
+      "end": 53.9
+    },
+    {
+      "ref_word": "wednesday",
+      "hyp_word": "today",
+      "status": "substitution",
+      "confidence": 0.371,
+      "start": 53.9,
+      "end": 54.5
+    },
+    {
+      "ref_word": "at",
+      "hyp_word": "and",
+      "status": "substitution",
+      "confidence": 0.776,
+      "start": 54.5,
+      "end": 55.3
+    },
+    {
+      "ref_word": "the",
+      "hyp_word": "the",
+      "status": "correct",
+      "confidence": 0.927,
+      "start": 55.3,
+      "end": 55.58
+    },
+    {
+      "ref_word": "train",
+      "hyp_word": "train",
+      "status": "correct",
+      "confidence": 0.788,
+      "start": 55.58,
+      "end": 55.98
+    },
+    {
+      "ref_word": "station",
+      "hyp_word": "station.",
+      "status": "correct",
+      "confidence": 0.977,
+      "start": 55.98,
+      "end": 56.82
+    }
+  ],
+  "scored_words": [
+    {
+      "score": 40,
+      "color": "red",
+      "level": "unclear"
+    },
+    {
+      "score": 10,
+      "color": "red",
+      "level": "wrong_word"
+    },
+    {
+      "score": 40,
+      "color": "red",
+      "level": "unclear"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 40,
+      "color": "red",
+      "level": "unclear"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 10,
+      "color": "red",
+      "level": "wrong_word"
+    },
+    {
+      "score": 10,
+      "color": "red",
+      "level": "wrong_word"
+    },
+    {
+      "score": 40,
+      "color": "red",
+      "level": "unclear"
+    },
+    {
+      "score": 70,
+      "color": "yellow",
+      "level": "acceptable"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 70,
+      "color": "yellow",
+      "level": "acceptable"
+    },
+    {
+      "score": 70,
+      "color": "yellow",
+      "level": "acceptable"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 10,
+      "color": "red",
+      "level": "wrong_word"
+    },
+    {
+      "score": 10,
+      "color": "red",
+      "level": "wrong_word"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 10,
+      "color": "red",
+      "level": "wrong_word"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 40,
+      "color": "red",
+      "level": "unclear"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 70,
+      "color": "yellow",
+      "level": "acceptable"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 40,
+      "color": "red",
+      "level": "unclear"
+    },
+    {
+      "score": 70,
+      "color": "yellow",
+      "level": "acceptable"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 10,
+      "color": "red",
+      "level": "wrong_word"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 10,
+      "color": "red",
+      "level": "wrong_word"
+    },
+    {
+      "score": 70,
+      "color": "yellow",
+      "level": "acceptable"
+    },
+    {
+      "score": 0,
+      "color": "red",
+      "level": "skipped"
+    },
+    {
+      "score": 40,
+      "color": "red",
+      "level": "unclear"
+    },
+    {
+      "score": 10,
+      "color": "red",
+      "level": "wrong_word"
+    },
+    {
+      "score": 30,
+      "color": "yellow",
+      "level": "extra_word"
+    },
+    {
+      "score": 10,
+      "color": "red",
+      "level": "wrong_word"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 10,
+      "color": "red",
+      "level": "wrong_word"
+    },
+    {
+      "score": 10,
+      "color": "red",
+      "level": "wrong_word"
+    },
+    {
+      "score": 40,
+      "color": "red",
+      "level": "unclear"
+    },
+    {
+      "score": 40,
+      "color": "red",
+      "level": "unclear"
+    },
+    {
+      "score": 40,
+      "color": "red",
+      "level": "unclear"
+    },
+    {
+      "score": 10,
+      "color": "red",
+      "level": "wrong_word"
+    },
+    {
+      "score": 70,
+      "color": "yellow",
+      "level": "acceptable"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 70,
+      "color": "yellow",
+      "level": "acceptable"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 30,
+      "color": "yellow",
+      "level": "extra_word"
+    },
+    {
+      "score": 10,
+      "color": "red",
+      "level": "wrong_word"
+    },
+    {
+      "score": 10,
+      "color": "red",
+      "level": "wrong_word"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    },
+    {
+      "score": 70,
+      "color": "yellow",
+      "level": "acceptable"
+    },
+    {
+      "score": 100,
+      "color": "green",
+      "level": "excellent"
+    }
+  ],
+  "analyzed_at": "2026-02-14T19:02:34.136916"
+}

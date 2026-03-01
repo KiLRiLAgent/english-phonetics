@@ -1,0 +1,3845 @@
+{
+  "overall_score": 35.1,
+  "total_expected": 222,
+  "total_actual": 220,
+  "correct": 78,
+  "error_count": 144,
+  "error_rate": 64.9,
+  "errors": [
+    {
+      "type": "substitution",
+      "expected": "uː",
+      "expected_name": "oo (food)",
+      "actual": "ʊ",
+      "actual_name": "oo (book)",
+      "description": "\"oo (food)\" → \"oo (book)\""
+    },
+    {
+      "type": "substitution",
+      "expected": "w",
+      "expected_name": "w",
+      "actual": "v",
+      "actual_name": "v",
+      "description": "\"w\" → \"v\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ʌ",
+      "expected_name": "uh",
+      "actual": "ə",
+      "actual_name": "ə",
+      "description": "\"uh\" → \"ə\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɔː",
+      "expected_name": "aw",
+      "actual": "oʊ",
+      "actual_name": "oh",
+      "description": "\"aw\" → \"oh\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɹ",
+      "expected_name": "r",
+      "actual": "s",
+      "actual_name": "s",
+      "description": "\"r\" → \"s\""
+    },
+    {
+      "type": "substitution",
+      "expected": "s",
+      "expected_name": "s",
+      "actual": "ɪ",
+      "actual_name": "ih",
+      "description": "\"s\" → \"ih\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɪ",
+      "expected_name": "ih",
+      "actual": "k",
+      "actual_name": "k",
+      "description": "\"ih\" → \"k\""
+    },
+    {
+      "type": "substitution",
+      "expected": "k",
+      "expected_name": "k",
+      "actual": "s",
+      "actual_name": "s",
+      "description": "\"k\" → \"s\""
+    },
+    {
+      "type": "substitution",
+      "expected": "s",
+      "expected_name": "s",
+      "actual": "k",
+      "actual_name": "k",
+      "description": "\"s\" → \"k\""
+    },
+    {
+      "type": "substitution",
+      "expected": "s",
+      "expected_name": "s",
+      "actual": "uː",
+      "actual_name": "oo (food)",
+      "description": "\"s\" → \"oo (food)\""
+    },
+    {
+      "type": "substitution",
+      "expected": "p",
+      "expected_name": "p",
+      "actual": "n",
+      "actual_name": "n",
+      "description": "\"p\" → \"n\""
+    },
+    {
+      "type": "substitution",
+      "expected": "uː",
+      "expected_name": "oo (food)",
+      "actual": "s",
+      "actual_name": "s",
+      "description": "\"oo (food)\" → \"s\""
+    },
+    {
+      "type": "substitution",
+      "expected": "n",
+      "expected_name": "n",
+      "actual": "ʌ",
+      "actual_name": "uh",
+      "description": "\"n\" → \"uh\""
+    },
+    {
+      "type": "substitution",
+      "expected": "z",
+      "expected_name": "z",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"z\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ʌ",
+      "expected_name": "uh",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"uh\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "v",
+      "expected_name": "v",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"v\" → \"∅\""
+    },
+    {
+      "type": "deletion",
+      "expected": "s",
+      "expected_name": "s",
+      "actual": "∅",
+      "actual_name": "missing",
+      "description": "\"s\" was dropped"
+    },
+    {
+      "type": "substitution",
+      "expected": "b",
+      "expected_name": "b",
+      "actual": "p",
+      "actual_name": "p",
+      "description": "\"b\" → \"p\""
+    },
+    {
+      "type": "substitution",
+      "expected": "z",
+      "expected_name": "z",
+      "actual": "s",
+      "actual_name": "s",
+      "description": "\"z\" → \"s\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ʌ",
+      "expected_name": "uh",
+      "actual": "ɔː",
+      "actual_name": "aw",
+      "description": "\"uh\" → \"aw\""
+    },
+    {
+      "type": "substitution",
+      "expected": "v",
+      "expected_name": "v",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"v\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ʌ",
+      "expected_name": "uh",
+      "actual": "æ",
+      "actual_name": "a",
+      "description": "\"uh\" → \"a\""
+    },
+    {
+      "type": "substitution",
+      "expected": "d",
+      "expected_name": "d",
+      "actual": "m",
+      "actual_name": "m",
+      "description": "\"d\" → \"m\""
+    },
+    {
+      "type": "substitution",
+      "expected": "m",
+      "expected_name": "m",
+      "actual": "eɪ",
+      "actual_name": "ay",
+      "description": "\"m\" → \"ay\""
+    },
+    {
+      "type": "substitution",
+      "expected": "eɪ",
+      "expected_name": "ay",
+      "actual": "b",
+      "actual_name": "b",
+      "description": "\"ay\" → \"b\""
+    },
+    {
+      "type": "substitution",
+      "expected": "b",
+      "expected_name": "b",
+      "actual": "iː",
+      "actual_name": "ee",
+      "description": "\"b\" → \"ee\""
+    },
+    {
+      "type": "substitution",
+      "expected": "iː",
+      "expected_name": "ee",
+      "actual": "ɐ",
+      "actual_name": "ɐ",
+      "description": "\"ee\" → \"ɐ\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ʌ",
+      "expected_name": "uh",
+      "actual": "s",
+      "actual_name": "s",
+      "description": "\"uh\" → \"s\""
+    },
+    {
+      "type": "substitution",
+      "expected": "s",
+      "expected_name": "s",
+      "actual": "n",
+      "actual_name": "n",
+      "description": "\"s\" → \"n\""
+    },
+    {
+      "type": "substitution",
+      "expected": "n",
+      "expected_name": "n",
+      "actual": "æ",
+      "actual_name": "a",
+      "description": "\"n\" → \"a\""
+    },
+    {
+      "type": "substitution",
+      "expected": "æ",
+      "expected_name": "a",
+      "actual": "k",
+      "actual_name": "k",
+      "description": "\"a\" → \"k\""
+    },
+    {
+      "type": "substitution",
+      "expected": "k",
+      "expected_name": "k",
+      "actual": "ʌ",
+      "actual_name": "uh",
+      "description": "\"k\" → \"uh\""
+    },
+    {
+      "type": "substitution",
+      "expected": "f",
+      "expected_name": "f",
+      "actual": "v",
+      "actual_name": "v",
+      "description": "\"f\" → \"v\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɔː",
+      "expected_name": "aw",
+      "actual": "s",
+      "actual_name": "s",
+      "description": "\"aw\" → \"s\""
+    },
+    {
+      "type": "substitution",
+      "expected": "b",
+      "expected_name": "b",
+      "actual": "ɹ",
+      "actual_name": "r",
+      "description": "\"b\" → \"r\""
+    },
+    {
+      "type": "substitution",
+      "expected": "b",
+      "expected_name": "b",
+      "actual": "s",
+      "actual_name": "s",
+      "description": "\"b\" → \"s\""
+    },
+    {
+      "type": "substitution",
+      "expected": "w",
+      "expected_name": "w",
+      "actual": "t",
+      "actual_name": "t",
+      "description": "\"w\" → \"t\""
+    },
+    {
+      "type": "substitution",
+      "expected": "iː",
+      "expected_name": "ee",
+      "actual": "ɪ",
+      "actual_name": "ih",
+      "description": "\"ee\" → \"ih\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɔː",
+      "expected_name": "aw",
+      "actual": "k",
+      "actual_name": "k",
+      "description": "\"aw\" → \"k\""
+    },
+    {
+      "type": "substitution",
+      "expected": "l",
+      "expected_name": "l",
+      "actual": "s",
+      "actual_name": "s",
+      "description": "\"l\" → \"s\""
+    },
+    {
+      "type": "substitution",
+      "expected": "s",
+      "expected_name": "s",
+      "actual": "n",
+      "actual_name": "n",
+      "description": "\"s\" → \"n\""
+    },
+    {
+      "type": "substitution",
+      "expected": "oʊ",
+      "expected_name": "oh",
+      "actual": "eɪ",
+      "actual_name": "ay",
+      "description": "\"oh\" → \"ay\""
+    },
+    {
+      "type": "substitution",
+      "expected": "n",
+      "expected_name": "n",
+      "actual": "k",
+      "actual_name": "k",
+      "description": "\"n\" → \"k\""
+    },
+    {
+      "type": "substitution",
+      "expected": "iː",
+      "expected_name": "ee",
+      "actual": "æ",
+      "actual_name": "a",
+      "description": "\"ee\" → \"a\""
+    },
+    {
+      "type": "substitution",
+      "expected": "d",
+      "expected_name": "d",
+      "actual": "n",
+      "actual_name": "n",
+      "description": "\"d\" → \"n\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ʌ",
+      "expected_name": "uh",
+      "actual": "d",
+      "actual_name": "d",
+      "description": "\"uh\" → \"d\""
+    },
+    {
+      "type": "substitution",
+      "expected": "s",
+      "expected_name": "s",
+      "actual": "b",
+      "actual_name": "b",
+      "description": "\"s\" → \"b\""
+    },
+    {
+      "type": "substitution",
+      "expected": "m",
+      "expected_name": "m",
+      "actual": "ɪ",
+      "actual_name": "ih",
+      "description": "\"m\" → \"ih\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɔː",
+      "expected_name": "aw",
+      "actual": "k",
+      "actual_name": "k",
+      "description": "\"aw\" → \"k\""
+    },
+    {
+      "type": "substitution",
+      "expected": "l",
+      "expected_name": "l",
+      "actual": "t",
+      "actual_name": "t",
+      "description": "\"l\" → \"t\""
+    },
+    {
+      "type": "substitution",
+      "expected": "p",
+      "expected_name": "p",
+      "actual": "ɔːɹ",
+      "actual_name": "ɔːɹ",
+      "description": "\"p\" → \"ɔːɹ\""
+    },
+    {
+      "type": "substitution",
+      "expected": "l",
+      "expected_name": "l",
+      "actual": "f",
+      "actual_name": "f",
+      "description": "\"l\" → \"f\""
+    },
+    {
+      "type": "substitution",
+      "expected": "æ",
+      "expected_name": "a",
+      "actual": "ɹ",
+      "actual_name": "r",
+      "description": "\"a\" → \"r\""
+    },
+    {
+      "type": "substitution",
+      "expected": "s",
+      "expected_name": "s",
+      "actual": "ɔ",
+      "actual_name": "ɔ",
+      "description": "\"s\" → \"ɔ\""
+    },
+    {
+      "type": "substitution",
+      "expected": "t",
+      "expected_name": "t",
+      "actual": "k",
+      "actual_name": "k",
+      "description": "\"t\" → \"k\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɪ",
+      "expected_name": "ih",
+      "actual": "f",
+      "actual_name": "f",
+      "description": "\"ih\" → \"f\""
+    },
+    {
+      "type": "substitution",
+      "expected": "k",
+      "expected_name": "k",
+      "actual": "ɔːɹ",
+      "actual_name": "ɔːɹ",
+      "description": "\"k\" → \"ɔːɹ\""
+    },
+    {
+      "type": "substitution",
+      "expected": "s",
+      "expected_name": "s",
+      "actual": "ð",
+      "actual_name": "th (this)",
+      "description": "\"s\" → \"th (this)\""
+    },
+    {
+      "type": "substitution",
+      "expected": "n",
+      "expected_name": "n",
+      "actual": "ə",
+      "actual_name": "ə",
+      "description": "\"n\" → \"ə\""
+    },
+    {
+      "type": "substitution",
+      "expected": "eɪ",
+      "expected_name": "ay",
+      "actual": "k",
+      "actual_name": "k",
+      "description": "\"ay\" → \"k\""
+    },
+    {
+      "type": "substitution",
+      "expected": "k",
+      "expected_name": "k",
+      "actual": "ɛ",
+      "actual_name": "eh",
+      "description": "\"k\" → \"eh\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ʌ",
+      "expected_name": "uh",
+      "actual": "t",
+      "actual_name": "t",
+      "description": "\"uh\" → \"t\""
+    },
+    {
+      "type": "substitution",
+      "expected": "n",
+      "expected_name": "n",
+      "actual": "s",
+      "actual_name": "s",
+      "description": "\"n\" → \"s\""
+    },
+    {
+      "type": "substitution",
+      "expected": "d",
+      "expected_name": "d",
+      "actual": "ʃ",
+      "actual_name": "sh",
+      "description": "\"d\" → \"sh\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ʌ",
+      "expected_name": "uh",
+      "actual": "iː",
+      "actual_name": "ee",
+      "description": "\"uh\" → \"ee\""
+    },
+    {
+      "type": "substitution",
+      "expected": "b",
+      "expected_name": "b",
+      "actual": "k",
+      "actual_name": "k",
+      "description": "\"b\" → \"k\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɪ",
+      "expected_name": "ih",
+      "actual": "æ",
+      "actual_name": "a",
+      "description": "\"ih\" → \"a\""
+    },
+    {
+      "type": "substitution",
+      "expected": "t",
+      "expected_name": "t",
+      "actual": "z",
+      "actual_name": "z",
+      "description": "\"t\" → \"z\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɔɪ",
+      "expected_name": "oy",
+      "actual": "æ",
+      "actual_name": "a",
+      "description": "\"oy\" → \"a\""
+    },
+    {
+      "type": "substitution",
+      "expected": "f",
+      "expected_name": "f",
+      "actual": "n",
+      "actual_name": "n",
+      "description": "\"f\" → \"n\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɹ",
+      "expected_name": "r",
+      "actual": "d",
+      "actual_name": "d",
+      "description": "\"r\" → \"d\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɑː",
+      "expected_name": "ah",
+      "actual": "v",
+      "actual_name": "v",
+      "description": "\"ah\" → \"v\""
+    },
+    {
+      "type": "substitution",
+      "expected": "f",
+      "expected_name": "f",
+      "actual": "oʊ",
+      "actual_name": "oh",
+      "description": "\"f\" → \"oh\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɔː",
+      "expected_name": "aw",
+      "actual": "m",
+      "actual_name": "m",
+      "description": "\"aw\" → \"m\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɹ",
+      "expected_name": "r",
+      "actual": "iː",
+      "actual_name": "ee",
+      "description": "\"r\" → \"ee\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ð",
+      "expected_name": "th (this)",
+      "actual": "ɾ",
+      "actual_name": "ɾ",
+      "description": "\"th (this)\" → \"ɾ\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ʌ",
+      "expected_name": "uh",
+      "actual": "ɚ",
+      "actual_name": "ɚ",
+      "description": "\"uh\" → \"ɚ\""
+    },
+    {
+      "type": "substitution",
+      "expected": "k",
+      "expected_name": "k",
+      "actual": "v",
+      "actual_name": "v",
+      "description": "\"k\" → \"v\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɪ",
+      "expected_name": "ih",
+      "actual": "ɛ",
+      "actual_name": "eh",
+      "description": "\"ih\" → \"eh\""
+    },
+    {
+      "type": "substitution",
+      "expected": "d",
+      "expected_name": "d",
+      "actual": "n",
+      "actual_name": "n",
+      "description": "\"d\" → \"n\""
+    },
+    {
+      "type": "substitution",
+      "expected": "iː",
+      "expected_name": "ee",
+      "actual": "ə",
+      "actual_name": "ə",
+      "description": "\"ee\" → \"ə\""
+    },
+    {
+      "type": "substitution",
+      "expected": "k",
+      "expected_name": "k",
+      "actual": "n",
+      "actual_name": "n",
+      "description": "\"k\" → \"n\""
+    },
+    {
+      "type": "substitution",
+      "expected": "æ",
+      "expected_name": "a",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"a\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "n",
+      "expected_name": "n",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"n\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "s",
+      "expected_name": "s",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"s\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "k",
+      "expected_name": "k",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"k\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "uː",
+      "expected_name": "oo (food)",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"oo (food)\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "p",
+      "expected_name": "p",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"p\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ð",
+      "expected_name": "th (this)",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"th (this)\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "iː",
+      "expected_name": "ee",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"ee\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "z",
+      "expected_name": "z",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"z\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "θ",
+      "expected_name": "th (thin)",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"th (thin)\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɪ",
+      "expected_name": "ih",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"ih\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ŋ",
+      "expected_name": "ng",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"ng\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "z",
+      "expected_name": "z",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"z\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɪ",
+      "expected_name": "ih",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"ih\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "n",
+      "expected_name": "n",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"n\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "t",
+      "expected_name": "t",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"t\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "uː",
+      "expected_name": "oo (food)",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"oo (food)\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "θ",
+      "expected_name": "th (thin)",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"th (thin)\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɹ",
+      "expected_name": "r",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"r\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "iː",
+      "expected_name": "ee",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"ee\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɹ",
+      "expected_name": "r",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"r\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɛ",
+      "expected_name": "eh",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"eh\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "d",
+      "expected_name": "d",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"d\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "b",
+      "expected_name": "b",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"b\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "æ",
+      "expected_name": "a",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"a\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɡ",
+      "expected_name": "g",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"g\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "z",
+      "expected_name": "z",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"z\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ʌ",
+      "expected_name": "uh",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"uh\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "n",
+      "expected_name": "n",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"n\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "d",
+      "expected_name": "d",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"d\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "w",
+      "expected_name": "w",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"w\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "iː",
+      "expected_name": "ee",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"ee\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "w",
+      "expected_name": "w",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"w\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɪ",
+      "expected_name": "ih",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"ih\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "l",
+      "expected_name": "l",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"l\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɡ",
+      "expected_name": "g",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"g\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "oʊ",
+      "expected_name": "oh",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"oh\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "m",
+      "expected_name": "m",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"m\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "iː",
+      "expected_name": "ee",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"ee\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "t",
+      "expected_name": "t",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"t\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "h",
+      "expected_name": "h",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"h\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɝ",
+      "expected_name": "er",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"er\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "w",
+      "expected_name": "w",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"w\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɛ",
+      "expected_name": "eh",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"eh\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "n",
+      "expected_name": "n",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"n\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "z",
+      "expected_name": "z",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"z\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "d",
+      "expected_name": "d",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"d\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "iː",
+      "expected_name": "ee",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"ee\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "æ",
+      "expected_name": "a",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"a\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "t",
+      "expected_name": "t",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"t\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ð",
+      "expected_name": "th (this)",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"th (this)\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ʌ",
+      "expected_name": "uh",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"uh\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "t",
+      "expected_name": "t",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"t\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ɹ",
+      "expected_name": "r",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"r\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "eɪ",
+      "expected_name": "ay",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"ay\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "n",
+      "expected_name": "n",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"n\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "s",
+      "expected_name": "s",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"s\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "t",
+      "expected_name": "t",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"t\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "eɪ",
+      "expected_name": "ay",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"ay\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ʃ",
+      "expected_name": "sh",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"sh\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "ʌ",
+      "expected_name": "uh",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"uh\" → \"∅\""
+    },
+    {
+      "type": "substitution",
+      "expected": "n",
+      "expected_name": "n",
+      "actual": "∅",
+      "actual_name": "∅",
+      "description": "\"n\" → \"∅\""
+    }
+  ],
+  "error_patterns": [
+    {
+      "pattern": "n → ∅",
+      "count": 6,
+      "readable": "n → ∅"
+    },
+    {
+      "pattern": "z → ∅",
+      "count": 5,
+      "readable": "z → ∅"
+    },
+    {
+      "pattern": "iː → ∅",
+      "count": 5,
+      "readable": "ee → ∅"
+    },
+    {
+      "pattern": "t → ∅",
+      "count": 5,
+      "readable": "t → ∅"
+    },
+    {
+      "pattern": "ʌ → ∅",
+      "count": 4,
+      "readable": "uh → ∅"
+    },
+    {
+      "pattern": "æ → ∅",
+      "count": 3,
+      "readable": "a → ∅"
+    },
+    {
+      "pattern": "ɪ → ∅",
+      "count": 3,
+      "readable": "ih → ∅"
+    },
+    {
+      "pattern": "ɹ → ∅",
+      "count": 3,
+      "readable": "r → ∅"
+    },
+    {
+      "pattern": "d → ∅",
+      "count": 3,
+      "readable": "d → ∅"
+    },
+    {
+      "pattern": "w → ∅",
+      "count": 3,
+      "readable": "w → ∅"
+    },
+    {
+      "pattern": "v → ∅",
+      "count": 2,
+      "readable": "v → ∅"
+    },
+    {
+      "pattern": "s → n",
+      "count": 2,
+      "readable": "s → n"
+    },
+    {
+      "pattern": "ɔː → k",
+      "count": 2,
+      "readable": "aw → k"
+    },
+    {
+      "pattern": "d → n",
+      "count": 2,
+      "readable": "d → n"
+    },
+    {
+      "pattern": "s → ∅",
+      "count": 2,
+      "readable": "s → ∅"
+    },
+    {
+      "pattern": "uː → ∅",
+      "count": 2,
+      "readable": "oo (food) → ∅"
+    },
+    {
+      "pattern": "ð → ∅",
+      "count": 2,
+      "readable": "th (this) → ∅"
+    },
+    {
+      "pattern": "θ → ∅",
+      "count": 2,
+      "readable": "th (thin) → ∅"
+    },
+    {
+      "pattern": "ɛ → ∅",
+      "count": 2,
+      "readable": "eh → ∅"
+    },
+    {
+      "pattern": "ɡ → ∅",
+      "count": 2,
+      "readable": "g → ∅"
+    },
+    {
+      "pattern": "eɪ → ∅",
+      "count": 2,
+      "readable": "ay → ∅"
+    },
+    {
+      "pattern": "uː → ʊ",
+      "count": 1,
+      "readable": "oo (food) → oo (book)"
+    },
+    {
+      "pattern": "w → v",
+      "count": 1,
+      "readable": "w → v"
+    },
+    {
+      "pattern": "ʌ → ə",
+      "count": 1,
+      "readable": "uh → ə"
+    },
+    {
+      "pattern": "ɔː → oʊ",
+      "count": 1,
+      "readable": "aw → oh"
+    },
+    {
+      "pattern": "ɹ → s",
+      "count": 1,
+      "readable": "r → s"
+    },
+    {
+      "pattern": "s → ɪ",
+      "count": 1,
+      "readable": "s → ih"
+    },
+    {
+      "pattern": "ɪ → k",
+      "count": 1,
+      "readable": "ih → k"
+    },
+    {
+      "pattern": "k → s",
+      "count": 1,
+      "readable": "k → s"
+    },
+    {
+      "pattern": "s → k",
+      "count": 1,
+      "readable": "s → k"
+    },
+    {
+      "pattern": "s → uː",
+      "count": 1,
+      "readable": "s → oo (food)"
+    },
+    {
+      "pattern": "p → n",
+      "count": 1,
+      "readable": "p → n"
+    },
+    {
+      "pattern": "uː → s",
+      "count": 1,
+      "readable": "oo (food) → s"
+    },
+    {
+      "pattern": "n → ʌ",
+      "count": 1,
+      "readable": "n → uh"
+    },
+    {
+      "pattern": "b → p",
+      "count": 1,
+      "readable": "b → p"
+    },
+    {
+      "pattern": "z → s",
+      "count": 1,
+      "readable": "z → s"
+    },
+    {
+      "pattern": "ʌ → ɔː",
+      "count": 1,
+      "readable": "uh → aw"
+    },
+    {
+      "pattern": "ʌ → æ",
+      "count": 1,
+      "readable": "uh → a"
+    },
+    {
+      "pattern": "d → m",
+      "count": 1,
+      "readable": "d → m"
+    },
+    {
+      "pattern": "m → eɪ",
+      "count": 1,
+      "readable": "m → ay"
+    },
+    {
+      "pattern": "eɪ → b",
+      "count": 1,
+      "readable": "ay → b"
+    },
+    {
+      "pattern": "b → iː",
+      "count": 1,
+      "readable": "b → ee"
+    },
+    {
+      "pattern": "iː → ɐ",
+      "count": 1,
+      "readable": "ee → ɐ"
+    },
+    {
+      "pattern": "ʌ → s",
+      "count": 1,
+      "readable": "uh → s"
+    },
+    {
+      "pattern": "n → æ",
+      "count": 1,
+      "readable": "n → a"
+    },
+    {
+      "pattern": "æ → k",
+      "count": 1,
+      "readable": "a → k"
+    },
+    {
+      "pattern": "k → ʌ",
+      "count": 1,
+      "readable": "k → uh"
+    },
+    {
+      "pattern": "f → v",
+      "count": 1,
+      "readable": "f → v"
+    },
+    {
+      "pattern": "ɔː → s",
+      "count": 1,
+      "readable": "aw → s"
+    },
+    {
+      "pattern": "b → ɹ",
+      "count": 1,
+      "readable": "b → r"
+    },
+    {
+      "pattern": "b → s",
+      "count": 1,
+      "readable": "b → s"
+    },
+    {
+      "pattern": "w → t",
+      "count": 1,
+      "readable": "w → t"
+    },
+    {
+      "pattern": "iː → ɪ",
+      "count": 1,
+      "readable": "ee → ih"
+    },
+    {
+      "pattern": "l → s",
+      "count": 1,
+      "readable": "l → s"
+    },
+    {
+      "pattern": "oʊ → eɪ",
+      "count": 1,
+      "readable": "oh → ay"
+    },
+    {
+      "pattern": "n → k",
+      "count": 1,
+      "readable": "n → k"
+    },
+    {
+      "pattern": "iː → æ",
+      "count": 1,
+      "readable": "ee → a"
+    },
+    {
+      "pattern": "ʌ → d",
+      "count": 1,
+      "readable": "uh → d"
+    },
+    {
+      "pattern": "s → b",
+      "count": 1,
+      "readable": "s → b"
+    },
+    {
+      "pattern": "m → ɪ",
+      "count": 1,
+      "readable": "m → ih"
+    },
+    {
+      "pattern": "l → t",
+      "count": 1,
+      "readable": "l → t"
+    },
+    {
+      "pattern": "p → ɔːɹ",
+      "count": 1,
+      "readable": "p → ɔːɹ"
+    },
+    {
+      "pattern": "l → f",
+      "count": 1,
+      "readable": "l → f"
+    },
+    {
+      "pattern": "æ → ɹ",
+      "count": 1,
+      "readable": "a → r"
+    },
+    {
+      "pattern": "s → ɔ",
+      "count": 1,
+      "readable": "s → ɔ"
+    },
+    {
+      "pattern": "t → k",
+      "count": 1,
+      "readable": "t → k"
+    },
+    {
+      "pattern": "ɪ → f",
+      "count": 1,
+      "readable": "ih → f"
+    },
+    {
+      "pattern": "k → ɔːɹ",
+      "count": 1,
+      "readable": "k → ɔːɹ"
+    },
+    {
+      "pattern": "s → ð",
+      "count": 1,
+      "readable": "s → th (this)"
+    },
+    {
+      "pattern": "n → ə",
+      "count": 1,
+      "readable": "n → ə"
+    },
+    {
+      "pattern": "eɪ → k",
+      "count": 1,
+      "readable": "ay → k"
+    },
+    {
+      "pattern": "k → ɛ",
+      "count": 1,
+      "readable": "k → eh"
+    },
+    {
+      "pattern": "ʌ → t",
+      "count": 1,
+      "readable": "uh → t"
+    },
+    {
+      "pattern": "n → s",
+      "count": 1,
+      "readable": "n → s"
+    },
+    {
+      "pattern": "d → ʃ",
+      "count": 1,
+      "readable": "d → sh"
+    },
+    {
+      "pattern": "ʌ → iː",
+      "count": 1,
+      "readable": "uh → ee"
+    },
+    {
+      "pattern": "b → k",
+      "count": 1,
+      "readable": "b → k"
+    },
+    {
+      "pattern": "ɪ → æ",
+      "count": 1,
+      "readable": "ih → a"
+    },
+    {
+      "pattern": "t → z",
+      "count": 1,
+      "readable": "t → z"
+    },
+    {
+      "pattern": "ɔɪ → æ",
+      "count": 1,
+      "readable": "oy → a"
+    },
+    {
+      "pattern": "f → n",
+      "count": 1,
+      "readable": "f → n"
+    },
+    {
+      "pattern": "ɹ → d",
+      "count": 1,
+      "readable": "r → d"
+    },
+    {
+      "pattern": "ɑː → v",
+      "count": 1,
+      "readable": "ah → v"
+    },
+    {
+      "pattern": "f → oʊ",
+      "count": 1,
+      "readable": "f → oh"
+    },
+    {
+      "pattern": "ɔː → m",
+      "count": 1,
+      "readable": "aw → m"
+    },
+    {
+      "pattern": "ɹ → iː",
+      "count": 1,
+      "readable": "r → ee"
+    },
+    {
+      "pattern": "ð → ɾ",
+      "count": 1,
+      "readable": "th (this) → ɾ"
+    },
+    {
+      "pattern": "ʌ → ɚ",
+      "count": 1,
+      "readable": "uh → ɚ"
+    },
+    {
+      "pattern": "k → v",
+      "count": 1,
+      "readable": "k → v"
+    },
+    {
+      "pattern": "ɪ → ɛ",
+      "count": 1,
+      "readable": "ih → eh"
+    },
+    {
+      "pattern": "iː → ə",
+      "count": 1,
+      "readable": "ee → ə"
+    },
+    {
+      "pattern": "k → n",
+      "count": 1,
+      "readable": "k → n"
+    },
+    {
+      "pattern": "k → ∅",
+      "count": 1,
+      "readable": "k → ∅"
+    },
+    {
+      "pattern": "p → ∅",
+      "count": 1,
+      "readable": "p → ∅"
+    },
+    {
+      "pattern": "ŋ → ∅",
+      "count": 1,
+      "readable": "ng → ∅"
+    },
+    {
+      "pattern": "b → ∅",
+      "count": 1,
+      "readable": "b → ∅"
+    },
+    {
+      "pattern": "l → ∅",
+      "count": 1,
+      "readable": "l → ∅"
+    },
+    {
+      "pattern": "oʊ → ∅",
+      "count": 1,
+      "readable": "oh → ∅"
+    },
+    {
+      "pattern": "m → ∅",
+      "count": 1,
+      "readable": "m → ∅"
+    },
+    {
+      "pattern": "h → ∅",
+      "count": 1,
+      "readable": "h → ∅"
+    },
+    {
+      "pattern": "ɝ → ∅",
+      "count": 1,
+      "readable": "er → ∅"
+    },
+    {
+      "pattern": "ʃ → ∅",
+      "count": 1,
+      "readable": "sh → ∅"
+    }
+  ],
+  "alignments": [
+    {
+      "expected": "p",
+      "actual": "p",
+      "status": "correct",
+      "confidence": 0.977
+    },
+    {
+      "expected": "l",
+      "actual": "l",
+      "status": "correct",
+      "confidence": 0.987
+    },
+    {
+      "expected": "iː",
+      "actual": "iː",
+      "status": "correct",
+      "confidence": 0.932
+    },
+    {
+      "expected": "z",
+      "actual": "z",
+      "status": "correct",
+      "confidence": 0.644
+    },
+    {
+      "expected": "k",
+      "actual": "k",
+      "status": "correct",
+      "confidence": 0.963
+    },
+    {
+      "expected": "ɔː",
+      "actual": "ɔ",
+      "status": "correct",
+      "confidence": 0.237
+    },
+    {
+      "expected": "l",
+      "actual": "l",
+      "status": "correct",
+      "confidence": 0.947
+    },
+    {
+      "expected": "s",
+      "actual": "s",
+      "status": "correct",
+      "confidence": 0.99
+    },
+    {
+      "expected": "t",
+      "actual": "t",
+      "status": "correct",
+      "confidence": 0.996
+    },
+    {
+      "expected": "ɛ",
+      "actual": "ɛ",
+      "status": "correct",
+      "confidence": 0.942
+    },
+    {
+      "expected": "l",
+      "actual": "l",
+      "status": "correct",
+      "confidence": 0.993
+    },
+    {
+      "expected": "ʌ",
+      "actual": "ɐ",
+      "status": "correct",
+      "confidence": 0.504
+    },
+    {
+      "expected": "æ",
+      "actual": "æ",
+      "status": "correct",
+      "confidence": 0.364
+    },
+    {
+      "expected": "s",
+      "actual": "s",
+      "status": "correct",
+      "confidence": 0.987
+    },
+    {
+      "expected": "k",
+      "actual": "k",
+      "status": "correct",
+      "confidence": 0.969
+    },
+    {
+      "expected": "h",
+      "actual": "h",
+      "status": "correct",
+      "confidence": 0.56
+    },
+    {
+      "expected": "ɝ",
+      "actual": "ɜː",
+      "status": "correct",
+      "confidence": 0.491
+    },
+    {
+      "expected": "t",
+      "actual": "t",
+      "status": "correct",
+      "confidence": 0.955
+    },
+    {
+      "expected": "uː",
+      "actual": "ʊ",
+      "status": "substitution",
+      "confidence": 0.571
+    },
+    {
+      "expected": "b",
+      "actual": "b",
+      "status": "correct",
+      "confidence": 0.979
+    },
+    {
+      "expected": "ɹ",
+      "actual": "ɹ",
+      "status": "correct",
+      "confidence": 0.764
+    },
+    {
+      "expected": "ɪ",
+      "actual": "ɪ",
+      "status": "correct",
+      "confidence": 0.931
+    },
+    {
+      "expected": "ŋ",
+      "actual": "ŋ",
+      "status": "correct",
+      "confidence": 0.943
+    },
+    {
+      "expected": "ð",
+      "actual": "ð",
+      "status": "correct",
+      "confidence": 0.98
+    },
+    {
+      "expected": "iː",
+      "actual": "iː",
+      "status": "correct",
+      "confidence": 0.905
+    },
+    {
+      "expected": "z",
+      "actual": "z",
+      "status": "correct",
+      "confidence": 0.892
+    },
+    {
+      "expected": "θ",
+      "actual": "θ",
+      "status": "correct",
+      "confidence": 0.553
+    },
+    {
+      "expected": "ɪ",
+      "actual": "ɪ",
+      "status": "correct",
+      "confidence": 0.934
+    },
+    {
+      "expected": "ŋ",
+      "actual": "ŋ",
+      "status": "correct",
+      "confidence": 0.85
+    },
+    {
+      "expected": "z",
+      "actual": "z",
+      "status": "correct",
+      "confidence": 0.815
+    },
+    {
+      "expected": "w",
+      "actual": "v",
+      "status": "substitution",
+      "confidence": 0.946
+    },
+    {
+      "expected": "ɪ",
+      "actual": "ɪ",
+      "status": "correct",
+      "confidence": 0.963
+    },
+    {
+      "expected": "ð",
+      "actual": "ð",
+      "status": "correct",
+      "confidence": 0.95
+    },
+    {
+      "expected": "h",
+      "actual": "h",
+      "status": "correct",
+      "confidence": 0.569
+    },
+    {
+      "expected": "ɝ",
+      "actual": "ɚ",
+      "status": "correct",
+      "confidence": 0.577
+    },
+    {
+      "expected": "f",
+      "actual": "f",
+      "status": "correct",
+      "confidence": 0.973
+    },
+    {
+      "expected": "ɹ",
+      "actual": "ɹ",
+      "status": "correct",
+      "confidence": 0.974
+    },
+    {
+      "expected": "ʌ",
+      "actual": "ʌ",
+      "status": "correct",
+      "confidence": 0.831
+    },
+    {
+      "expected": "m",
+      "actual": "m",
+      "status": "correct",
+      "confidence": 0.992
+    },
+    {
+      "expected": "ð",
+      "actual": "ð",
+      "status": "correct",
+      "confidence": 0.987
+    },
+    {
+      "expected": "ʌ",
+      "actual": "ə",
+      "status": "substitution",
+      "confidence": 0.952
+    },
+    {
+      "expected": "s",
+      "actual": "s",
+      "status": "correct",
+      "confidence": 0.987
+    },
+    {
+      "expected": "t",
+      "actual": "t",
+      "status": "correct",
+      "confidence": 0.994
+    },
+    {
+      "expected": "ɔː",
+      "actual": "oʊ",
+      "status": "substitution",
+      "confidence": 0.379
+    },
+    {
+      "expected": "ɹ",
+      "actual": "s",
+      "status": "substitution",
+      "confidence": 0.979
+    },
+    {
+      "expected": "s",
+      "actual": "ɪ",
+      "status": "substitution",
+      "confidence": 0.961
+    },
+    {
+      "expected": "ɪ",
+      "actual": "k",
+      "status": "substitution",
+      "confidence": 0.987
+    },
+    {
+      "expected": "k",
+      "actual": "s",
+      "status": "substitution",
+      "confidence": 0.988
+    },
+    {
+      "expected": "s",
+      "actual": "k",
+      "status": "substitution",
+      "confidence": 0.909
+    },
+    {
+      "expected": "s",
+      "actual": "uː",
+      "status": "substitution",
+      "confidence": 0.886
+    },
+    {
+      "expected": "p",
+      "actual": "n",
+      "status": "substitution",
+      "confidence": 0.834
+    },
+    {
+      "expected": "uː",
+      "actual": "s",
+      "status": "substitution",
+      "confidence": 0.738
+    },
+    {
+      "expected": "n",
+      "actual": "ʌ",
+      "status": "substitution",
+      "confidence": 0.915
+    },
+    {
+      "expected": "z",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "ʌ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "v",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "f",
+      "actual": "f",
+      "status": "correct",
+      "confidence": 0.992
+    },
+    {
+      "expected": "ɹ",
+      "actual": "ɹ",
+      "status": "correct",
+      "confidence": 0.93
+    },
+    {
+      "expected": "ɛ",
+      "actual": "ɛ",
+      "status": "correct",
+      "confidence": 0.909
+    },
+    {
+      "expected": "ʃ",
+      "actual": "ʃ",
+      "status": "correct",
+      "confidence": 0.872
+    },
+    {
+      "expected": "s",
+      "actual": "∅",
+      "status": "deletion",
+      "confidence": 0.0
+    },
+    {
+      "expected": "n",
+      "actual": "n",
+      "status": "correct",
+      "confidence": 0.9
+    },
+    {
+      "expected": "oʊ",
+      "actual": "oʊ",
+      "status": "correct",
+      "confidence": 0.637
+    },
+    {
+      "expected": "p",
+      "actual": "p",
+      "status": "correct",
+      "confidence": 0.94
+    },
+    {
+      "expected": "iː",
+      "actual": "iː",
+      "status": "correct",
+      "confidence": 0.821
+    },
+    {
+      "expected": "z",
+      "actual": "z",
+      "status": "correct",
+      "confidence": 0.961
+    },
+    {
+      "expected": "f",
+      "actual": "f",
+      "status": "correct",
+      "confidence": 0.989
+    },
+    {
+      "expected": "aɪ",
+      "actual": "aɪ",
+      "status": "correct",
+      "confidence": 0.961
+    },
+    {
+      "expected": "v",
+      "actual": "v",
+      "status": "correct",
+      "confidence": 0.852
+    },
+    {
+      "expected": "θ",
+      "actual": "θ",
+      "status": "correct",
+      "confidence": 0.925
+    },
+    {
+      "expected": "ɪ",
+      "actual": "ɪ",
+      "status": "correct",
+      "confidence": 0.966
+    },
+    {
+      "expected": "k",
+      "actual": "k",
+      "status": "correct",
+      "confidence": 0.974
+    },
+    {
+      "expected": "s",
+      "actual": "s",
+      "status": "correct",
+      "confidence": 0.973
+    },
+    {
+      "expected": "l",
+      "actual": "l",
+      "status": "correct",
+      "confidence": 0.973
+    },
+    {
+      "expected": "æ",
+      "actual": "æ",
+      "status": "correct",
+      "confidence": 0.785
+    },
+    {
+      "expected": "b",
+      "actual": "p",
+      "status": "substitution",
+      "confidence": 0.939
+    },
+    {
+      "expected": "z",
+      "actual": "s",
+      "status": "substitution",
+      "confidence": 0.911
+    },
+    {
+      "expected": "ʌ",
+      "actual": "ɔː",
+      "status": "substitution",
+      "confidence": 0.248
+    },
+    {
+      "expected": "v",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "b",
+      "actual": "b",
+      "status": "correct",
+      "confidence": 0.983
+    },
+    {
+      "expected": "l",
+      "actual": "l",
+      "status": "correct",
+      "confidence": 0.989
+    },
+    {
+      "expected": "uː",
+      "actual": "uː",
+      "status": "correct",
+      "confidence": 0.922
+    },
+    {
+      "expected": "tʃ",
+      "actual": "tʃ",
+      "status": "correct",
+      "confidence": 0.491
+    },
+    {
+      "expected": "iː",
+      "actual": "iː",
+      "status": "correct",
+      "confidence": 0.651
+    },
+    {
+      "expected": "z",
+      "actual": "z",
+      "status": "correct",
+      "confidence": 0.91
+    },
+    {
+      "expected": "ʌ",
+      "actual": "æ",
+      "status": "substitution",
+      "confidence": 0.946
+    },
+    {
+      "expected": "n",
+      "actual": "n",
+      "status": "correct",
+      "confidence": 0.984
+    },
+    {
+      "expected": "d",
+      "actual": "m",
+      "status": "substitution",
+      "confidence": 0.989
+    },
+    {
+      "expected": "m",
+      "actual": "eɪ",
+      "status": "substitution",
+      "confidence": 0.844
+    },
+    {
+      "expected": "eɪ",
+      "actual": "b",
+      "status": "substitution",
+      "confidence": 0.934
+    },
+    {
+      "expected": "b",
+      "actual": "iː",
+      "status": "substitution",
+      "confidence": 0.457
+    },
+    {
+      "expected": "iː",
+      "actual": "ɐ",
+      "status": "substitution",
+      "confidence": 0.877
+    },
+    {
+      "expected": "ʌ",
+      "actual": "s",
+      "status": "substitution",
+      "confidence": 0.985
+    },
+    {
+      "expected": "s",
+      "actual": "n",
+      "status": "substitution",
+      "confidence": 0.996
+    },
+    {
+      "expected": "n",
+      "actual": "æ",
+      "status": "substitution",
+      "confidence": 0.893
+    },
+    {
+      "expected": "æ",
+      "actual": "k",
+      "status": "substitution",
+      "confidence": 0.977
+    },
+    {
+      "expected": "k",
+      "actual": "ʌ",
+      "status": "substitution",
+      "confidence": 0.749
+    },
+    {
+      "expected": "f",
+      "actual": "v",
+      "status": "substitution",
+      "confidence": 0.983
+    },
+    {
+      "expected": "ɔː",
+      "actual": "s",
+      "status": "substitution",
+      "confidence": 0.984
+    },
+    {
+      "expected": "∅",
+      "actual": "n",
+      "status": "substitution",
+      "confidence": 0.996
+    },
+    {
+      "expected": "∅",
+      "actual": "æ",
+      "status": "substitution",
+      "confidence": 0.914
+    },
+    {
+      "expected": "∅",
+      "actual": "k",
+      "status": "substitution",
+      "confidence": 0.824
+    },
+    {
+      "expected": "∅",
+      "actual": "f",
+      "status": "substitution",
+      "confidence": 0.986
+    },
+    {
+      "expected": "∅",
+      "actual": "ɔːɹ",
+      "status": "substitution",
+      "confidence": 0.241
+    },
+    {
+      "expected": "ɹ",
+      "actual": "ɾ",
+      "status": "correct",
+      "confidence": 0.314
+    },
+    {
+      "expected": "h",
+      "actual": "h",
+      "status": "correct",
+      "confidence": 0.911
+    },
+    {
+      "expected": "ɝ",
+      "actual": "ɚ",
+      "status": "correct",
+      "confidence": 0.368
+    },
+    {
+      "expected": "b",
+      "actual": "b",
+      "status": "correct",
+      "confidence": 0.979
+    },
+    {
+      "expected": "ɹ",
+      "actual": "ɹ",
+      "status": "correct",
+      "confidence": 0.576
+    },
+    {
+      "expected": "ʌ",
+      "actual": "ʌ",
+      "status": "correct",
+      "confidence": 0.897
+    },
+    {
+      "expected": "ð",
+      "actual": "ð",
+      "status": "correct",
+      "confidence": 0.968
+    },
+    {
+      "expected": "ɝ",
+      "actual": "ɚ",
+      "status": "correct",
+      "confidence": 0.745
+    },
+    {
+      "expected": "b",
+      "actual": "ɹ",
+      "status": "substitution",
+      "confidence": 0.444
+    },
+    {
+      "expected": "∅",
+      "actual": "b",
+      "status": "substitution",
+      "confidence": 0.979
+    },
+    {
+      "expected": "∅",
+      "actual": "ɔ",
+      "status": "substitution",
+      "confidence": 0.365
+    },
+    {
+      "expected": "∅",
+      "actual": "b",
+      "status": "substitution",
+      "confidence": 0.974
+    },
+    {
+      "expected": "∅",
+      "actual": "v",
+      "status": "substitution",
+      "confidence": 0.773
+    },
+    {
+      "expected": "∅",
+      "actual": "iː",
+      "status": "substitution",
+      "confidence": 0.834
+    },
+    {
+      "expected": "∅",
+      "actual": "ɔː",
+      "status": "substitution",
+      "confidence": 0.446
+    },
+    {
+      "expected": "∅",
+      "actual": "l",
+      "status": "substitution",
+      "confidence": 0.744
+    },
+    {
+      "expected": "∅",
+      "actual": "s",
+      "status": "substitution",
+      "confidence": 0.538
+    },
+    {
+      "expected": "∅",
+      "actual": "oʊ",
+      "status": "substitution",
+      "confidence": 0.676
+    },
+    {
+      "expected": "∅",
+      "actual": "n",
+      "status": "substitution",
+      "confidence": 0.991
+    },
+    {
+      "expected": "∅",
+      "actual": "iː",
+      "status": "substitution",
+      "confidence": 0.958
+    },
+    {
+      "expected": "∅",
+      "actual": "d",
+      "status": "substitution",
+      "confidence": 0.953
+    },
+    {
+      "expected": "∅",
+      "actual": "ɐ",
+      "status": "substitution",
+      "confidence": 0.884
+    },
+    {
+      "expected": "∅",
+      "actual": "s",
+      "status": "substitution",
+      "confidence": 0.988
+    },
+    {
+      "expected": "∅",
+      "actual": "m",
+      "status": "substitution",
+      "confidence": 0.962
+    },
+    {
+      "expected": "∅",
+      "actual": "ɔː",
+      "status": "substitution",
+      "confidence": 0.293
+    },
+    {
+      "expected": "∅",
+      "actual": "l",
+      "status": "substitution",
+      "confidence": 0.966
+    },
+    {
+      "expected": "∅",
+      "actual": "p",
+      "status": "substitution",
+      "confidence": 0.707
+    },
+    {
+      "expected": "∅",
+      "actual": "l",
+      "status": "substitution",
+      "confidence": 0.627
+    },
+    {
+      "expected": "ɑː",
+      "actual": "ɑː",
+      "status": "correct",
+      "confidence": 0.523
+    },
+    {
+      "expected": "b",
+      "actual": "s",
+      "status": "substitution",
+      "confidence": 0.988
+    },
+    {
+      "expected": "w",
+      "actual": "t",
+      "status": "substitution",
+      "confidence": 0.993
+    },
+    {
+      "expected": "iː",
+      "actual": "ɪ",
+      "status": "substitution",
+      "confidence": 0.946
+    },
+    {
+      "expected": "ɔː",
+      "actual": "k",
+      "status": "substitution",
+      "confidence": 0.812
+    },
+    {
+      "expected": "l",
+      "actual": "s",
+      "status": "substitution",
+      "confidence": 0.988
+    },
+    {
+      "expected": "s",
+      "actual": "n",
+      "status": "substitution",
+      "confidence": 0.995
+    },
+    {
+      "expected": "oʊ",
+      "actual": "eɪ",
+      "status": "substitution",
+      "confidence": 0.906
+    },
+    {
+      "expected": "n",
+      "actual": "k",
+      "status": "substitution",
+      "confidence": 0.619
+    },
+    {
+      "expected": "iː",
+      "actual": "æ",
+      "status": "substitution",
+      "confidence": 0.965
+    },
+    {
+      "expected": "d",
+      "actual": "n",
+      "status": "substitution",
+      "confidence": 0.953
+    },
+    {
+      "expected": "ʌ",
+      "actual": "d",
+      "status": "substitution",
+      "confidence": 0.985
+    },
+    {
+      "expected": "s",
+      "actual": "b",
+      "status": "substitution",
+      "confidence": 0.95
+    },
+    {
+      "expected": "m",
+      "actual": "ɪ",
+      "status": "substitution",
+      "confidence": 0.954
+    },
+    {
+      "expected": "ɔː",
+      "actual": "k",
+      "status": "substitution",
+      "confidence": 0.93
+    },
+    {
+      "expected": "l",
+      "actual": "t",
+      "status": "substitution",
+      "confidence": 0.736
+    },
+    {
+      "expected": "p",
+      "actual": "ɔːɹ",
+      "status": "substitution",
+      "confidence": 0.119
+    },
+    {
+      "expected": "l",
+      "actual": "f",
+      "status": "substitution",
+      "confidence": 0.994
+    },
+    {
+      "expected": "æ",
+      "actual": "ɹ",
+      "status": "substitution",
+      "confidence": 0.707
+    },
+    {
+      "expected": "s",
+      "actual": "ɔ",
+      "status": "substitution",
+      "confidence": 0.384
+    },
+    {
+      "expected": "t",
+      "actual": "k",
+      "status": "substitution",
+      "confidence": 0.965
+    },
+    {
+      "expected": "ɪ",
+      "actual": "f",
+      "status": "substitution",
+      "confidence": 0.992
+    },
+    {
+      "expected": "k",
+      "actual": "ɔːɹ",
+      "status": "substitution",
+      "confidence": 0.283
+    },
+    {
+      "expected": "s",
+      "actual": "ð",
+      "status": "substitution",
+      "confidence": 0.975
+    },
+    {
+      "expected": "n",
+      "actual": "ə",
+      "status": "substitution",
+      "confidence": 0.9
+    },
+    {
+      "expected": "eɪ",
+      "actual": "k",
+      "status": "substitution",
+      "confidence": 0.982
+    },
+    {
+      "expected": "k",
+      "actual": "ɛ",
+      "status": "substitution",
+      "confidence": 0.375
+    },
+    {
+      "expected": "ʌ",
+      "actual": "t",
+      "status": "substitution",
+      "confidence": 0.803
+    },
+    {
+      "expected": "n",
+      "actual": "s",
+      "status": "substitution",
+      "confidence": 0.459
+    },
+    {
+      "expected": "d",
+      "actual": "ʃ",
+      "status": "substitution",
+      "confidence": 0.885
+    },
+    {
+      "expected": "ʌ",
+      "actual": "iː",
+      "status": "substitution",
+      "confidence": 0.892
+    },
+    {
+      "expected": "b",
+      "actual": "k",
+      "status": "substitution",
+      "confidence": 0.969
+    },
+    {
+      "expected": "ɪ",
+      "actual": "æ",
+      "status": "substitution",
+      "confidence": 0.76
+    },
+    {
+      "expected": "∅",
+      "actual": "n",
+      "status": "substitution",
+      "confidence": 0.9
+    },
+    {
+      "expected": "∅",
+      "actual": "s",
+      "status": "substitution",
+      "confidence": 0.976
+    },
+    {
+      "expected": "∅",
+      "actual": "k",
+      "status": "substitution",
+      "confidence": 0.979
+    },
+    {
+      "expected": "∅",
+      "actual": "uː",
+      "status": "substitution",
+      "confidence": 0.891
+    },
+    {
+      "expected": "∅",
+      "actual": "p",
+      "status": "substitution",
+      "confidence": 0.81
+    },
+    {
+      "expected": "∅",
+      "actual": "ð",
+      "status": "substitution",
+      "confidence": 0.868
+    },
+    {
+      "expected": "∅",
+      "actual": "iː",
+      "status": "substitution",
+      "confidence": 0.929
+    },
+    {
+      "expected": "∅",
+      "actual": "z",
+      "status": "substitution",
+      "confidence": 0.906
+    },
+    {
+      "expected": "∅",
+      "actual": "θ",
+      "status": "substitution",
+      "confidence": 0.837
+    },
+    {
+      "expected": "∅",
+      "actual": "ɪ",
+      "status": "substitution",
+      "confidence": 0.953
+    },
+    {
+      "expected": "∅",
+      "actual": "ŋ",
+      "status": "substitution",
+      "confidence": 0.962
+    },
+    {
+      "expected": "∅",
+      "actual": "z",
+      "status": "substitution",
+      "confidence": 0.573
+    },
+    {
+      "expected": "∅",
+      "actual": "ɪ",
+      "status": "substitution",
+      "confidence": 0.968
+    },
+    {
+      "expected": "∅",
+      "actual": "n",
+      "status": "substitution",
+      "confidence": 0.906
+    },
+    {
+      "expected": "∅",
+      "actual": "t",
+      "status": "substitution",
+      "confidence": 0.964
+    },
+    {
+      "expected": "∅",
+      "actual": "uː",
+      "status": "substitution",
+      "confidence": 0.52
+    },
+    {
+      "expected": "∅",
+      "actual": "θ",
+      "status": "substitution",
+      "confidence": 0.923
+    },
+    {
+      "expected": "∅",
+      "actual": "ɹ",
+      "status": "substitution",
+      "confidence": 0.961
+    },
+    {
+      "expected": "∅",
+      "actual": "iː",
+      "status": "substitution",
+      "confidence": 0.882
+    },
+    {
+      "expected": "∅",
+      "actual": "ɹ",
+      "status": "substitution",
+      "confidence": 0.928
+    },
+    {
+      "expected": "∅",
+      "actual": "ɛ",
+      "status": "substitution",
+      "confidence": 0.912
+    },
+    {
+      "expected": "∅",
+      "actual": "d",
+      "status": "substitution",
+      "confidence": 0.988
+    },
+    {
+      "expected": "∅",
+      "actual": "b",
+      "status": "substitution",
+      "confidence": 0.98
+    },
+    {
+      "expected": "∅",
+      "actual": "æ",
+      "status": "substitution",
+      "confidence": 0.821
+    },
+    {
+      "expected": "ɡ",
+      "actual": "ɡ",
+      "status": "correct",
+      "confidence": 0.875
+    },
+    {
+      "expected": "t",
+      "actual": "z",
+      "status": "substitution",
+      "confidence": 0.946
+    },
+    {
+      "expected": "ɔɪ",
+      "actual": "æ",
+      "status": "substitution",
+      "confidence": 0.948
+    },
+    {
+      "expected": "f",
+      "actual": "n",
+      "status": "substitution",
+      "confidence": 0.962
+    },
+    {
+      "expected": "ɹ",
+      "actual": "d",
+      "status": "substitution",
+      "confidence": 0.981
+    },
+    {
+      "expected": "ɑː",
+      "actual": "v",
+      "status": "substitution",
+      "confidence": 0.585
+    },
+    {
+      "expected": "∅",
+      "actual": "iː",
+      "status": "substitution",
+      "confidence": 0.74
+    },
+    {
+      "expected": "∅",
+      "actual": "v",
+      "status": "substitution",
+      "confidence": 0.638
+    },
+    {
+      "expected": "∅",
+      "actual": "ɪ",
+      "status": "substitution",
+      "confidence": 0.815
+    },
+    {
+      "expected": "∅",
+      "actual": "l",
+      "status": "substitution",
+      "confidence": 0.61
+    },
+    {
+      "expected": "ɡ",
+      "actual": "ɡ",
+      "status": "correct",
+      "confidence": 0.98
+    },
+    {
+      "expected": "f",
+      "actual": "oʊ",
+      "status": "substitution",
+      "confidence": 0.717
+    },
+    {
+      "expected": "ɔː",
+      "actual": "m",
+      "status": "substitution",
+      "confidence": 0.994
+    },
+    {
+      "expected": "ɹ",
+      "actual": "iː",
+      "status": "substitution",
+      "confidence": 0.853
+    },
+    {
+      "expected": "ð",
+      "actual": "ɾ",
+      "status": "substitution",
+      "confidence": 0.694
+    },
+    {
+      "expected": "ʌ",
+      "actual": "ɚ",
+      "status": "substitution",
+      "confidence": 0.663
+    },
+    {
+      "expected": "k",
+      "actual": "v",
+      "status": "substitution",
+      "confidence": 0.989
+    },
+    {
+      "expected": "ɪ",
+      "actual": "ɛ",
+      "status": "substitution",
+      "confidence": 0.899
+    },
+    {
+      "expected": "d",
+      "actual": "n",
+      "status": "substitution",
+      "confidence": 0.725
+    },
+    {
+      "expected": "z",
+      "actual": "z",
+      "status": "correct",
+      "confidence": 0.636
+    },
+    {
+      "expected": "∅",
+      "actual": "d",
+      "status": "substitution",
+      "confidence": 0.969
+    },
+    {
+      "expected": "∅",
+      "actual": "eɪ",
+      "status": "substitution",
+      "confidence": 0.749
+    },
+    {
+      "expected": "∅",
+      "actual": "æ",
+      "status": "substitution",
+      "confidence": 0.937
+    },
+    {
+      "expected": "∅",
+      "actual": "t",
+      "status": "substitution",
+      "confidence": 0.668
+    },
+    {
+      "expected": "∅",
+      "actual": "ð",
+      "status": "substitution",
+      "confidence": 0.857
+    },
+    {
+      "expected": "∅",
+      "actual": "ə",
+      "status": "substitution",
+      "confidence": 0.877
+    },
+    {
+      "expected": "∅",
+      "actual": "t",
+      "status": "substitution",
+      "confidence": 0.945
+    },
+    {
+      "expected": "∅",
+      "actual": "ɹ",
+      "status": "substitution",
+      "confidence": 0.933
+    },
+    {
+      "expected": "∅",
+      "actual": "eɪ",
+      "status": "substitution",
+      "confidence": 0.936
+    },
+    {
+      "expected": "∅",
+      "actual": "n",
+      "status": "substitution",
+      "confidence": 0.99
+    },
+    {
+      "expected": "∅",
+      "actual": "s",
+      "status": "substitution",
+      "confidence": 0.969
+    },
+    {
+      "expected": "∅",
+      "actual": "t",
+      "status": "substitution",
+      "confidence": 0.993
+    },
+    {
+      "expected": "∅",
+      "actual": "eɪ",
+      "status": "substitution",
+      "confidence": 0.894
+    },
+    {
+      "expected": "ʃ",
+      "actual": "ʃ",
+      "status": "correct",
+      "confidence": 0.941
+    },
+    {
+      "expected": "iː",
+      "actual": "ə",
+      "status": "substitution",
+      "confidence": 0.984
+    },
+    {
+      "expected": "k",
+      "actual": "n",
+      "status": "substitution",
+      "confidence": 0.817
+    },
+    {
+      "expected": "æ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "n",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "s",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "k",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "uː",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "p",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "ð",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "iː",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "z",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "θ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "ɪ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "ŋ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "z",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "ɪ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "n",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "t",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "uː",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "θ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "ɹ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "iː",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "ɹ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "ɛ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "d",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "b",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "æ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "ɡ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "z",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "ʌ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "n",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "d",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "w",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "iː",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "w",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "ɪ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "l",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "ɡ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "oʊ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "m",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "iː",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "t",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "h",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "ɝ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "w",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "ɛ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "n",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "z",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "d",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "iː",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "æ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "t",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "ð",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "ʌ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "t",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "ɹ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "eɪ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "n",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "s",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "t",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "eɪ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "ʃ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "ʌ",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    },
+    {
+      "expected": "n",
+      "actual": "∅",
+      "status": "substitution",
+      "confidence": 0.0
+    }
+  ],
+  "expected_phonemes": [
+    "p",
+    "l",
+    "iː",
+    "z",
+    "k",
+    "ɔː",
+    "l",
+    "s",
+    "t",
+    "ɛ",
+    "l",
+    "ʌ",
+    "æ",
+    "s",
+    "k",
+    "h",
+    "ɝ",
+    "t",
+    "uː",
+    "b",
+    "ɹ",
+    "ɪ",
+    "ŋ",
+    "ð",
+    "iː",
+    "z",
+    "θ",
+    "ɪ",
+    "ŋ",
+    "z",
+    "w",
+    "ɪ",
+    "ð",
+    "h",
+    "ɝ",
+    "f",
+    "ɹ",
+    "ʌ",
+    "m",
+    "ð",
+    "ʌ",
+    "s",
+    "t",
+    "ɔː",
+    "ɹ",
+    "s",
+    "ɪ",
+    "k",
+    "s",
+    "s",
+    "p",
+    "uː",
+    "n",
+    "z",
+    "ʌ",
+    "v",
+    "f",
+    "ɹ",
+    "ɛ",
+    "ʃ",
+    "s",
+    "n",
+    "oʊ",
+    "p",
+    "iː",
+    "z",
+    "f",
+    "aɪ",
+    "v",
+    "θ",
+    "ɪ",
+    "k",
+    "s",
+    "l",
+    "æ",
+    "b",
+    "z",
+    "ʌ",
+    "v",
+    "b",
+    "l",
+    "uː",
+    "tʃ",
+    "iː",
+    "z",
+    "ʌ",
+    "n",
+    "d",
+    "m",
+    "eɪ",
+    "b",
+    "iː",
+    "ʌ",
+    "s",
+    "n",
+    "æ",
+    "k",
+    "f",
+    "ɔː",
+    "ɹ",
+    "h",
+    "ɝ",
+    "b",
+    "ɹ",
+    "ʌ",
+    "ð",
+    "ɝ",
+    "b",
+    "ɑː",
+    "b",
+    "w",
+    "iː",
+    "ɔː",
+    "l",
+    "s",
+    "oʊ",
+    "n",
+    "iː",
+    "d",
+    "ʌ",
+    "s",
+    "m",
+    "ɔː",
+    "l",
+    "p",
+    "l",
+    "æ",
+    "s",
+    "t",
+    "ɪ",
+    "k",
+    "s",
+    "n",
+    "eɪ",
+    "k",
+    "ʌ",
+    "n",
+    "d",
+    "ʌ",
+    "b",
+    "ɪ",
+    "ɡ",
+    "t",
+    "ɔɪ",
+    "f",
+    "ɹ",
+    "ɑː",
+    "ɡ",
+    "f",
+    "ɔː",
+    "ɹ",
+    "ð",
+    "ʌ",
+    "k",
+    "ɪ",
+    "d",
+    "z",
+    "ʃ",
+    "iː",
+    "k",
+    "æ",
+    "n",
+    "s",
+    "k",
+    "uː",
+    "p",
+    "ð",
+    "iː",
+    "z",
+    "θ",
+    "ɪ",
+    "ŋ",
+    "z",
+    "ɪ",
+    "n",
+    "t",
+    "uː",
+    "θ",
+    "ɹ",
+    "iː",
+    "ɹ",
+    "ɛ",
+    "d",
+    "b",
+    "æ",
+    "ɡ",
+    "z",
+    "ʌ",
+    "n",
+    "d",
+    "w",
+    "iː",
+    "w",
+    "ɪ",
+    "l",
+    "ɡ",
+    "oʊ",
+    "m",
+    "iː",
+    "t",
+    "h",
+    "ɝ",
+    "w",
+    "ɛ",
+    "n",
+    "z",
+    "d",
+    "iː",
+    "æ",
+    "t",
+    "ð",
+    "ʌ",
+    "t",
+    "ɹ",
+    "eɪ",
+    "n",
+    "s",
+    "t",
+    "eɪ",
+    "ʃ",
+    "ʌ",
+    "n"
+  ],
+  "actual_phonemes": [
+    "p",
+    "l",
+    "iː",
+    "z",
+    "k",
+    "ɔ",
+    "l",
+    "s",
+    "t",
+    "ɛ",
+    "l",
+    "ɐ",
+    "æ",
+    "s",
+    "k",
+    "h",
+    "ɜː",
+    "t",
+    "ʊ",
+    "b",
+    "ɹ",
+    "ɪ",
+    "ŋ",
+    "ð",
+    "iː",
+    "z",
+    "θ",
+    "ɪ",
+    "ŋ",
+    "z",
+    "v",
+    "ɪ",
+    "ð",
+    "h",
+    "ɚ",
+    "f",
+    "ɹ",
+    "ʌ",
+    "m",
+    "ð",
+    "ə",
+    "s",
+    "t",
+    "oʊ",
+    "s",
+    "ɪ",
+    "k",
+    "s",
+    "k",
+    "uː",
+    "n",
+    "s",
+    "ʌ",
+    "f",
+    "ɹ",
+    "ɛ",
+    "ʃ",
+    "n",
+    "oʊ",
+    "p",
+    "iː",
+    "z",
+    "f",
+    "aɪ",
+    "v",
+    "θ",
+    "ɪ",
+    "k",
+    "s",
+    "l",
+    "æ",
+    "p",
+    "s",
+    "ɔː",
+    "b",
+    "l",
+    "uː",
+    "tʃ",
+    "iː",
+    "z",
+    "æ",
+    "n",
+    "m",
+    "eɪ",
+    "b",
+    "iː",
+    "ɐ",
+    "s",
+    "n",
+    "æ",
+    "k",
+    "ʌ",
+    "v",
+    "s",
+    "n",
+    "æ",
+    "k",
+    "f",
+    "ɔːɹ",
+    "ɾ",
+    "h",
+    "ɚ",
+    "b",
+    "ɹ",
+    "ʌ",
+    "ð",
+    "ɚ",
+    "ɹ",
+    "b",
+    "ɔ",
+    "b",
+    "v",
+    "iː",
+    "ɔː",
+    "l",
+    "s",
+    "oʊ",
+    "n",
+    "iː",
+    "d",
+    "ɐ",
+    "s",
+    "m",
+    "ɔː",
+    "l",
+    "p",
+    "l",
+    "ɑː",
+    "s",
+    "t",
+    "ɪ",
+    "k",
+    "s",
+    "n",
+    "eɪ",
+    "k",
+    "æ",
+    "n",
+    "d",
+    "b",
+    "ɪ",
+    "k",
+    "t",
+    "ɔːɹ",
+    "f",
+    "ɹ",
+    "ɔ",
+    "k",
+    "f",
+    "ɔːɹ",
+    "ð",
+    "ə",
+    "k",
+    "ɛ",
+    "t",
+    "s",
+    "ʃ",
+    "iː",
+    "k",
+    "æ",
+    "n",
+    "s",
+    "k",
+    "uː",
+    "p",
+    "ð",
+    "iː",
+    "z",
+    "θ",
+    "ɪ",
+    "ŋ",
+    "z",
+    "ɪ",
+    "n",
+    "t",
+    "uː",
+    "θ",
+    "ɹ",
+    "iː",
+    "ɹ",
+    "ɛ",
+    "d",
+    "b",
+    "æ",
+    "ɡ",
+    "z",
+    "æ",
+    "n",
+    "d",
+    "v",
+    "iː",
+    "v",
+    "ɪ",
+    "l",
+    "ɡ",
+    "oʊ",
+    "m",
+    "iː",
+    "ɾ",
+    "ɚ",
+    "v",
+    "ɛ",
+    "n",
+    "z",
+    "d",
+    "eɪ",
+    "æ",
+    "t",
+    "ð",
+    "ə",
+    "t",
+    "ɹ",
+    "eɪ",
+    "n",
+    "s",
+    "t",
+    "eɪ",
+    "ʃ",
+    "ə",
+    "n"
+  ],
+  "reference_text": "Please call Stella. Ask her to bring these things with her from the store. Six spoons of fresh snow peas, five thick slabs of blue cheese and maybe a snack for her brother Bob. We also need a small plastic snake and a big toy frog for the kids. She can scoop these things into three red bags and we will go meet her Wednesday at the train station."
+}
