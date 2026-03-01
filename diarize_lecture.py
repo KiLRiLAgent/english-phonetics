@@ -13,6 +13,8 @@ import sys
 import os
 import json
 from pathlib import Path
+import warnings
+warnings.filterwarnings("ignore")
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -33,19 +35,39 @@ def load_diarization_pipeline():
     print("Loading speaker diarization pipeline...")
     pipeline = Pipeline.from_pretrained(
         "pyannote/speaker-diarization-3.1",
-        use_auth_token=hf_token
+        token=hf_token
     )
     print("Diarization pipeline loaded")
     return pipeline
 
 
+def convert_to_wav(audio_path: str) -> str:
+    """Convert audio to 16kHz mono WAV to ensure pyannote compatibility."""
+    import subprocess
+    wav_path = str(Path(audio_path).with_suffix('.diarization_tmp.wav'))
+    subprocess.run([
+        "ffmpeg", "-y", "-i", audio_path,
+        "-ar", "16000", "-ac", "1", "-f", "wav", wav_path
+    ], capture_output=True, check=True)
+    print(f"Converted to WAV: {wav_path}")
+    return wav_path
+
+
 def diarize_speakers(pipeline, audio_path: str):
     """Run diarization on audio file. Returns speaker segments."""
+    # Convert to WAV first — MP3 has sample count mismatch with pyannote
+    wav_path = convert_to_wav(audio_path)
     print(f"Running diarization on: {audio_path}")
-    diarization = pipeline(audio_path)
+    try:
+        diarization = pipeline(wav_path)
+    finally:
+        # Clean up temp WAV
+        Path(wav_path).unlink(missing_ok=True)
 
+    # pyannote 4.x: returns DiarizeOutput, annotation is in .speaker_diarization
+    annotation = getattr(diarization, 'speaker_diarization', diarization)
     segments = []
-    for turn, _, speaker in diarization.itertracks(yield_label=True):
+    for turn, _, speaker in annotation.itertracks(yield_label=True):
         speaker_id = int(speaker.split('_')[-1]) if '_' in speaker else 0
         segments.append({
             "speaker": speaker_id,
